@@ -34,7 +34,10 @@ const SEEN = read("data/seen.json", {});
 const PAGES = read("data/pages.json", {});
 
 const HORIZON_DAYS = 400;
-const STALE_DAYS = 14;
+// A source that fails keeps its last good dates this long. Eventbrite and a
+// few sites refuse GitHub's servers and are read from a Mac each morning
+// (scripts/home-refresh.sh), so this has to outlast a laptop left shut.
+const STALE_DAYS = 30;
 const CONCURRENCY = 8;
 const LUMA_PAGES = 40;
 const MAX_PAGES = 8;
@@ -301,14 +304,14 @@ function makeEvent(inst, { authors, via, match, topic, sourceId, sourceLabel, ve
 const events = [];
 const sources = [];
 
-function recordFailure(id, label, kind, url, err) {
+function recordFailure(id, label, kind, url, err, { homeOnly = false } = {}) {
   const prev = PREV.sources?.find((s) => s.id === id);
   const lastGood = prev?.ok ? PREV.fetchedAt : prev?.lastGood ?? null;
   const fresh = lastGood && now - Date.parse(lastGood) < STALE_DAYS * 86400000;
   const kept = fresh ? (PREV.events ?? []).filter((e) => e.sourceId === id && e.day >= today) : [];
   events.push(...kept);
   console.warn(`fetch-events: ${label}: ${err.message}${kept.length ? ` (kept ${kept.length} from ${lastGood.slice(0, 10)})` : ""}`);
-  sources.push({ id, label, kind, url, ok: false, count: kept.length, parsed: 0, lastGood, error: String(err.message).slice(0, 120) });
+  sources.push({ id, label, kind, url, ok: false, count: kept.length, parsed: 0, lastGood, homeOnly, error: String(err.message).slice(0, 120) });
 }
 
 async function readAuthor(a) {
@@ -375,9 +378,9 @@ async function readVenue(v) {
         return d > m ? d : m;
       }, "");
       console.log(`fetch-events: ${v.name}: ${n} kept (${items.length} read, to ${reach || "nothing"})`);
-      sources.push({ id, label: v.name, kind: "venue", url: feed.url, ok: true, count: n, parsed: items.length, reach: reach || null });
+      sources.push({ id, label: v.name, kind: "venue", url: feed.url, ok: true, count: n, parsed: items.length, reach: reach || null, homeOnly: !!v.homeOnly });
     } catch (err) {
-      recordFailure(id, v.name, "venue", feed.url, err);
+      recordFailure(id, v.name, "venue", feed.url, err, { homeOnly: !!v.homeOnly });
     }
   }
 }

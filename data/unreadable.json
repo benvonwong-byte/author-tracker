@@ -93,5 +93,20 @@
   "name": "Center on Sustainable Development, Columbia",
   "url": "https://csd.columbia.edu/events",
   "why": "refuses automated requests"
+ },
+ {
+  "name": "New York Insight",
+  "url": "https://www.nyimc.org/events/",
+  "why": "answers a Cloudflare challenge to every request, feeds included"
+ },
+ {
+  "name": "Prospect Park Alliance",
+  "url": "https://www.prospectpark.org/events/",
+  "why": "answers a Cloudflare challenge to every request, feeds included"
+ },
+ {
+  "name": "Billion Oyster Project",
+  "url": "https://www.billionoysterproject.org/events",
+  "why": "builds its calendar in the browser"
  }
 ]

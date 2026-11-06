@@ -51,6 +51,7 @@ for (const v of venues) {
   if (!v.id || vids.has(v.id)) errors.push(`${at}: id missing or duplicate`);
   vids.add(v.id);
   if (!v.name) errors.push(`${at}: missing name`);
+  if (v.homeOnly !== undefined && typeof v.homeOnly !== "boolean") errors.push(`${at}: homeOnly must be true or false`);
   feeds(at, v.feeds);
 }
 for (const u of unreadable) if (!u.name || !isHttp(u.url)) errors.push(`unreadable ${u.name ?? "?"}: needs a name and a url`);

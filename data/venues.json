@@ -69,7 +69,8 @@
     "format": "jsonld",
     "url": "https://www.eventbrite.com/d/ny--new-york/artificial-intelligence-talk/"
    }
-  ]
+  ],
+  "homeOnly": true
  },
  {
   "id": "explorers-club",
@@ -83,7 +84,8 @@
     "format": "tribe",
     "url": "https://www.explorers.org/wp-json/tribe/events/v1/events?per_page=50"
    }
-  ]
+  ],
+  "homeOnly": true
  },
  {
   "id": "albertine",
@@ -411,20 +413,6 @@
   ]
  },
  {
-  "id": "new-york-insight",
-  "name": "New York Insight",
-  "kind": "community",
-  "lat": null,
-  "lng": null,
-  "site": "https://www.nyimc.org/events/",
-  "feeds": [
-   {
-    "format": "ics",
-    "url": "https://www.nyimc.org/events/?ical=1"
-   }
-  ]
- },
- {
   "id": "park-slope-food-coop",
   "name": "Park Slope Food Coop",
   "kind": "community",
@@ -435,20 +423,6 @@
    {
     "format": "ics",
     "url": "https://linewaitersgazette.com/events/?ical=1"
-   }
-  ]
- },
- {
-  "id": "prospect-park-alliance",
-  "name": "Prospect Park Alliance",
-  "kind": "community",
-  "lat": null,
-  "lng": null,
-  "site": "https://www.prospectpark.org/events/",
-  "feeds": [
-   {
-    "format": "ics",
-    "url": "https://www.prospectpark.org/events/?ical=1"
    }
   ]
  },
@@ -505,20 +479,6 @@
    {
     "format": "ics",
     "url": "https://calendar.google.com/calendar/ical/c_ece6e2744f97e756c5a07f81630bbbb377f8facf58ac5064cb72accc423e7098%40group.calendar.google.com/public/basic.ics"
-   }
-  ]
- },
- {
-  "id": "billion-oyster-project",
-  "name": "Billion Oyster Project",
-  "kind": "community",
-  "lat": null,
-  "lng": null,
-  "site": "https://www.billionoysterproject.org/events",
-  "feeds": [
-   {
-    "format": "squarespace",
-    "url": "https://www.billionoysterproject.org/events?format=json"
    }
   ]
  },
@@ -983,7 +943,8 @@
     "format": "text",
     "url": "https://www.wendyssubway.com/programs"
    }
-  ]
+  ],
+  "homeOnly": true
  },
  {
   "id": "make-the-road-new-york",
@@ -1166,7 +1127,8 @@
     "format": "tribe",
     "url": "https://poetshouse.org/wp-json/tribe/events/v1/events?per_page=50"
    }
-  ]
+  ],
+  "homeOnly": true
  },
  {
   "id": "roosevelt-institute",

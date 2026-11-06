@@ -56,6 +56,10 @@ Add an entry to `data/authors.json`: `id`, `name`, `cluster`, `what`, `site`, `e
 
 Set `needsContext: true` on a common name (Tim Jackson, Dan Davies), and `aliases` for other spellings. A `text` feed takes `start`, `stop`, `placeBefore`, `titleBefore`, `yearless`, `placeFirst` and `skip`; the comment at the top of `scripts/lib/dated-text.mjs` says what each is for. Run `node scripts/try-page.mjs <id>` to check.
 
+## Sources that refuse GitHub
+
+A few sites answer GitHub's servers with an error but load from a home connection. They are marked `homeOnly` in `data/venues.json`, and `scripts/home-refresh.sh` reads them from a home connection. `HANDOFF.md` has the setup.
+
 ## What it does not see
 
 Several of the calendars that matter most refuse automated requests or only build their calendar in a browser: The Strand, McNally Jackson, Greenlight, Word, Book Culture, 92NY, the New York Public Library, Brooklyn Public Library, The New School and others. They are listed in `data/unreadable.json` and in the page footer for checking by hand. `docs/coverage.md` has the detail and the options.

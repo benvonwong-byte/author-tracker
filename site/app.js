@@ -465,11 +465,15 @@ function setView(v) {
 function renderSources() {
   const authors = DATA.sources.filter((s) => s.kind === "author");
   const venues = DATA.sources.filter((s) => s.kind === "venue");
-  const failed = DATA.sources.filter((s) => !s.ok);
+  // A source read from a home connection is fine while its last read holds.
+  const fresh = (s) => s.ok || (s.homeOnly && s.lastGood);
+  const failed = DATA.sources.filter((s) => !fresh(s));
+  const fromHome = DATA.sources.filter((s) => !s.ok && fresh(s));
   const items = [
-    `<li>Author pages: ${authors.filter((s) => s.ok).length} of ${authors.length}</li>`,
-    `<li>New York calendars: ${venues.filter((s) => s.ok).length} of ${venues.length}</li>`,
-    ...failed.map((s) => `<li class="bad">${esc(s.label)}: did not load today</li>`),
+    `<li>Author pages: ${authors.filter(fresh).length} of ${authors.length}</li>`,
+    `<li>New York calendars: ${venues.filter(fresh).length} of ${venues.length}</li>`,
+    ...fromHome.map((s) => `<li>${esc(s.label)}: read from a home connection ${esc(shortStamp.format(new Date(s.lastGood)))}</li>`),
+    ...failed.map((s) => `<li class="bad">${esc(s.label)}: did not load${s.count ? ` (showing ${s.count} from ${esc(shortStamp.format(new Date(s.lastGood)))})` : " today"}</li>`),
   ];
   if (DATA.fetchedAt) items.push(`<li>Updated ${esc(stampFmt.format(new Date(DATA.fetchedAt)))}</li>`);
   $("#sources").innerHTML = items.join("");

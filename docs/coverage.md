@@ -23,6 +23,10 @@ The fetcher keeps anything in the next 400 days, but that only helps if a source
 
 Run `node scripts/show-events.mjs --reach` to see how far each calendar really goes. A small organization that only lists the next few weeks shows up short here, and nothing can be done about that from this side. Each source's furthest date is stored as `reach` in `data/events.json`.
 
+## Read from a home connection only
+
+Eventbrite (405), Poets House (403), Wendy's Subway (no connection) and the Explorers Club (a challenge page instead of its feed) refuse GitHub's servers and load from a home connection. `scripts/home-refresh.sh` reads them from a home connection; `HANDOFF.md` says how to run it every morning. In the footer they show as "read from a home connection" with the date.
+
 ## Not read
 
 These are in `data/unreadable.json` and the page footer.
@@ -31,6 +35,8 @@ These are in `data/unreadable.json` and the page footer.
 |---|---|
 | The Strand, McNally Jackson, Greenlight, Word, Book Culture | Answer 403 to automated requests, including their RSS addresses |
 | CUNY Graduate Center, Asia Society, Fordham, American Museum of Natural History | Answer 403 |
+| New York Insight, Prospect Park Alliance | A Cloudflare challenge on every URL, feeds included, from everywhere |
+| Billion Oyster Project | Moved to Webflow; the events load from a widget with no readable data |
 | The Center for Fiction, PEN America, Museum of Modern Art, Columbia Climate School, Center on Sustainable Development | Answer 403 |
 | 92NY, New York Public Library, Brooklyn Public Library, The New School, Books Are Magic | Build the calendar in the browser, so the page has no dates in it |
 

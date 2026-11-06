@@ -14,6 +14,18 @@ To replace it with a plain record, the way Sunset Events works: run `npx wrangle
 
 To take the site down: `npx wrangler delete`, then Settings, Pages, Unpublish.
 
+## The sources that need a home connection
+
+Eventbrite, Poets House, Wendy's Subway and the Explorers Club refuse requests from GitHub's servers (`homeOnly` in `data/venues.json`). `scripts/home-refresh.sh` reads every source from a home connection and pushes the result, and GitHub's 11:23 UTC run keeps those sources' dates for 30 days after the last home read. `scripts/install-home-refresh.sh` installs it as a daily 5:50 AM launch agent, `com.dearcrisis.authors-refresh`, with logs in `/tmp/dc-authors-refresh.*.log`. **It is not installed yet.** Until it is, those four sources only update when someone runs `home-refresh.sh` by hand, and their dates drop 30 days after that. Sunset Events' `HANDOFF.md` has the options if no Mac is available.
+
+Remove the agent with:
+
+```bash
+launchctl bootout gui/$(id -u)/com.dearcrisis.authors-refresh
+rm ~/Library/LaunchAgents/com.dearcrisis.authors-refresh.plist
+rm -rf ~/.authors-refresh
+```
+
 ## Still open
 
 - Merge dear-crisis PR #117, the atlas entry for this site.
