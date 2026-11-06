@@ -1,0 +1,1438 @@
+[
+ {
+  "id": "nyu",
+  "name": "New York University",
+  "kind": "university",
+  "lat": 40.7295,
+  "lng": -73.9965,
+  "site": "https://events.nyu.edu/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://events.nyu.edu/live/ical/events/"
+   }
+  ]
+ },
+ {
+  "id": "columbia",
+  "name": "Columbia University",
+  "kind": "university",
+  "lat": 40.8075,
+  "lng": -73.9626,
+  "site": "https://events.columbia.edu/",
+  "feeds": [
+   {
+    "format": "columbia",
+    "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&fexpr=(categories.href!=%22/public/.bedework/categories/sys/Ongoing%22)&skinName=list-json&count=100"
+   }
+  ]
+ },
+ {
+  "id": "luma-nyc",
+  "name": "Luma New York",
+  "kind": "listing",
+  "lat": null,
+  "lng": null,
+  "site": "https://luma.com/nyc",
+  "feeds": [
+   {
+    "format": "luma",
+    "url": "https://api.lu.ma/discover/get-paginated-events?latitude=40.73&longitude=-73.98&pagination_limit=50"
+   }
+  ]
+ },
+ {
+  "id": "eventbrite-nyc",
+  "name": "Eventbrite New York",
+  "kind": "listing",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/d/ny--new-york/book-talk/",
+  "feeds": [
+   {
+    "format": "jsonld",
+    "url": "https://www.eventbrite.com/d/ny--new-york/book-talk/"
+   },
+   {
+    "format": "jsonld",
+    "url": "https://www.eventbrite.com/d/ny--new-york/author-talk/"
+   },
+   {
+    "format": "jsonld",
+    "url": "https://www.eventbrite.com/d/ny--new-york/book-launch/"
+   },
+   {
+    "format": "jsonld",
+    "url": "https://www.eventbrite.com/d/ny--new-york/climate-lecture/"
+   },
+   {
+    "format": "jsonld",
+    "url": "https://www.eventbrite.com/d/ny--new-york/artificial-intelligence-talk/"
+   }
+  ]
+ },
+ {
+  "id": "explorers-club",
+  "name": "The Explorers Club",
+  "kind": "venue",
+  "lat": 40.7656,
+  "lng": -73.965,
+  "site": "https://www.explorers.org/events/",
+  "feeds": [
+   {
+    "format": "tribe",
+    "url": "https://www.explorers.org/wp-json/tribe/events/v1/events?per_page=50"
+   }
+  ]
+ },
+ {
+  "id": "albertine",
+  "name": "Albertine",
+  "kind": "bookstore",
+  "lat": 40.7766,
+  "lng": -73.9638,
+  "site": "https://www.albertine.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.albertine.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "printed-matter",
+  "name": "Printed Matter",
+  "kind": "bookstore",
+  "lat": 40.7477,
+  "lng": -74.0058,
+  "site": "https://www.printedmatter.org/programs/2-events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.printedmatter.org/programs/2-events"
+   }
+  ]
+ },
+ {
+  "id": "pioneer-works",
+  "name": "Pioneer Works",
+  "kind": "venue",
+  "lat": 40.6787,
+  "lng": -74.0127,
+  "site": "https://pioneerworks.org/programs",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://pioneerworks.org/programs"
+   }
+  ]
+ },
+ {
+  "id": "rubin",
+  "name": "Rubin Museum",
+  "kind": "venue",
+  "lat": 40.7403,
+  "lng": -73.9978,
+  "site": "https://rubinmuseum.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rubinmuseum.org/events"
+   }
+  ]
+ },
+ {
+  "id": "mcny",
+  "name": "Museum of the City of New York",
+  "kind": "venue",
+  "lat": 40.7925,
+  "lng": -73.9519,
+  "site": "https://www.mcny.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.mcny.org/events"
+   }
+  ]
+ },
+ {
+  "id": "interference",
+  "name": "Interference Archive",
+  "kind": "venue",
+  "lat": 40.6703,
+  "lng": -73.9904,
+  "site": "https://interferencearchive.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://interferencearchive.org/events"
+   }
+  ]
+ },
+ {
+  "id": "nyas",
+  "name": "New York Academy of Sciences",
+  "kind": "venue",
+  "lat": 40.7127,
+  "lng": -74.0134,
+  "site": "https://www.nyas.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.nyas.org/events"
+   }
+  ]
+ },
+ {
+  "id": "roosevelt-house",
+  "name": "Roosevelt House, Hunter College",
+  "kind": "university",
+  "lat": 40.7685,
+  "lng": -73.9648,
+  "site": "https://roosevelthouse.hunter.cuny.edu/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://roosevelthouse.hunter.cuny.edu/events"
+   }
+  ]
+ },
+ {
+  "id": "cfr",
+  "name": "Council on Foreign Relations",
+  "kind": "venue",
+  "lat": 40.7687,
+  "lng": -73.9657,
+  "site": "https://www.cfr.org/event",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.cfr.org/event"
+   }
+  ]
+ },
+ {
+  "id": "new-america",
+  "name": "New America",
+  "kind": "venue",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.newamerica.org/events/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.newamerica.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "350-brooklyn",
+  "name": "350 Brooklyn",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/350brooklyn%40gmail.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/350brooklyn%40gmail.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "effective-altruism-nyc",
+  "name": "Effective Altruism NYC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/hbvetqf5h1pd0of0vn6uvphqts%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/hbvetqf5h1pd0of0vn6uvphqts%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "north-brooklyn-mutual-aid",
+  "name": "North Brooklyn Mutual Aid",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/greenpointhelpers%40gmail.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/greenpointhelpers%40gmail.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "smiling-hogshead-ranch",
+  "name": "Smiling Hogshead Ranch",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/smilinghogsheadranch%40gmail.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/smilinghogsheadranch%40gmail.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "sunrise-movement-nyc",
+  "name": "Sunrise Movement NYC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/hello%40sunrisenyc.org/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/hello%40sunrisenyc.org/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "climate-cafe-nyc-friends",
+  "name": "Climate Cafe NYC & friends",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://api.lu.ma/ics/get",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-dWMNt952eh2WWAh"
+   }
+  ]
+ },
+ {
+  "id": "all-tech-is-human",
+  "name": "All Tech Is Human",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://api.lu.ma/ics/get",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-tp9fJuQNa1rcyNN"
+   }
+  ]
+ },
+ {
+  "id": "betanyc",
+  "name": "BetaNYC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.beta.nyc/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.beta.nyc/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "ny-society-for-ethical-culture",
+  "name": "NY Society for Ethical Culture",
+  "kind": "community",
+  "lat": 40.7727,
+  "lng": -73.9783,
+  "site": "https://ethical.nyc/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://ethical.nyc/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "green-wood-cemetery",
+  "name": "Green-Wood Cemetery",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.green-wood.com/calendar/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.green-wood.com/calendar/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "les-ecology-center",
+  "name": "LES Ecology Center",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.lesecologycenter.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.lesecologycenter.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "loisaida-center",
+  "name": "Loisaida Center",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://loisaida.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://loisaida.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "marine-park-alliance",
+  "name": "Marine Park Alliance",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.marineparkalliance.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.marineparkalliance.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "new-york-insight",
+  "name": "New York Insight",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.nyimc.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.nyimc.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "park-slope-food-coop",
+  "name": "Park Slope Food Coop",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://linewaitersgazette.com/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://linewaitersgazette.com/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "prospect-park-alliance",
+  "name": "Prospect Park Alliance",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.prospectpark.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.prospectpark.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "randall-s-island-park-alliance",
+  "name": "Randall's Island Park Alliance",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://randallsisland.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://randallsisland.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "go-green-brooklyn",
+  "name": "Go Green Brooklyn",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://gogreenbk.org/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://gogreenbk.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "bushwick-ayuda-mutua",
+  "name": "Bushwick Ayuda Mutua",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/e2ccb510b59ef94691d46c9fa96e8f6de65ef2a82f121d0059ef12ee9c34c88d%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/e2ccb510b59ef94691d46c9fa96e8f6de65ef2a82f121d0059ef12ee9c34c88d%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "the-point-cdc",
+  "name": "THE POINT CDC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/c_ece6e2744f97e756c5a07f81630bbbb377f8facf58ac5064cb72accc423e7098%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/c_ece6e2744f97e756c5a07f81630bbbb377f8facf58ac5064cb72accc423e7098%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "billion-oyster-project",
+  "name": "Billion Oyster Project",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.billionoysterproject.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.billionoysterproject.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "brooklyn-repair-cafe",
+  "name": "Brooklyn Repair Cafe",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.repaircafe.nyc/upcoming-events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.repaircafe.nyc/upcoming-events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "culture-push",
+  "name": "Culture Push",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.culturepush.org/new-events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.culturepush.org/new-events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "extinction-rebellion-nyc",
+  "name": "Extinction Rebellion NYC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.xrebellion.nyc/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.xrebellion.nyc/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "open-plans",
+  "name": "Open Plans",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.openplans.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.openplans.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "south-bronx-unite",
+  "name": "South Bronx Unite",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.southbronxunite.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.southbronxunite.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "the-new-york-climate-exchange",
+  "name": "The New York Climate Exchange",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.nyclimateexchange.org/events-calendar",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.nyclimateexchange.org/events-calendar?format=json"
+   }
+  ]
+ },
+ {
+  "id": "the-climate-museum",
+  "name": "The Climate Museum",
+  "kind": "community",
+  "lat": 40.7306,
+  "lng": -73.9866,
+  "site": "https://climatemuseum.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://climatemuseum.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "broadway-green-alliance",
+  "name": "Broadway Green Alliance",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.broadwaygreen.com/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.broadwaygreen.com/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "food-water-watch",
+  "name": "Food & Water Watch",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://api.mobilize.us/v1/organizations/1094/events",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "mobilize",
+    "url": "https://api.mobilize.us/v1/organizations/1094/events"
+   }
+  ]
+ },
+ {
+  "id": "earth-matter-ny",
+  "name": "Earth Matter NY",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://earthmatter.org/events/feed/",
+  "feeds": [
+   {
+    "format": "rss",
+    "url": "https://earthmatter.org/events/feed/"
+   }
+  ]
+ },
+ {
+  "id": "cooper-square-committee-cooper-square-clt",
+  "name": "Cooper Square Committee & Cooper Square CLT",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/coopersquare%40gmail.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/coopersquare%40gmail.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "east-new-york-community-land-trust",
+  "name": "East New York Community Land Trust",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/f02921c5fbab2de72df15220564f82ec6c290c064e277c67993aaa81ad64a255%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/f02921c5fbab2de72df15220564f82ec6c290c064e277c67993aaa81ad64a255%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "flatbush-tool-library-flatbush-mixtape",
+  "name": "Flatbush Tool Library (Flatbush Mixtape)",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/d141c9baf5e32194020970ac8e766b82d2f95554d573608d433d57eb022198ce%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/d141c9baf5e32194020970ac8e766b82d2f95554d573608d433d57eb022198ce%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "nyc-resistor",
+  "name": "NYC Resistor",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://calendar.google.com/calendar/ical/p2m2av9dhrh4n1ub7jlsc68s7o%40group.calendar.google.com/public/basic.ics",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://calendar.google.com/calendar/ical/p2m2av9dhrh4n1ub7jlsc68s7o%40group.calendar.google.com/public/basic.ics"
+   }
+  ]
+ },
+ {
+  "id": "solar-one",
+  "name": "Solar One",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://solar1.org/events-calendar/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://solar1.org/events-calendar/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "the-people-s-forum",
+  "name": "The People's Forum",
+  "kind": "community",
+  "lat": 40.7513,
+  "lng": -73.9941,
+  "site": "https://peoplesforum.org/calendar/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://peoplesforum.org/calendar/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "index-space",
+  "name": "Index Space",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://api.lu.ma/ics/get",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-qdFtD4iSoH7Xj4m"
+   }
+  ]
+ },
+ {
+  "id": "judson-memorial-church",
+  "name": "Judson Memorial Church",
+  "kind": "community",
+  "lat": 40.7305,
+  "lng": -73.9988,
+  "site": "https://www.judson.org/calendar",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.judson.org/calendar?format=json"
+   }
+  ]
+ },
+ {
+  "id": "st-lydia-s",
+  "name": "St. Lydia's",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.stlydias.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.stlydias.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "starr-bar",
+  "name": "Starr Bar",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.starrbar.com/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.starrbar.com/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "sure-we-can",
+  "name": "Sure We Can",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.surewecan.org/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.surewecan.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "slow-money-nyc",
+  "name": "Slow Money NYC",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.slowmoneynyc.org/calendar",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.slowmoneynyc.org/calendar?format=json"
+   }
+  ]
+ },
+ {
+  "id": "civic-hall-at-union-square",
+  "name": "Civic Hall at Union Square",
+  "kind": "community",
+  "lat": 40.73607,
+  "lng": -73.99019,
+  "site": "https://www.civichall.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.civichall.org/events"
+   }
+  ]
+ },
+ {
+  "id": "we-act-for-environmental-justice",
+  "name": "WE ACT for Environmental Justice",
+  "kind": "community",
+  "lat": 40.82415,
+  "lng": -73.95006,
+  "site": "https://weact.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://weact.org/events"
+   }
+  ]
+ },
+ {
+  "id": "freshkills-park-alliance",
+  "name": "Freshkills Park Alliance",
+  "kind": "community",
+  "lat": 40.57774,
+  "lng": -74.17997,
+  "site": "https://freshkillspark.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://freshkillspark.org/calendar"
+   }
+  ]
+ },
+ {
+  "id": "the-psychedelic-assembly",
+  "name": "The Psychedelic Assembly",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.thepsychedelicassembly.com/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.thepsychedelicassembly.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "reti-center",
+  "name": "RETI Center",
+  "kind": "community",
+  "lat": 40.6751,
+  "lng": -74.00958,
+  "site": "https://www.reticenter.org/",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.reticenter.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "regional-plan-association-rpa",
+  "name": "Regional Plan Association (RPA)",
+  "kind": "community",
+  "lat": 40.70767,
+  "lng": -74.00927,
+  "site": "https://rpa.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rpa.org/events/upcoming"
+   }
+  ]
+ },
+ {
+  "id": "creative-time",
+  "name": "Creative Time",
+  "kind": "community",
+  "lat": 40.72927,
+  "lng": -73.98736,
+  "site": "https://creativetime.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://creativetime.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "pratt-institute",
+  "name": "Pratt Institute",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.pratt.edu/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.pratt.edu/events/"
+   }
+  ]
+ },
+ {
+  "id": "ica-group",
+  "name": "ICA Group",
+  "kind": "community",
+  "lat": 40.70767,
+  "lng": -74.00927,
+  "site": "https://www.icagroup.org/newyorkcity",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.icagroup.org/events"
+   }
+  ]
+ },
+ {
+  "id": "tishman-environment-and-design-center-the-new-school",
+  "name": "Tishman Environment and Design Center (The New School)",
+  "kind": "community",
+  "lat": 40.73607,
+  "lng": -73.99019,
+  "site": "https://www.tishmancenter.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.tishmancenter.org/events"
+   }
+  ]
+ },
+ {
+  "id": "wendy-s-subway",
+  "name": "Wendy's Subway",
+  "kind": "community",
+  "lat": 40.69427,
+  "lng": -73.91875,
+  "site": "https://www.wendyssubway.com/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.wendyssubway.com/programs"
+   }
+  ]
+ },
+ {
+  "id": "make-the-road-new-york",
+  "name": "Make the Road New York",
+  "kind": "community",
+  "lat": 40.69427,
+  "lng": -73.91875,
+  "site": "https://maketheroadny.org/",
+  "feeds": [
+   {
+    "format": "tribe",
+    "url": "https://maketheroadny.org/wp-json/tribe/events/v1/events?per_page=50"
+   }
+  ]
+ },
+ {
+  "id": "waterfront-alliance",
+  "name": "Waterfront Alliance",
+  "kind": "community",
+  "lat": 40.70767,
+  "lng": -74.00927,
+  "site": "https://waterfrontalliance.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://waterfrontalliance.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "brooklyn-zen-center",
+  "name": "Brooklyn Zen Center",
+  "kind": "community",
+  "lat": 40.68755,
+  "lng": -73.99734,
+  "site": "https://brooklynzen.org/offerings/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://brooklynzen.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "genspace",
+  "name": "Genspace",
+  "kind": "community",
+  "lat": 40.64422,
+  "lng": -74.00759,
+  "site": "https://www.genspace.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.genspace.org/events"
+   }
+  ]
+ },
+ {
+  "id": "post-carbon-institute-resilience-org",
+  "name": "Post Carbon Institute & resilience.org",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.resilience.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.resilience.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "riverkeeper",
+  "name": "Riverkeeper",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.riverkeeper.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.riverkeeper.org/news-and-events/events"
+   }
+  ]
+ },
+ {
+  "id": "green-guerillas",
+  "name": "Green Guerillas",
+  "kind": "community",
+  "lat": 40.66747,
+  "lng": -73.94357,
+  "site": "https://www.greenguerillas.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.greenguerillas.org/upcoming-events"
+   }
+  ]
+ },
+ {
+  "id": "employee-ownership-nyc-owner-to-owners",
+  "name": "Employee Ownership NYC / Owner to Owners",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.owner2owners.nyc/",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.owner2owners.nyc/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "climate-cafe-nyc",
+  "name": "Climate Cafe NYC",
+  "kind": "community",
+  "lat": 40.68865,
+  "lng": -74.01828,
+  "site": "https://www.climatecafe.eco/",
+  "feeds": [
+   {
+    "format": "jsonld",
+    "url": "https://www.climatecafe.eco/events"
+   }
+  ]
+ },
+ {
+  "id": "data-society",
+  "name": "Data & Society",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://datasociety.net/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://datasociety.net/events/"
+   }
+  ]
+ },
+ {
+  "id": "brooklyn-institute-for-social-research",
+  "name": "Brooklyn Institute for Social Research",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://thebrooklyninstitute.com/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://thebrooklyninstitute.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "the-new-york-society-library",
+  "name": "The New York Society Library",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.nysoclib.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.nysoclib.org/events"
+   }
+  ]
+ },
+ {
+  "id": "poets-house",
+  "name": "Poets House",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://poetshouse.org/",
+  "feeds": [
+   {
+    "format": "tribe",
+    "url": "https://poetshouse.org/wp-json/tribe/events/v1/events?per_page=50"
+   }
+  ]
+ },
+ {
+  "id": "roosevelt-institute",
+  "name": "Roosevelt Institute",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://rooseveltinstitute.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rooseveltinstitute.org/event"
+   }
+  ]
+ },
+ {
+  "id": "club-of-rome",
+  "name": "Club of Rome",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.clubofrome.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.clubofrome.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "doughnut-economics-action-lab",
+  "name": "Doughnut Economics Action Lab",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://doughnuteconomics.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://doughnuteconomics.org/events.xml"
+   }
+  ]
+ },
+ {
+  "id": "democracy-collaborative",
+  "name": "Democracy Collaborative",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.democracycollaborative.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.democracycollaborative.org/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "institute-for-policy-studies",
+  "name": "Institute for Policy Studies",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://ips-dc.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://ips-dc.org/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "commonweal",
+  "name": "Commonweal",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.commonweal.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.commonweal.org/events"
+   }
+  ]
+ },
+ {
+  "id": "haymarket-books",
+  "name": "Haymarket Books",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.haymarketbooks.org/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.haymarketbooks.org/events"
+   }
+  ]
+ },
+ {
+  "id": "literary-hub",
+  "name": "Literary Hub",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://lithub.com/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://lithub.com/events"
+   }
+  ]
+ },
+ {
+  "id": "nyu-stern-center-for-sustainable-business",
+  "name": "NYU Stern Center for Sustainable Business",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/centers-of-research/center-sustainable-business",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.stern.nyu.edu/experience-stern/events"
+   }
+  ]
+ },
+ {
+  "id": "the-bell-house",
+  "name": "The Bell House",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.thebellhouseny.com/",
+  "feeds": [
+   {
+    "format": "jsonld",
+    "url": "https://www.thebellhouseny.com/calendar"
+   }
+  ]
+ },
+ {
+  "id": "brooklyn-book-festival",
+  "name": "Brooklyn Book Festival",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://brooklynbookfestival.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://brooklynbookfestival.org/event"
+   }
+  ]
+ },
+ {
+  "id": "skirball-center-nyu",
+  "name": "Skirball Center NYU",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://nyuskirball.org/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://nyuskirball.org/whats-on/"
+   }
+  ]
+ },
+ {
+  "id": "local-futures",
+  "name": "Local Futures",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.localfutures.org/events/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.localfutures.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "navdanya-international",
+  "name": "Navdanya International",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://navdanyainternational.org/upcoming-actions/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://navdanyainternational.org/upcoming-actions/"
+   }
+  ]
+ },
+ {
+  "id": "othering-belonging-institute",
+  "name": "Othering & Belonging Institute",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://belonging.berkeley.edu/events",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://belonging.berkeley.edu/events",
+    "titleBefore": true
+   }
+  ]
+ },
+ {
+  "id": "centre-for-the-understanding-of-sustainable-prosperity",
+  "name": "Centre for the Understanding of Sustainable Prosperity",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://cusp.ac.uk/events/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://cusp.ac.uk/events/"
+   }
+  ]
+ },
+ {
+  "id": "earth4all",
+  "name": "Earth4All",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://earth4all.life/event-list/",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://earth4all.life/event-list/"
+   }
+  ]
+ },
+ {
+  "id": "life-itself",
+  "name": "Life Itself",
+  "kind": "community",
+  "lat": null,
+  "lng": null,
+  "site": "https://lifeitself.org/events",
+  "unsure": true,
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://lifeitself.org/events"
+   }
+  ]
+ }
+]

@@ -1,0 +1,2398 @@
+[
+ {
+  "id": "jonathan-rowson",
+  "name": "Jonathan Rowson",
+  "cluster": "metacrisis",
+  "what": "Philosopher and chess grandmaster, co-founder of Perspectiva. Wrote the essay Tasting the Pickle on the metacrisis, and The Moves That Matter.",
+  "site": "https://systems-souls-society.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "zak-stein",
+  "name": "Zak Stein",
+  "cluster": "metacrisis",
+  "what": "Writes on education and the metacrisis. Author of Education in a Time Between Worlds.",
+  "site": "https://www.zakstein.org",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "iain-mcgilchrist",
+  "name": "Iain McGilchrist",
+  "cluster": "metacrisis",
+  "what": "Psychiatrist and author of The Master and His Emissary and The Matter with Things, on what the brain's two hemispheres mean for how a civilization attends to the world.",
+  "site": "https://channelmcgilchrist.com",
+  "eventsPage": "https://channelmcgilchrist.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://channelmcgilchrist.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "daniel-schmachtenberger",
+  "name": "Daniel Schmachtenberger",
+  "cluster": "metacrisis",
+  "what": "Founding member of The Consilience Project. Writes and speaks on the metacrisis and the third attractor.",
+  "site": "https://civilizationemerging.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nate-hagens",
+  "name": "Nate Hagens",
+  "cluster": "metacrisis",
+  "what": "Host of The Great Simplification, on energy, ecology and human behavior. Co-author of Reality Blind.",
+  "site": "https://www.thegreatsimplification.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nora-bateson",
+  "name": "Nora Bateson",
+  "cluster": "metacrisis",
+  "what": "President of the International Bateson Institute. Author of Small Arcs of Larger Circles and Combining.",
+  "site": "https://www.batesoninstitute.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "vanessa-machado-de-oliveira",
+  "name": "Vanessa Machado de Oliveira",
+  "cluster": "metacrisis",
+  "what": "Author of Hospicing Modernity and Outgrowing Modernity, and a member of the Gesturing Towards Decolonial Futures collective.",
+  "site": "https://decolonialfutures.net/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Vanessa Andreotti"
+  ]
+ },
+ {
+  "id": "bayo-akomolafe",
+  "name": "Bayo Akomolafe",
+  "cluster": "metacrisis",
+  "what": "Author of These Wilds Beyond Our Fences. Founder of The Emergence Network.",
+  "site": "https://www.bayoakomolafe.net",
+  "eventsPage": "https://www.bayoakomolafe.net/engagements",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.bayoakomolafe.net/engagements"
+   }
+  ]
+ },
+ {
+  "id": "tyson-yunkaporta",
+  "name": "Tyson Yunkaporta",
+  "cluster": "metacrisis",
+  "what": "Aboriginal scholar and author of Sand Talk and Right Story, Wrong Story, on Indigenous patterns of thought and the global crisis.",
+  "site": "https://www.textpublishing.com.au/authors/tyson-yunkaporta",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "john-vervaeke",
+  "name": "John Vervaeke",
+  "cluster": "metacrisis",
+  "what": "Cognitive scientist behind the lecture series Awakening from the Meaning Crisis.",
+  "site": "https://johnvervaeke.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "hanzi-freinacht",
+  "name": "Hanzi Freinacht",
+  "cluster": "metacrisis",
+  "what": "Pen name behind The Listening Society and Nordic Ideology, on metamodern politics.",
+  "site": "https://metamoderna.org",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "lene-rachel-andersen",
+  "name": "Lene Rachel Andersen",
+  "cluster": "metacrisis",
+  "what": "Author of Metamodernity and The Nordic Secret. Founder of the Nordic Bildung think tank.",
+  "site": "https://www.nordicbildung.org",
+  "eventsPage": "https://www.nordicbildung.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.nordicbildung.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "charles-eisenstein",
+  "name": "Charles Eisenstein",
+  "cluster": "metacrisis",
+  "what": "Author of The More Beautiful World Our Hearts Know Is Possible and Climate: A New Story.",
+  "site": "https://charleseisenstein.org",
+  "eventsPage": "https://charleseisenstein.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://charleseisenstein.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "jeremy-lent",
+  "name": "Jeremy Lent",
+  "cluster": "metacrisis",
+  "what": "Author of The Patterning Instinct and The Web of Meaning. Founder of the Deep Transformation Network.",
+  "site": "https://www.jeremylent.com",
+  "eventsPage": "https://www.jeremylent.com/event-archive",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.jeremylent.com/event-archive"
+   }
+  ]
+ },
+ {
+  "id": "dougald-hine",
+  "name": "Dougald Hine",
+  "cluster": "metacrisis",
+  "what": "Author of At Work in the Ruins, on what climate science cannot answer.",
+  "site": "https://dougald.nu",
+  "eventsPage": "https://dougald.nu/talks/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://dougald.nu/talks/"
+   }
+  ]
+ },
+ {
+  "id": "paul-kingsnorth",
+  "name": "Paul Kingsnorth",
+  "cluster": "metacrisis",
+  "what": "Author of Against the Machine and co-founder of the Dark Mountain Project.",
+  "site": "https://www.paulkingsnorth.net",
+  "eventsPage": "https://www.paulkingsnorth.net/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.paulkingsnorth.net/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "otto-scharmer",
+  "name": "Otto Scharmer",
+  "cluster": "metacrisis",
+  "what": "MIT lecturer, author of Theory U, co-founder of the Presencing Institute.",
+  "site": "https://www.ottoscharmer.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "sarah-wilson",
+  "name": "Sarah Wilson",
+  "cluster": "metacrisis",
+  "what": "Author of This One Wild and Precious Life. Writes on the metacrisis at This Is Precious.",
+  "site": "https://sarahwilson.substack.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "adam-tooze",
+  "name": "Adam Tooze",
+  "cluster": "polycrisis",
+  "what": "Columbia historian who brought the word polycrisis into wide use. Author of Crashed and Shutdown, and of the Chartbook newsletter.",
+  "site": "https://adamtooze.com",
+  "eventsPage": "https://adamtooze.com/talks/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://adamtooze.com/talks/"
+   }
+  ],
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "thomas-homer-dixon",
+  "name": "Thomas Homer-Dixon",
+  "cluster": "polycrisis",
+  "what": "Author of Commanding Hope and The Upside of Down. Founding director of the Cascade Institute, which studies the polycrisis.",
+  "site": "https://homerdixon.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "michael-j-albert",
+  "name": "Michael J. Albert",
+  "cluster": "polycrisis",
+  "what": "Author of Navigating the Polycrisis, on mapping possible futures of capitalism and the Earth.",
+  "site": "https://sps.ed.ac.uk/staff/michael-albert",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true,
+  "aliases": [
+   "Michael Albert"
+  ]
+ },
+ {
+  "id": "daniel-m-knight",
+  "name": "Daniel M. Knight",
+  "cluster": "polycrisis",
+  "what": "Anthropologist and author of Against Polycrisis, a critique of the framework.",
+  "site": "https://st-andrews.ac.uk/social-anthropology/people/dmk3",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "peter-turchin",
+  "name": "Peter Turchin",
+  "cluster": "polycrisis",
+  "what": "Founder of cliodynamics and author of End Times, on elite overproduction and why societies come apart.",
+  "site": "https://peterturchin.com",
+  "eventsPage": "https://peterturchin.com/talks",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://peterturchin.com/talks"
+   }
+  ]
+ },
+ {
+  "id": "luke-kemp",
+  "name": "Luke Kemp",
+  "cluster": "polycrisis",
+  "what": "Author of Goliath's Curse, a history of how societies collapse, and researcher in global catastrophic risk.",
+  "site": "https://www.penguinrandomhouse.com/authors/2257058/luke-kemp/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jem-bendell",
+  "name": "Jem Bendell",
+  "cluster": "polycrisis",
+  "what": "Author of Breaking Together and originator of the Deep Adaptation paper.",
+  "site": "https://jembendell.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rupert-read",
+  "name": "Rupert Read",
+  "cluster": "polycrisis",
+  "what": "Philosopher and climate campaigner, co-founder of the Moderate Flank Incubator. Author of Parents for a Future.",
+  "site": "https://www.rupertread.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "joseph-tainter",
+  "name": "Joseph Tainter",
+  "cluster": "polycrisis",
+  "what": "Anthropologist and author of The Collapse of Complex Societies.",
+  "site": "https://www.usu.edu/today/story/fragile-amp-impermanent-usu-expert-tapped-for-his-take-on-big-picture-social-disruption",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jared-diamond",
+  "name": "Jared Diamond",
+  "cluster": "polycrisis",
+  "what": "Author of Collapse, Guns, Germs, and Steel, and Upheaval.",
+  "site": "https://geog.ucla.edu/person/jared-diamond/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "neil-howe",
+  "name": "Neil Howe",
+  "cluster": "polycrisis",
+  "what": "Author of The Fourth Turning Is Here and co-author of The Fourth Turning, on generational cycles of crisis.",
+  "site": "https://www.neilhowe.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "peter-zeihan",
+  "name": "Peter Zeihan",
+  "cluster": "polycrisis",
+  "what": "Geopolitical strategist and author of The End of the World Is Just the Beginning.",
+  "site": "https://zeihan.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "naomi-klein",
+  "name": "Naomi Klein",
+  "cluster": "polycrisis",
+  "what": "Author of The Shock Doctrine, This Changes Everything and Doppelganger. Touring End Times Fascism with Astra Taylor in 2026.",
+  "site": "https://naomiklein.org",
+  "eventsPage": "https://naomiklein.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://naomiklein.org/events/",
+    "stop": "^(selected )?past"
+   }
+  ]
+ },
+ {
+  "id": "astra-taylor",
+  "name": "Astra Taylor",
+  "cluster": "polycrisis",
+  "what": "Author of The Age of Insecurity and co-author of End Times Fascism with Naomi Klein.",
+  "site": "https://astrataylor.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rebecca-solnit",
+  "name": "Rebecca Solnit",
+  "cluster": "polycrisis",
+  "what": "Author of Hope in the Dark and The Beginning Comes After the End.",
+  "site": "https://rebeccasolnit.net",
+  "eventsPage": "https://www.rebeccasolnit.net/events1.html",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.rebeccasolnit.net/events1.html"
+   }
+  ]
+ },
+ {
+  "id": "timothy-snyder",
+  "name": "Timothy Snyder",
+  "cluster": "polycrisis",
+  "what": "Historian and author of On Tyranny and On Freedom.",
+  "site": "https://timothysnyder.org",
+  "eventsPage": "https://timothysnyder.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://timothysnyder.org/events"
+   }
+  ]
+ },
+ {
+  "id": "toby-ord",
+  "name": "Toby Ord",
+  "cluster": "xrisk",
+  "what": "Oxford philosopher and author of The Precipice, on existential risk and the future of humanity.",
+  "site": "https://www.tobyord.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "william-macaskill",
+  "name": "William MacAskill",
+  "cluster": "xrisk",
+  "what": "Philosopher and author of What We Owe the Future.",
+  "site": "https://www.williammacaskill.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nick-bostrom",
+  "name": "Nick Bostrom",
+  "cluster": "xrisk",
+  "what": "Philosopher and author of Superintelligence and Deep Utopia.",
+  "site": "https://nickbostrom.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "max-tegmark",
+  "name": "Max Tegmark",
+  "cluster": "xrisk",
+  "what": "MIT physicist, author of Life 3.0, co-founder of the Future of Life Institute.",
+  "site": "https://physics.mit.edu/faculty/max-tegmark/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "stuart-russell",
+  "name": "Stuart Russell",
+  "cluster": "xrisk",
+  "what": "Berkeley computer scientist and author of Human Compatible.",
+  "site": "https://people.eecs.berkeley.edu/~russell",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "eliezer-yudkowsky",
+  "name": "Eliezer Yudkowsky",
+  "cluster": "xrisk",
+  "what": "Co-author of If Anyone Builds It, Everyone Dies. Co-founder of the Machine Intelligence Research Institute.",
+  "site": "https://www.yudkowsky.net/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nate-soares",
+  "name": "Nate Soares",
+  "cluster": "xrisk",
+  "what": "President of the Machine Intelligence Research Institute and co-author of If Anyone Builds It, Everyone Dies.",
+  "site": "https://mindingourway.com/about/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "martin-rees",
+  "name": "Martin Rees",
+  "cluster": "xrisk",
+  "what": "Astronomer Royal, author of Our Final Hour and If Science Is to Save Us. Co-founder of Cambridge's Centre for the Study of Existential Risk.",
+  "site": "https://www.ast.cam.ac.uk/people/martin.rees",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Lord Rees"
+  ]
+ },
+ {
+  "id": "emile-p-torres",
+  "name": "Émile P. Torres",
+  "cluster": "xrisk",
+  "what": "Philosopher and historian of existential risk, author of Human Extinction.",
+  "site": "https://www.xriskology.com",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Émile Torres"
+  ]
+ },
+ {
+  "id": "annie-jacobsen",
+  "name": "Annie Jacobsen",
+  "cluster": "xrisk",
+  "what": "Investigative journalist and author of Nuclear War: A Scenario.",
+  "site": "https://anniejacobsen.com",
+  "eventsPage": "https://www.anniejacobsen.com/calendar",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.anniejacobsen.com/calendar?format=json"
+   }
+  ]
+ },
+ {
+  "id": "yuval-noah-harari",
+  "name": "Yuval Noah Harari",
+  "cluster": "xrisk",
+  "what": "Historian and author of Sapiens, Homo Deus and Nexus.",
+  "site": "https://www.ynharari.com",
+  "eventsPage": "https://www.ynharari.com/events-page/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.ynharari.com/events-page/",
+    "placeBefore": true
+   }
+  ]
+ },
+ {
+  "id": "mustafa-suleyman",
+  "name": "Mustafa Suleyman",
+  "cluster": "xrisk",
+  "what": "Author of The Coming Wave, on AI and containment.",
+  "site": "https://mustafa-suleyman.ai/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "gary-marcus",
+  "name": "Gary Marcus",
+  "cluster": "xrisk",
+  "what": "Cognitive scientist and author of Taming Silicon Valley and Rebooting AI.",
+  "site": "https://garymarcus.substack.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kate-crawford",
+  "name": "Kate Crawford",
+  "cluster": "xrisk",
+  "what": "Author of Atlas of AI, on AI's material and political costs.",
+  "site": "https://katecrawford.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "karen-hao",
+  "name": "Karen Hao",
+  "cluster": "xrisk",
+  "what": "Journalist and author of Empire of AI.",
+  "site": "https://karendhao.com",
+  "eventsPage": "https://karendhao.com/tour-archive",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://karendhao.com/tour-archive"
+   }
+  ]
+ },
+ {
+  "id": "shoshana-zuboff",
+  "name": "Shoshana Zuboff",
+  "cluster": "xrisk",
+  "what": "Author of The Age of Surveillance Capitalism.",
+  "site": "https://shoshanazuboff.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "tristan-harris",
+  "name": "Tristan Harris",
+  "cluster": "xrisk",
+  "what": "Co-founder of the Center for Humane Technology, on the risks of AI and the attention economy.",
+  "site": "https://www.tristanharris.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "aza-raskin",
+  "name": "Aza Raskin",
+  "cluster": "xrisk",
+  "what": "Co-founder of the Center for Humane Technology and of the Earth Species Project.",
+  "site": "https://www.earthspecies.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "liv-boeree",
+  "name": "Liv Boeree",
+  "cluster": "xrisk",
+  "what": "Host of the Win-Win podcast, on the game theory behind runaway competition.",
+  "site": "https://www.livboeree.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "timnit-gebru",
+  "name": "Timnit Gebru",
+  "cluster": "xrisk",
+  "what": "Founder of the Distributed AI Research Institute.",
+  "site": "https://dair-institute.org",
+  "eventsPage": "https://dair-institute.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://dair-institute.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "emily-m-bender",
+  "name": "Emily M. Bender",
+  "cluster": "xrisk",
+  "what": "Linguist and co-author of The AI Con with Alex Hanna.",
+  "site": "https://faculty.washington.edu/ebender",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Emily Bender"
+  ]
+ },
+ {
+  "id": "alex-hanna",
+  "name": "Alex Hanna",
+  "cluster": "xrisk",
+  "what": "Sociologist, research director at the Distributed AI Research Institute, co-author of The AI Con.",
+  "site": "https://alex-hanna.com/",
+  "eventsPage": "https://thecon.ai/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://thecon.ai/events/"
+   }
+  ],
+  "needsContext": true
+ },
+ {
+  "id": "carissa-veliz",
+  "name": "Carissa Véliz",
+  "cluster": "xrisk",
+  "what": "Oxford philosopher and author of Privacy Is Power and Prophecy.",
+  "site": "https://www.carissaveliz.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jeff-sebo",
+  "name": "Jeff Sebo",
+  "cluster": "xrisk",
+  "what": "NYU philosopher and author of The Moral Circle, on who and what counts as morality's scope widens.",
+  "site": "https://jeffsebo.net",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Teaches at New York University"
+ },
+ {
+  "id": "ruha-benjamin",
+  "name": "Ruha Benjamin",
+  "cluster": "xrisk",
+  "what": "Princeton sociologist and author of Race After Technology and Imagination: A Manifesto.",
+  "site": "https://www.ruhabenjamin.com",
+  "eventsPage": "https://www.ruhabenjamin.com/events",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.ruhabenjamin.com/events?format=json"
+   }
+  ]
+ },
+ {
+  "id": "douglas-rushkoff",
+  "name": "Douglas Rushkoff",
+  "cluster": "xrisk",
+  "what": "Author of Team Human and Survival of the Richest, on technology and the billionaire escape plan.",
+  "site": "https://rushkoff.com",
+  "eventsPage": "https://rushkoff.com/speaking.html",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rushkoff.com/speaking.html",
+    "stop": "^recent talks"
+   }
+  ],
+  "nyc": "Teaches at Queens College, CUNY"
+ },
+ {
+  "id": "cory-doctorow",
+  "name": "Cory Doctorow",
+  "cluster": "xrisk",
+  "what": "Author of Enshittification and The Internet Con. Keeps a running list of appearances on Pluralistic.",
+  "site": "https://craphound.com",
+  "eventsPage": "https://pluralistic.net/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://pluralistic.net/feed/",
+    "page": "https://pluralistic.net/",
+    "start": "^Upcoming appearances \\( ?permalink",
+    "stop": "^Recent appearances",
+    "yearless": true,
+    "placeFirst": true
+   }
+  ]
+ },
+ {
+  "id": "fritjof-capra",
+  "name": "Fritjof Capra",
+  "cluster": "systems",
+  "what": "Physicist and author of The Tao of Physics and The Systems View of Life.",
+  "site": "https://www.fritjofcapra.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "peter-senge",
+  "name": "Peter Senge",
+  "cluster": "systems",
+  "what": "MIT lecturer and author of The Fifth Discipline. Founding chair of the Society for Organizational Learning.",
+  "site": "https://www.solonline.org",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "geoffrey-west",
+  "name": "Geoffrey West",
+  "cluster": "systems",
+  "what": "Santa Fe Institute physicist and author of Scale.",
+  "site": "https://www.santafe.edu/people/profile/geoffrey-west",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "dan-davies",
+  "name": "Dan Davies",
+  "cluster": "systems",
+  "what": "Author of The Unaccountability Machine and Lying for Money, on how organizations stop being answerable.",
+  "site": "https://backofmind.substack.com",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "melanie-mitchell",
+  "name": "Melanie Mitchell",
+  "cluster": "systems",
+  "what": "Santa Fe Institute professor and author of Complexity: A Guided Tour.",
+  "site": "https://melaniemitchell.me",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "brian-klaas",
+  "name": "Brian Klaas",
+  "cluster": "systems",
+  "what": "Political scientist and author of Fluke and Corruptible.",
+  "site": "https://brianklaas.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "daniel-christian-wahl",
+  "name": "Daniel Christian Wahl",
+  "cluster": "systems",
+  "what": "Author of Designing Regenerative Cultures.",
+  "site": "https://www.danielchristianwahl.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "e-glen-weyl",
+  "name": "E. Glen Weyl",
+  "cluster": "systems",
+  "what": "Economist and co-author of Plurality with Audrey Tang, and of Radical Markets.",
+  "site": "https://glenweyl.com",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Glen Weyl"
+  ]
+ },
+ {
+  "id": "audrey-tang",
+  "name": "Audrey Tang",
+  "cluster": "systems",
+  "what": "Taiwan's first digital minister and co-author of Plurality.",
+  "site": "https://audreyt.org",
+  "eventsPage": "https://audreyt.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://audreyt.org/events"
+   }
+  ]
+ },
+ {
+  "id": "nassim-nicholas-taleb",
+  "name": "Nassim Nicholas Taleb",
+  "cluster": "systems",
+  "what": "Author of The Black Swan and Antifragile, on risk and fragile systems.",
+  "site": "https://www.fooledbyrandomness.com",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Nassim Taleb"
+  ]
+ },
+ {
+  "id": "philip-e-tetlock",
+  "name": "Philip E. Tetlock",
+  "cluster": "systems",
+  "what": "Author of Superforecasting and Expert Political Judgment.",
+  "site": "https://mgmt.wharton.upenn.edu/profile/tetlock/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Philip Tetlock"
+  ]
+ },
+ {
+  "id": "david-sloan-wilson",
+  "name": "David Sloan Wilson",
+  "cluster": "systems",
+  "what": "Evolutionary biologist and author of Darwin's Cathedral and This View of Life.",
+  "site": "https://www.davidsloanwilson.world",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "janine-benyus",
+  "name": "Janine Benyus",
+  "cluster": "systems",
+  "what": "Author of Biomimicry and co-founder of the Biomimicry Institute.",
+  "site": "https://biomimicry.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "eden-medina",
+  "name": "Eden Medina",
+  "cluster": "systems",
+  "what": "Author of Cybernetic Revolutionaries, on Chile's Project Cybersyn.",
+  "site": "https://edenmedina.mit.edu/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "george-lakoff",
+  "name": "George Lakoff",
+  "cluster": "systems",
+  "what": "Cognitive linguist and author of Don't Think of an Elephant.",
+  "site": "https://georgelakoff.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "hahrie-han",
+  "name": "Hahrie Han",
+  "cluster": "systems",
+  "what": "Johns Hopkins political scientist and author of How Organizations Develop Activists.",
+  "site": "https://www.p3researchlab.org/hahrie_han",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "amanda-ripley",
+  "name": "Amanda Ripley",
+  "cluster": "systems",
+  "what": "Journalist and author of High Conflict.",
+  "site": "https://www.amandaripley.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "adrienne-maree-brown",
+  "name": "adrienne maree brown",
+  "cluster": "systems",
+  "what": "Author of Emergent Strategy and Pleasure Activism.",
+  "site": "https://adriennemareebrown.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rob-hopkins",
+  "name": "Rob Hopkins",
+  "cluster": "systems",
+  "what": "Co-founder of the Transition movement and author of From What Is to What If.",
+  "site": "https://www.robhopkins.net",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "yancey-strickler",
+  "name": "Yancey Strickler",
+  "cluster": "systems",
+  "what": "Kickstarter co-founder and author of This Could Be Our Future. Co-founder of Metalabel.",
+  "site": "https://www.ystrickler.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kate-raworth",
+  "name": "Kate Raworth",
+  "cluster": "economy",
+  "what": "Author of Doughnut Economics and co-founder of the Doughnut Economics Action Lab.",
+  "site": "https://www.kateraworth.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jason-hickel",
+  "name": "Jason Hickel",
+  "cluster": "economy",
+  "what": "Economic anthropologist and author of Less Is More and The Divide.",
+  "site": "https://www.jasonhickel.org",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kohei-saito",
+  "name": "Kohei Saito",
+  "cluster": "economy",
+  "what": "Author of Slow Down and Marx in the Anthropocene, on degrowth.",
+  "site": "https://koheisaito.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "yanis-varoufakis",
+  "name": "Yanis Varoufakis",
+  "cluster": "economy",
+  "what": "Former Greek finance minister and author of Technofeudalism.",
+  "site": "https://www.yanisvaroufakis.eu",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "mariana-mazzucato",
+  "name": "Mariana Mazzucato",
+  "cluster": "economy",
+  "what": "Economist and author of Mission Economy and The Value of Everything.",
+  "site": "https://marianamazzucato.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rutger-bregman",
+  "name": "Rutger Bregman",
+  "cluster": "economy",
+  "what": "Author of Humankind, Utopia for Realists and Moral Ambition.",
+  "site": "https://www.rutgerbregman.com",
+  "eventsPage": "https://rutgerbregman.com/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rutgerbregman.com/events"
+   }
+  ]
+ },
+ {
+  "id": "marjorie-kelly",
+  "name": "Marjorie Kelly",
+  "cluster": "economy",
+  "what": "Author of Wealth Supremacy and Owning Our Future.",
+  "site": "https://www.marjoriekelly.org",
+  "eventsPage": "https://marjoriekelly.org/speaking/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://marjoriekelly.org/speaking/"
+   }
+  ]
+ },
+ {
+  "id": "daron-acemoglu",
+  "name": "Daron Acemoglu",
+  "cluster": "economy",
+  "what": "MIT economist, co-author of Power and Progress and Why Nations Fail.",
+  "site": "https://economics.mit.edu/people/faculty/daron-acemoglu",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "simon-johnson",
+  "name": "Simon Johnson",
+  "cluster": "economy",
+  "what": "MIT economist and co-author of Power and Progress.",
+  "site": "https://mitsloan.mit.edu/faculty/directory/simon-johnson",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "jessica-gordon-nembhard",
+  "name": "Jessica Gordon Nembhard",
+  "cluster": "economy",
+  "what": "Political economist and author of Collective Courage, a history of Black cooperatives.",
+  "site": "https://www.jjay.cuny.edu/faculty/jessica-gordon-nembhard",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Teaches at John Jay College, CUNY"
+ },
+ {
+  "id": "deepak-bhargava",
+  "name": "Deepak Bhargava",
+  "cluster": "economy",
+  "what": "Co-author of Practical Radicals with Stephanie Luce.",
+  "site": "https://www.practicalradicals.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "stephanie-luce",
+  "name": "Stephanie Luce",
+  "cluster": "economy",
+  "what": "Labor scholar at CUNY and co-author of Practical Radicals.",
+  "site": "https://www.practicalradicals.com",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "tim-jackson",
+  "name": "Tim Jackson",
+  "cluster": "economy",
+  "what": "Ecological economist and author of Prosperity Without Growth and Post Growth.",
+  "site": "https://cusp.ac.uk/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "jeffrey-sachs",
+  "name": "Jeffrey Sachs",
+  "cluster": "economy",
+  "what": "Columbia economist, director of the Center for Sustainable Development, author of The Age of Sustainable Development.",
+  "site": "https://www.jeffsachs.org",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Jeffrey D. Sachs"
+  ],
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "anand-giridharadas",
+  "name": "Anand Giridharadas",
+  "cluster": "economy",
+  "what": "Author of Winners Take All and The Persuaders.",
+  "site": "https://anand.ly",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "roman-krznaric",
+  "name": "Roman Krznaric",
+  "cluster": "economy",
+  "what": "Philosopher and author of The Good Ancestor and History for Tomorrow.",
+  "site": "https://www.romankrznaric.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "lewis-hyde",
+  "name": "Lewis Hyde",
+  "cluster": "economy",
+  "what": "Author of The Gift, on creativity and the commons.",
+  "site": "https://www.lewishyde.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ashish-kothari",
+  "name": "Ashish Kothari",
+  "cluster": "economy",
+  "what": "Co-editor of Pluriverse: A Post-Development Dictionary.",
+  "site": "https://ashishkothari.in/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "vaclav-smil",
+  "name": "Vaclav Smil",
+  "cluster": "planet",
+  "what": "Energy historian and author of How the World Really Works.",
+  "site": "https://www.penguinrandomhouse.com/authors/2214462/vaclav-smil/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "johan-rockstrom",
+  "name": "Johan Rockström",
+  "cluster": "planet",
+  "what": "Earth scientist behind the planetary boundaries framework, co-author of Breaking Boundaries.",
+  "site": "https://www.stockholmresilience.org/meet-our-team/staff/2008-01-16-rockstrom.html",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "william-rees",
+  "name": "William Rees",
+  "cluster": "planet",
+  "what": "Co-creator of the ecological footprint concept.",
+  "site": "https://scarp.ubc.ca/directory/william-rees",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "tom-murphy",
+  "name": "Tom Murphy",
+  "cluster": "planet",
+  "what": "Physicist and author of Energy and Human Ambitions on a Finite Planet.",
+  "site": "https://tmurphy.physics.ucsd.edu/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "bill-mckibben",
+  "name": "Bill McKibben",
+  "cluster": "planet",
+  "what": "Author of The End of Nature and Falter. Founder of 350.org and Third Act.",
+  "site": "https://billmckibben.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "amitav-ghosh",
+  "name": "Amitav Ghosh",
+  "cluster": "planet",
+  "what": "Author of The Great Derangement, The Nutmeg's Curse and Wild Fictions.",
+  "site": "https://amitavghosh.com",
+  "eventsPage": "https://amitavghosh.com/news-and-events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://amitavghosh.com/news-and-events/"
+   }
+  ],
+  "nyc": "Lives in Brooklyn"
+ },
+ {
+  "id": "george-monbiot",
+  "name": "George Monbiot",
+  "cluster": "planet",
+  "what": "Guardian columnist and author of Regenesis and The Invisible Doctrine.",
+  "site": "https://www.monbiot.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kim-stanley-robinson",
+  "name": "Kim Stanley Robinson",
+  "cluster": "planet",
+  "what": "Novelist and author of The Ministry for the Future.",
+  "site": "https://www.kimstanleyrobinson.info",
+  "eventsPage": "https://www.kimstanleyrobinson.info/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://www.kimstanleyrobinson.info/events/?ical=1",
+    "skip": "\\bpublication\\b"
+   }
+  ]
+ },
+ {
+  "id": "robin-wall-kimmerer",
+  "name": "Robin Wall Kimmerer",
+  "cluster": "planet",
+  "what": "Botanist and author of Braiding Sweetgrass and The Serviceberry.",
+  "site": "https://robinwallkimmerer.com",
+  "eventsPage": "https://robinwallkimmerer.com/events/",
+  "feeds": [
+   {
+    "format": "ics",
+    "url": "https://robinwallkimmerer.com/events/?ical=1"
+   }
+  ]
+ },
+ {
+  "id": "elizabeth-kolbert",
+  "name": "Elizabeth Kolbert",
+  "cluster": "planet",
+  "what": "New Yorker staff writer and author of The Sixth Extinction and Under a White Sky.",
+  "site": "https://www.elizabethkolbert.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "david-wallace-wells",
+  "name": "David Wallace-Wells",
+  "cluster": "planet",
+  "what": "Author of The Uninhabitable Earth.",
+  "site": "https://davidwallacewells.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "andreas-malm",
+  "name": "Andreas Malm",
+  "cluster": "planet",
+  "what": "Author of How to Blow Up a Pipeline and Fossil Capital.",
+  "site": "https://portal.research.lu.se/en/persons/andreas-malm",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ayana-elizabeth-johnson",
+  "name": "Ayana Elizabeth Johnson",
+  "cluster": "planet",
+  "what": "Marine biologist and author of What If We Get It Right? Co-founder of the Urban Ocean Lab.",
+  "site": "https://www.ayanaelizabeth.com",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Dr. Ayana Elizabeth Johnson"
+  ]
+ },
+ {
+  "id": "naomi-oreskes",
+  "name": "Naomi Oreskes",
+  "cluster": "planet",
+  "what": "Harvard historian of science, co-author of Merchants of Doubt and The Big Myth.",
+  "site": "https://www.naomioreskes.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "michael-e-mann",
+  "name": "Michael E. Mann",
+  "cluster": "planet",
+  "what": "Climate scientist at Penn and author of Our Fragile Moment and Science Under Siege.",
+  "site": "https://michaelmann.net",
+  "eventsPage": "https://michaelmann.net/talks-events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://michaelmann.net/talks-events/"
+   }
+  ],
+  "aliases": [
+   "Michael Mann"
+  ],
+  "needsContext": true
+ },
+ {
+  "id": "katharine-hayhoe",
+  "name": "Katharine Hayhoe",
+  "cluster": "planet",
+  "what": "Climate scientist and author of Saving Us.",
+  "site": "https://www.katharinehayhoe.com",
+  "eventsPage": "https://www.katharinehayhoe.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.katharinehayhoe.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "kate-marvel",
+  "name": "Kate Marvel",
+  "cluster": "planet",
+  "what": "Climate scientist and author of Human Nature.",
+  "site": "https://www.marvelclimate.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Lives in Brooklyn"
+ },
+ {
+  "id": "hannah-ritchie",
+  "name": "Hannah Ritchie",
+  "cluster": "planet",
+  "what": "Data scientist at Our World in Data and author of Not the End of the World.",
+  "site": "https://hannahritchie.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ed-conway",
+  "name": "Ed Conway",
+  "cluster": "planet",
+  "what": "Sky News economics editor and author of Material World.",
+  "site": "https://www.edmundconway.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "jonathan-haidt",
+  "name": "Jonathan Haidt",
+  "cluster": "xrisk",
+  "what": "Wrote The Anxious Generation, which argues that the shift from play-based to phone-based childhood has driven an epidemic of teen mental illness.",
+  "site": "https://www.jonathanhaidt.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Teaches at NYU Stern"
+ },
+ {
+  "id": "helena-norberg-hodge",
+  "name": "Helena Norberg-Hodge",
+  "cluster": "planet",
+  "what": "Wrote Ancient Futures, which draws on Ladakh since 1975 to show how globalized development changes a local culture, and argues for localization.",
+  "site": "https://www.localfutures.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "guy-d-middleton",
+  "name": "Guy D. Middleton",
+  "cluster": "polycrisis",
+  "what": "Wrote Understanding Collapse, a survey of ancient cases such as Rome, the Maya and Easter Island that questions modern myths about how societies fall.",
+  "site": "https://researchportal.northumbria.ac.uk/en/persons/guy-d-middleton/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Guy Middleton"
+  ]
+ },
+ {
+  "id": "vandana-shiva",
+  "name": "Vandana Shiva",
+  "cluster": "planet",
+  "what": "Wrote Water Wars, on the privatization and pollution of water for profit, and Oneness vs the 1%, subtitled Shattering Illusions, Seeding Freedom.",
+  "site": "https://navdanya.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jeffrey-a-winters",
+  "name": "Jeffrey A. Winters",
+  "cluster": "polycrisis",
+  "what": "Wrote The Blind Spot, which argues that democracy's failure to address economic inequality is intentional, because oligarchs hold more power than voters.",
+  "site": "https://polisci.northwestern.edu/people/core-faculty/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Jeffrey Winters"
+  ]
+ },
+ {
+  "id": "johann-hari",
+  "name": "Johann Hari",
+  "cluster": "xrisk",
+  "what": "Wrote Stolen Focus, which argues that attention is collapsing worldwide for twelve deep causes and that people and societies can win focus back.",
+  "site": "https://johannhari.com/",
+  "eventsPage": "https://stolenfocusbook.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://stolenfocusbook.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "ray-dalio",
+  "name": "Ray Dalio",
+  "cluster": "polycrisis",
+  "what": "Wrote Principles for Dealing with the Changing World Order, subtitled Why Nations Succeed and Fail, which studies long cycles of debt and national power.",
+  "site": "https://www.principles.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "chris-johnstone",
+  "name": "Chris Johnstone",
+  "cluster": "metacrisis",
+  "what": "Co-wrote Active Hope, which offers tools for facing the mess the world is in and finding a role in the transition to a society that supports life.",
+  "site": "https://chrisjohnstone.info/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "david-korten",
+  "name": "David Korten",
+  "cluster": "economy",
+  "what": "Wrote When Corporations Rule the World, on corporate power and globalization, and The Great Turning, on moving from empire to Earth community.",
+  "site": "https://davidkorten.org/",
+  "eventsPage": "https://davidkorten.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://davidkorten.org/events/"
+   }
+  ]
+ },
+ {
+  "id": "merlin-sheldrake",
+  "name": "Merlin Sheldrake",
+  "cluster": "planet",
+  "what": "Wrote Entangled Life, which shows how fungi support nearly all living systems and change how life is understood to work.",
+  "site": "https://www.merlinsheldrake.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "james-bridle",
+  "name": "James Bridle",
+  "cluster": "culture",
+  "what": "Wrote Ways of Being, a book about AI, non-human intelligence, ecology, biological computing and more-than-human relations.",
+  "site": "https://jamesbridle.com/",
+  "eventsPage": "https://jamesbridle.com/speaking",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://jamesbridle.com/speaking"
+   }
+  ]
+ },
+ {
+  "id": "thomas-piketty",
+  "name": "Thomas Piketty",
+  "cluster": "economy",
+  "what": "Wrote Capital in the 21st Century, which argues that inequality grows when the return on capital outpaces economic growth and needs state action to reverse.",
+  "site": "http://piketty.pse.ens.fr/en/",
+  "eventsPage": "http://piketty.pse.ens.fr/en/lectures",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "http://piketty.pse.ens.fr/en/lectures"
+   }
+  ]
+ },
+ {
+  "id": "andrew-boyd",
+  "name": "Andrew Boyd",
+  "cluster": "polycrisis",
+  "what": "Wrote I Want a Better Catastrophe, a guide to living with climate grief as warming passes the 2C limit, using hope and gallows humor.",
+  "site": "https://andrewboyd.com/",
+  "eventsPage": "https://bettercatastrophe.com/tour",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://bettercatastrophe.com/tour"
+   }
+  ],
+  "nyc": "Lives in New York City",
+  "needsContext": true
+ },
+ {
+  "id": "dmitry-orlov",
+  "name": "Dmitry Orlov",
+  "cluster": "polycrisis",
+  "what": "Wrote The Five Stages of Collapse, which splits collapse into financial, commercial, political, social and cultural stages, each losing a level of trust.",
+  "site": "https://cluborlov.wordpress.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "paul-hawken",
+  "name": "Paul Hawken",
+  "cluster": "planet",
+  "what": "Wrote Regeneration, on ending the climate crisis in one generation, and earlier The Ecology of Commerce and Natural Capitalism, on business and nature.",
+  "site": "https://paulhawken.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nouriel-roubini",
+  "name": "Nouriel Roubini",
+  "cluster": "polycrisis",
+  "what": "Wrote MegaThreats, which sets out ten overlapping, interconnected threats, including debt crises and excess money creation.",
+  "site": "https://nourielroubini.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Professor Emeritus at NYU Stern"
+ },
+ {
+  "id": "tobias-rose-stockwell",
+  "name": "Tobias Rose-Stockwell",
+  "cluster": "xrisk",
+  "what": "Wrote Outrage Machine, on how the internet has damaged the way people make sense of the world and what can be done to fix it.",
+  "site": "https://www.outragemachine.org/",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Lives in New York City"
+ },
+ {
+  "id": "miguel-centeno",
+  "name": "Miguel Centeno",
+  "cluster": "polycrisis",
+  "what": "Co-edited How Worlds Collapse, 25 chapters on what past societal falls, systems and complexity teach about the modern world.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Miguel A. Centeno"
+  ]
+ },
+ {
+  "id": "david-wengrow",
+  "name": "David Wengrow",
+  "cluster": "polycrisis",
+  "what": "Co-wrote The Dawn of Everything, which argues there was no single original form of human society and that large societies often ran without ruling elites.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jude-currivan",
+  "name": "Jude Currivan",
+  "cluster": "metacrisis",
+  "what": "Wrote The Cosmic Hologram, which proposes that information is the basic ingredient of reality and that the universe is holographic and unified.",
+  "site": "https://judecurrivan.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "pablo-servigne",
+  "name": "Pablo Servigne",
+  "cluster": "polycrisis",
+  "what": "Co-wrote How Everything Can Collapse, which surveys across disciplines how a civilization could collapse, a subject the authors name collapsology.",
+  "site": "https://www.seuil.com/auteur/pablo-servigne/21392",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "mark-swilling",
+  "name": "Mark Swilling",
+  "cluster": "economy",
+  "what": "Wrote The Age of Sustainability, which argues that the renewable energy transition is key to a just transition on the scale of the Industrial Revolution.",
+  "site": "https://www0.sun.ac.za/cst/team-member/mark-swilling/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "john-elkington",
+  "name": "John Elkington",
+  "cluster": "economy",
+  "what": "Wrote Green Swans, which explores new forms of capitalism for the 21st century and a move toward regeneration.",
+  "site": "https://johnelkington.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "margaret-wheatley",
+  "name": "Margaret Wheatley",
+  "cluster": "systems",
+  "what": "Wrote Who Do We Choose to Be?, which asks people to see current reality clearly, claim leadership and restore sanity, since older work may no longer fit.",
+  "site": "https://margaretwheatley.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "amory-lovins",
+  "name": "Amory Lovins",
+  "cluster": "planet",
+  "what": "Co-wrote Natural Capitalism, an environmental economics book on making far more productive use of natural resources in business.",
+  "site": "https://rmi.org/bios/amory-lovins/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "hunter-lovins",
+  "name": "Hunter Lovins",
+  "cluster": "planet",
+  "what": "Co-wrote Natural Capitalism, an environmental economics book on making far more productive use of natural resources in business.",
+  "site": "https://natcapsolutions.org/l-hunter-lovins/",
+  "eventsPage": "https://natcapsolutions.org/speaking/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://natcapsolutions.org/speaking/"
+   }
+  ],
+  "aliases": [
+   "L. Hunter Lovins"
+  ]
+ },
+ {
+  "id": "john-fullerton",
+  "name": "John Fullerton",
+  "cluster": "economy",
+  "what": "Wrote Regenerative Economics: Revolutionary Thinking for a World in Crisis, which sets out the economic and finance ideas he developed at Capital Institute.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "raoul-martinez",
+  "name": "Raoul Martinez",
+  "cluster": "economy",
+  "what": "Wrote Creating Freedom, a rethink of freedom that challenges common beliefs about free will, markets, media and elections.",
+  "site": "https://canongate.co.uk/books/2133-creating-freedom-power-control-and-the-fight-for-our-future/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ugo-bardi",
+  "name": "Ugo Bardi",
+  "cluster": "polycrisis",
+  "what": "Wrote Before the Collapse, which argues that collapse is a normal feature of complex systems, that growth is slow and ruin rapid.",
+  "site": "https://senecaeffect.substack.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "dennis-meadows",
+  "name": "Dennis Meadows",
+  "cluster": "polycrisis",
+  "what": "Co-wrote The Limits to Growth, which used the World3 computer model to show that unchanged growth would reach the planet's limits within a century.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jorgen-randers",
+  "name": "Jorgen Randers",
+  "cluster": "polycrisis",
+  "what": "Co-wrote The Limits to Growth, which modeled growth against finite resources, and later 2052, a global forecast for the next forty years.",
+  "site": "http://www.2052.info/",
+  "eventsPage": "http://www.2052.info/presentations/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "http://www.2052.info/presentations/"
+   }
+  ]
+ },
+ {
+  "id": "annie-duke",
+  "name": "Annie Duke",
+  "cluster": "systems",
+  "what": "Wrote Quit, which argues that knowing when to walk away is integral to success, and How to Decide, a set of tools for making better choices.",
+  "site": "https://www.annieduke.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "codie-sanchez",
+  "name": "Codie Sanchez",
+  "cluster": "economy",
+  "what": "Wrote Main Street Millionaire, which argues for building wealth by buying existing small businesses instead of starting new ones.",
+  "site": "https://codiesanchez.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jamie-wheal",
+  "name": "Jamie Wheal",
+  "cluster": "metacrisis",
+  "what": "Wrote Recapture the Rapture, which rethinks god, sex and death for a world it says has lost its mind. Founded the Flow Genome Project.",
+  "site": "https://www.flowgenomeproject.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "eric-ries",
+  "name": "Eric Ries",
+  "cluster": "systems",
+  "what": "Wrote Incorruptible, on why good companies go bad and how great companies stay great.",
+  "site": "https://www.incorruptible.co/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "donnie-maclurcan",
+  "name": "Donnie Maclurcan",
+  "cluster": "economy",
+  "what": "Director of Strategy at the Post Growth Institute, which he founded. Argues in talks that post-growth futures must be post-capitalist.",
+  "site": "https://postgrowth.org/who-we-are/team/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "john-a-powell",
+  "name": "john a. powell",
+  "cluster": "culture",
+  "what": "Co-wrote Belonging without Othering, which argues that no group is inherently an other and that societies can be built on belonging across difference.",
+  "site": "https://belonging.berkeley.edu/john-powell",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "stephen-menendian",
+  "name": "Stephen Menendian",
+  "cluster": "culture",
+  "what": "Co-wrote Belonging without Othering, which argues that no group is inherently an other. Also researches structural racism, fair housing and civil rights at Berkeley.",
+  "site": "https://belonging.berkeley.edu/stephen-menendian",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "matt-haig",
+  "name": "Matt Haig",
+  "cluster": "culture",
+  "what": "Novelist who wrote The Life Impossible and The Midnight Library, fiction about grief, regret and finding reasons to go on living.",
+  "site": "https://www.matthaig.com/",
+  "eventsPage": "https://www.matthaig.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.matthaig.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "edward-e-baptist",
+  "name": "Edward E. Baptist",
+  "cluster": "culture",
+  "what": "Wrote The Half Has Never Been Told, which argues that the expansion of slavery drove the growth of the American economy and of capitalism.",
+  "site": "https://as.cornell.edu/people/edward-e-baptist",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Edward Baptist"
+  ]
+ },
+ {
+  "id": "samantha-sweetwater",
+  "name": "Samantha Sweetwater",
+  "cluster": "metacrisis",
+  "what": "Wrote True Human, which reframes being human as a relationship with life, not a project of control, and joins personal change to the collective future.",
+  "site": "https://www.samanthasweetwater.com/",
+  "eventsPage": "https://www.samanthasweetwater.com/events-and-retreats",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.samanthasweetwater.com/events-and-retreats"
+   }
+  ]
+ },
+ {
+  "id": "tom-chi",
+  "name": "Tom Chi",
+  "cluster": "systems",
+  "what": "Wrote Climate Capital, which treats economics as a design discipline and argues that investment should build tools fitting the planet's physical limits.",
+  "site": "https://tomchi.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "pascal-gielen",
+  "name": "Pascal Gielen",
+  "cluster": "culture",
+  "what": "Co-edited The Aesthetics of Ambiguity, which argues that multiculturalism rests on monocultural thinking and proposes ambiguity in art and politics as a response.",
+  "site": "https://www.uantwerpen.be/en/staff/pascal-gielen/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nav-haq",
+  "name": "Nav Haq",
+  "cluster": "culture",
+  "what": "Co-edited The Aesthetics of Ambiguity, which argues that multiculturalism rests on monocultural thinking and proposes ambiguity in art and politics as a response.",
+  "site": "https://valiz.nl/en/publications/the-aesthetics-of-ambiguity-eng",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "hugh-eakin",
+  "name": "Hugh Eakin",
+  "cluster": "culture",
+  "what": "Wrote Picasso's War, an account of how a 1939 Museum of Modern Art show and two men's obsession with Picasso brought modern art to America.",
+  "site": "https://www.americanacademy.de/person/hugh-eakin/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "paulo-coelho",
+  "name": "Paulo Coelho",
+  "cluster": "culture",
+  "what": "Wrote The Alchemist, a fable about a shepherd who travels in search of treasure and learns to follow a personal calling.",
+  "site": "https://www.paulocoelho.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "richard-powers",
+  "name": "Richard Powers",
+  "cluster": "culture",
+  "what": "Wrote The Overstory, a novel that follows people whose lives become bound up with trees and with efforts to save old forests.",
+  "site": "https://www.richardpowers.net/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "chauncey-bell",
+  "name": "Chauncey Bell",
+  "cluster": "systems",
+  "what": "Wrote Mobilize! Dancing in the World, a book for people responsible for the future of enterprises, drawing on decades of consulting on how organizations work.",
+  "site": "https://www.chaunceybell.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "joseph-henrich",
+  "name": "Joseph Henrich",
+  "cluster": "systems",
+  "what": "Wrote The Secret of Our Success, which argues that humans thrive through cultural learning shared across generations, and that culture and genes shaped each other.",
+  "site": "https://press.princeton.edu/books/paperback/9780691178431/the-secret-of-our-success",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "monica-sharma",
+  "name": "Monica Sharma",
+  "cluster": "systems",
+  "what": "Wrote Radical Transformational Leadership, which argues that ordinary people can drive large-scale change by acting on shared values such as fairness and compassion.",
+  "site": "https://www.radicallytransform.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "barrett-holmes-pitner",
+  "name": "Barrett Holmes Pitner",
+  "cluster": "culture",
+  "what": "Wrote The Crime Without a Name, which traces the historical origins of ethnocide in the United States and its effects on Black Americans.",
+  "site": "https://www.barrettholmespitner.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "lynn-murphy",
+  "name": "Lynn Murphy",
+  "cluster": "economy",
+  "what": "Co-wrote Post Capitalist Philanthropy, which argues that redistributing money is not enough and that giving must change how people perceive and relate to a living world.",
+  "site": "https://darajapress.com/authors/lynn-murphy-2/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "alnoor-ladha",
+  "name": "Alnoor Ladha",
+  "cluster": "economy",
+  "what": "Co-wrote Post Capitalist Philanthropy, which argues that redistributing money is not enough and that giving must change how people perceive and relate to a living world.",
+  "site": "https://darajapress.com/authors/alnoor-ladha/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "david-abram",
+  "name": "David Abram",
+  "cluster": "planet",
+  "what": "Wrote The Spell of the Sensuous, which argues that human thought and language grow from sensory contact with the natural world and that this bond can be recovered.",
+  "site": "https://www.davidabram.org/",
+  "eventsPage": "https://www.davidabram.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.davidabram.org/events"
+   }
+  ]
+ },
+ {
+  "id": "ruthanna-emrys",
+  "name": "Ruthanna Emrys",
+  "cluster": "culture",
+  "what": "Wrote A Half-Built Garden, a first-contact novel set in a near future where self-governed watershed networks have replaced corporations and nation states.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "morris-berman",
+  "name": "Morris Berman",
+  "cluster": "metacrisis",
+  "what": "Wrote The Reenchantment of the World, which traces how a detached, mechanistic view of nature displaced a participatory one and argues for an ecological worldview.",
+  "site": "https://morrisberman.blogspot.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "evan-eisenberg",
+  "name": "Evan Eisenberg",
+  "cluster": "culture",
+  "what": "Wrote The Ecology of Eden, which uses the myth of paradise to ask what place humans have had in nature and what place they should take.",
+  "site": "https://penguinrandomhouse.com/books/45600/the-ecology-of-eden-by-evan-eisenberg",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "naomi-alderman",
+  "name": "Naomi Alderman",
+  "cluster": "culture",
+  "what": "Wrote The Future, a novel about friends who plan a heist to stop tech companies whose greed threatens society.",
+  "site": "https://www.naomialderman.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "duane-elgin",
+  "name": "Duane Elgin",
+  "cluster": "metacrisis",
+  "what": "Wrote Choosing Earth, which argues humanity is in a planetary transition and must choose consciously how to live on a damaged Earth.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "bill-plotkin",
+  "name": "Bill Plotkin",
+  "cluster": "metacrisis",
+  "what": "Wrote Nature and the Human Soul, which maps human development as eight life stages rooted in nature and soul.",
+  "site": "https://www.animas.org/guides/36/bill-plotkin",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "david-bollier",
+  "name": "David Bollier",
+  "cluster": "economy",
+  "what": "Co-wrote Free, Fair, and Alive, which argues self-organized commoning offers an alternative to both capitalism and socialism.",
+  "site": "https://www.bollier.org",
+  "eventsPage": "https://www.bollier.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.bollier.org/events"
+   }
+  ]
+ },
+ {
+  "id": "m-e-o-brien",
+  "name": "M.E. O'Brien",
+  "cluster": "culture",
+  "what": "Co-wrote Everything for Everyone, speculative oral histories of a New York revolution imagining a social order built after capitalism collapses.",
+  "site": "https://www.commonnotions.org/buy/everything-for-everyone",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "M. E. O'Brien",
+   "M.E. O’Brien"
+  ]
+ },
+ {
+  "id": "eman-abdelhadi",
+  "name": "Eman Abdelhadi",
+  "cluster": "culture",
+  "what": "Co-wrote Everything for Everyone, speculative oral histories of a New York revolution imagining a social order built after capitalism collapses.",
+  "site": "https://socialsciences.uchicago.edu/directory/Eman-Abdelhadi",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "chris-benner",
+  "name": "Chris Benner",
+  "cluster": "economy",
+  "what": "Co-wrote Solidarity Economics, which offers a framework for equity-driven economic reform built on mutuality and social movements.",
+  "site": "https://transform.ucsc.edu/partnerships/projects/solidarity-economics",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "manuel-pastor",
+  "name": "Manuel Pastor",
+  "cluster": "economy",
+  "what": "Co-wrote Solidarity Economics, which offers a framework for equity-driven economic reform built on mutuality and social movements.",
+  "site": "https://dornsife.usc.edu/profile/manuel-pastor/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "starhawk",
+  "name": "Starhawk",
+  "cluster": "culture",
+  "what": "Wrote The Fifth Sacred Thing, a novel setting an ecological, nonviolent community in 2048 San Francisco against a militarized regime.",
+  "site": "https://starhawk.org",
+  "eventsPage": "https://starhawk.org/events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://starhawk.org/events"
+   }
+  ]
+ },
+ {
+  "id": "nick-fuller-googins",
+  "name": "Nick Fuller Googins",
+  "cluster": "culture",
+  "what": "Wrote The Great Transition, a novel about a family in flooded near-future New York after the global movement that answered climate collapse.",
+  "site": "https://www.nickfg.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "chris-smaje",
+  "name": "Chris Smaje",
+  "cluster": "planet",
+  "what": "Wrote A Small Farm Future, which argues for a society built on local economies, self-provisioning and agricultural diversity.",
+  "site": "https://chrissmaje.com",
+  "eventsPage": "https://chrissmaje.com/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://chrissmaje.com/events/"
+   }
+  ]
+ },
+ {
+  "id": "matthias-schmelzer",
+  "name": "Matthias Schmelzer",
+  "cluster": "economy",
+  "what": "Co-wrote The Future Is Degrowth, which sets out a case and strategies for an economy beyond growth and capitalism.",
+  "site": "https://www.uni-flensburg.de/nec/ueber-uns/personen/mitarbeiterinnen/matthias-schmelzer",
+  "eventsPage": "https://www.uni-flensburg.de/nec/ueber-uns/personen/mitarbeiterinnen/matthias-schmelzer",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.uni-flensburg.de/nec/ueber-uns/personen/mitarbeiterinnen/matthias-schmelzer"
+   }
+  ]
+ },
+ {
+  "id": "ted-trainer",
+  "name": "Ted Trainer",
+  "cluster": "economy",
+  "what": "Wrote on The Simpler Way, which argues societies must shift to simple, cooperative, locally self-sufficient lives with far less production.",
+  "site": "https://thesimplerway.info",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "becky-chambers",
+  "name": "Becky Chambers",
+  "cluster": "culture",
+  "what": "Wrote A Psalm for the Wild-Built, a novella about a tea monk and a robot asking what people need after an industrial age.",
+  "site": "https://www.otherscribbles.com",
+  "eventsPage": "https://www.otherscribbles.com/events-launches",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.otherscribbles.com/events-launches"
+   }
+  ]
+ },
+ {
+  "id": "gary-paul-nabhan",
+  "name": "Gary Paul Nabhan",
+  "cluster": "planet",
+  "what": "Wrote Where Our Food Comes From, retracing Vavilov's seed-collecting journeys to argue that crop diversity protects the food supply.",
+  "site": "https://uapress.arizona.edu/author/gary-paul-nabhan",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ronald-l-trosper",
+  "name": "Ronald L. Trosper",
+  "cluster": "economy",
+  "what": "Wrote Indigenous Economics, which argues for economic models based on relations of care drawn from Indigenous worldviews, not competition.",
+  "site": "https://ais.arizona.edu/person/ronald-trosper",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Ronald Trosper"
+  ]
+ },
+ {
+  "id": "asher-miller",
+  "name": "Asher Miller",
+  "cluster": "planet",
+  "what": "Executive Director of Post Carbon Institute since 2008, which works on the transition away from fossil fuels and growth dependence.",
+  "site": "https://www.postcarbon.org/our-people/asher-miller/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "timothy-lenton",
+  "name": "Timothy Lenton",
+  "cluster": "planet",
+  "what": "Wrote Positive Tipping Points, which argues people can trigger self-reinforcing shifts in energy, transport and movements because incremental change is too slow.",
+  "site": "https://experts.exeter.ac.uk/19727-tim-lenton",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Tim Lenton"
+  ]
+ },
+ {
+  "id": "sandrine-dixon-decleve",
+  "name": "Sandrine Dixon-Declève",
+  "cluster": "planet",
+  "what": "Co-wrote Earth for All, which proposes economic and social turnarounds on poverty, inequality, gender, food and energy to stay within planetary limits.",
+  "site": "https://www.clubofrome.org/member/dixson-decleve-sandrine/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Sandrine Dixson-Declève"
+  ]
+ },
+ {
+  "id": "arturo-escobar",
+  "name": "Arturo Escobar",
+  "cluster": "culture",
+  "what": "Wrote Designs for the Pluriverse, which argues design should turn from capitalist modernization to place-based autonomous practice drawn from Latin American struggles.",
+  "site": "https://www.amacad.org/person/arturo-escobar",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "john-michael-greer",
+  "name": "John Michael Greer",
+  "cluster": "polycrisis",
+  "what": "Wrote The Ecotechnic Future, which argues industrial society will decline in stages toward lower-energy societies, not collapse or progress.",
+  "site": "https://www.ecosophia.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "neal-stephenson",
+  "name": "Neal Stephenson",
+  "cluster": "culture",
+  "what": "Wrote Termination Shock, a thriller about a plan to reverse global warming through geoengineering and the consequences that follow.",
+  "site": "https://www.nealstephenson.com",
+  "eventsPage": "https://www.nealstephenson.com/tour.html",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.nealstephenson.com/tour.html"
+   }
+  ]
+ },
+ {
+  "id": "donna-haraway",
+  "name": "Donna Haraway",
+  "cluster": "culture",
+  "what": "Wrote Staying with the Trouble, which replaces the Anthropocene with the Chthulucene and argues for making-with other species on a damaged earth.",
+  "site": "https://library.ucsc.edu/reg-hist/haraway",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "llewellyn-vaughan-lee",
+  "name": "Llewellyn Vaughan-Lee",
+  "cluster": "metacrisis",
+  "what": "Edited Spiritual Ecology, which argues the ecological crisis is a spiritual one that calls for a changed relationship with the Earth.",
+  "site": "https://goldensufi.org",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "carolyn-baker",
+  "name": "Carolyn Baker",
+  "cluster": "metacrisis",
+  "what": "Wrote Apocalypse Anytime, a workbook holding that the polycrisis cannot be solved, only responded to, with emotional and spiritual tools.",
+  "site": "https://www.carolynbaker.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "brian-swimme",
+  "name": "Brian Swimme",
+  "cluster": "metacrisis",
+  "what": "Co-wrote The Universe Story, which tells cosmic and Earth history as a single narrative meant to reorient human purpose.",
+  "site": "http://www.ciis.edu/faculty-and-staff-directory/brian-thomas-swimme",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "glen-sean-coulthard",
+  "name": "Glen Sean Coulthard",
+  "cluster": "culture",
+  "what": "Wrote Red Skin, White Masks, which rejects the colonial politics of recognition as a route to Indigenous self-determination.",
+  "site": "https://politics.ubc.ca/profile/glen-coulthard/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Glen Coulthard"
+  ]
+ },
+ {
+  "id": "nick-estes",
+  "name": "Nick Estes",
+  "cluster": "culture",
+  "what": "Wrote Our History Is the Future, which places the movement against the Dakota Access Pipeline within a long history of Indigenous resistance.",
+  "site": "https://cla.umn.edu/about/directory/profile/nestes",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "dahr-jamail",
+  "name": "Dahr Jamail",
+  "cluster": "culture",
+  "what": "Co-edited We Are the Middle of Forever, which places Indigenous voices from Turtle Island at the center of talk about the environmental crisis.",
+  "site": "https://www.haymarketbooks.org/authors/74-dahr-jamail",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "leanne-betasamosake-simpson",
+  "name": "Leanne Betasamosake Simpson",
+  "cluster": "culture",
+  "what": "Wrote As We Have Always Done, which argues Indigenous freedom comes through radical resistance grounded in Nishnaabeg thought and land.",
+  "site": "https://www.leannesimpson.ca",
+  "eventsPage": "https://www.leannesimpson.ca/shows",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.leannesimpson.ca/shows"
+   }
+  ],
+  "aliases": [
+   "Leanne Simpson"
+  ]
+ },
+ {
+  "id": "linda-tuhiwai-smith",
+  "name": "Linda Tuhiwai Smith",
+  "cluster": "culture",
+  "what": "Wrote Decolonizing Methodologies, which critiques Western research as a tool of imperialism and sets out Indigenous approaches to research.",
+  "site": "https://waitangitribunal.govt.nz/en/about/about-the-waitangi-tribunal/tribunal/professor-linda-tuhiwai-smith-cnzm",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kyle-whyte",
+  "name": "Kyle Whyte",
+  "cluster": "culture",
+  "what": "Writes on Indigenous peoples and climate policy, examining moral and political issues in climate justice, food sovereignty and the Anthropocene.",
+  "site": "https://www.colorado.edu/project/environmental-futures/node/43",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Kyle Powys Whyte",
+   "Kyle P. Whyte"
+  ]
+ },
+ {
+  "id": "ortwin-renn",
+  "name": "Ortwin Renn",
+  "cluster": "polycrisis",
+  "what": "Wrote Risk Governance: Coping with Uncertainty in a Complex World, which sets out how societies can assess and manage complex risks with public participation.",
+  "site": "https://rifs-potsdam.de/en/people/ortwin-renn",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "michael-lawrence",
+  "name": "Michael Lawrence",
+  "cluster": "polycrisis",
+  "what": "Co-wrote Positive Pathways through Polycrisis, which argues polycrisis analysis can chart routes to better futures through leverage and tipping points.",
+  "site": "https://cascadeinstitute.org/?p=1454",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "laurie-laybourn",
+  "name": "Laurie Laybourn",
+  "cluster": "polycrisis",
+  "what": "Researcher on climate tipping points and derailment risk; co-wrote Planet on Fire on the environmental emergency and the economic systems driving it.",
+  "site": "https://laurielaybourn.com/speaking/",
+  "eventsPage": "https://laurielaybourn.com/speaking/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://laurielaybourn.com/speaking/"
+   }
+  ],
+  "aliases": [
+   "Laurie Laybourn-Langton"
+  ],
+  "needsContext": true
+ },
+ {
+  "id": "daniel-hoyer",
+  "name": "Daniel Hoyer",
+  "cluster": "polycrisis",
+  "what": "Co-wrote Navigating Polycrisis, which uses a database of past crises to study how societies respond to environmental shocks.",
+  "site": "https://www.resilience.org/resilience-author/daniel-hoyer",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "zack-walsh",
+  "name": "Zack Walsh",
+  "cluster": "metacrisis",
+  "what": "Co-wrote on the global polycrisis and its causal mechanisms; his consultancy researches equitable, regenerative responses to entangled crises.",
+  "site": "https://www.polycrisistransition.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "rufus-pollock",
+  "name": "Rufus Pollock",
+  "cluster": "metacrisis",
+  "what": "Co-founder of Life Itself; wrote From Polycrisis to Metacrisis, which traces entangled crises to an underlying crisis of worldview and values.",
+  "site": "https://rufuspollock.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "paul-raskin",
+  "name": "Paul Raskin",
+  "cluster": "polycrisis",
+  "what": "Wrote Journey to Earthland, which argues an organic planetary civilization has become both a possibility and a necessity.",
+  "site": "https://tellus.org",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "peter-frase",
+  "name": "Peter Frase",
+  "cluster": "economy",
+  "what": "Wrote Four Futures, which sketches four possible post-capitalist societies shaped by automation, climate change and class power.",
+  "site": "https://www.peterfrase.com",
+  "eventsPage": "https://www.peterfrase.com/talking/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.peterfrase.com/talking/"
+   }
+  ],
+  "needsContext": true
+ },
+ {
+  "id": "james-gustave-speth",
+  "name": "James Gustave Speth",
+  "cluster": "economy",
+  "what": "Co-edited The New Systems Reader, a collection of alternatives to the current political economy aimed at deep system change.",
+  "site": "https://democracycollaborative.org/gus-speth",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Gus Speth",
+   "James Speth"
+  ]
+ },
+ {
+  "id": "anna-lappe",
+  "name": "Anna Lappé",
+  "cluster": "planet",
+  "what": "Writes on food, farming and sustainability; Diet for a Hot Planet traces the climate crisis through the food system.",
+  "site": "https://smallplanet.org/anna-lappe",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "daniel-pinchbeck",
+  "name": "Daniel Pinchbeck",
+  "cluster": "metacrisis",
+  "what": "Wrote Breaking Open the Head, an account of psychedelic plant shamanism arguing for its role in spiritual recognition.",
+  "site": "https://pinchbeck.net",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jeremy-johnson",
+  "name": "Jeremy Johnson",
+  "cluster": "metacrisis",
+  "what": "Wrote Seeing Through the World, an introduction to Jean Gebser's philosophy of integral consciousness.",
+  "site": "https://www.jeremydjohnson.com",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "tzeporah-berman",
+  "name": "Tzeporah Berman",
+  "cluster": "planet",
+  "what": "Wrote This Crazy Time, on living with environmental challenge from decades of campaigns; chairs the Fossil Fuel Non-Proliferation Treaty Initiative.",
+  "site": "https://spun.earth/team-members/tzeporah-berman",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "chad-frischmann",
+  "name": "Chad Frischmann",
+  "cluster": "planet",
+  "what": "Co-wrote Drawdown and built its solutions framework, which ranks existing climate solutions by their potential to reduce greenhouse gases.",
+  "site": "https://www.chadfrischmann.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jacob-harold",
+  "name": "Jacob Harold",
+  "cluster": "systems",
+  "what": "Wrote The Toolbox, which sets out nine strategies used by social movements and large businesses to change systems.",
+  "site": "https://www.jacobharold.com",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "zander-grashow",
+  "name": "Zander Grashow",
+  "cluster": "systems",
+  "what": "Co-wrote The Practice of Adaptive Leadership, tools for moving organizations through challenges that have no technical fix.",
+  "site": "https://adaptandlead.squarespace.com/about",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "anne-therese-gennari",
+  "name": "Anne Therese Gennari",
+  "cluster": "planet",
+  "what": "Wrote The Climate Optimist Handbook, which treats climate optimism as a practice combining awareness, resilience, action and hope.",
+  "site": "https://www.annetheresegennari.com",
+  "eventsPage": "https://www.annetheresegennari.com/upcoming-events",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://www.annetheresegennari.com/upcoming-events"
+   }
+  ]
+ },
+ {
+  "id": "tom-llewellyn",
+  "name": "Tom Llewellyn",
+  "cluster": "economy",
+  "what": "Co-edited Sharing Cities: Activating the Urban Commons, which collects examples of cities organizing shared resources and services.",
+  "site": "https://www.shareable.net/author/tom-llewellyn/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ }
+]

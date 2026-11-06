@@ -1,0 +1,15 @@
+{
+  "name": "author-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Authors in Town: when the writers on the metacrisis, polycrisis, existential risk and systems come through New York. authors.dearcrisis.com",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch-events.mjs",
+    "gate": "node scripts/check-voice.mjs && node scripts/check-data.mjs && node --test tests/*.test.mjs",
+    "build": "node scripts/check-voice.mjs && node scripts/check-data.mjs && node scripts/build.mjs && node scripts/check-preview.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs dist 4323",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

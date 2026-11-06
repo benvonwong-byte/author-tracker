@@ -1,0 +1,97 @@
+[
+ {
+  "name": "The Strand",
+  "url": "https://www.strandbooks.com/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "McNally Jackson",
+  "url": "https://www.mcnallyjackson.com/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Greenlight Bookstore",
+  "url": "https://www.greenlightbookstore.com/event",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Word Bookstores",
+  "url": "https://www.wordbookstores.com/event",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Book Culture",
+  "url": "https://www.bookculture.com/event",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "CUNY Graduate Center",
+  "url": "https://www.gc.cuny.edu/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Asia Society",
+  "url": "https://asiasociety.org/new-york/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Fordham University",
+  "url": "https://www.fordham.edu/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "American Museum of Natural History",
+  "url": "https://www.amnh.org/calendar",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "92NY",
+  "url": "https://www.92ny.org/talks",
+  "why": "builds its calendar in the browser"
+ },
+ {
+  "name": "New York Public Library",
+  "url": "https://www.nypl.org/events/calendar",
+  "why": "builds its calendar in the browser"
+ },
+ {
+  "name": "Brooklyn Public Library",
+  "url": "https://www.bklynlibrary.org/calendar",
+  "why": "builds its calendar in the browser"
+ },
+ {
+  "name": "The New School",
+  "url": "https://events.newschool.edu/",
+  "why": "builds its calendar in the browser"
+ },
+ {
+  "name": "Books Are Magic",
+  "url": "https://www.booksaremagic.net/events",
+  "why": "builds its calendar in the browser"
+ },
+ {
+  "name": "The Center for Fiction",
+  "url": "https://centerforfiction.org/events/",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "PEN America",
+  "url": "https://pen.org/events/",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Museum of Modern Art",
+  "url": "https://www.moma.org/calendar/",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Columbia Climate School",
+  "url": "https://climate.columbia.edu/events",
+  "why": "refuses automated requests"
+ },
+ {
+  "name": "Center on Sustainable Development, Columbia",
+  "url": "https://csd.columbia.edu/events",
+  "why": "refuses automated requests"
+ }
+]
