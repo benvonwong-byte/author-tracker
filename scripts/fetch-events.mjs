@@ -19,7 +19,7 @@ import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { get, sleep } from "./lib/http.mjs";
 import { parseByFormat } from "./lib/parsers.mjs";
-import { parseDatedText, parseCalendarLinks, htmlToLines } from "./lib/dated-text.mjs";
+import { parseDatedText, parseCalendarLinks, htmlToLines, nextPage } from "./lib/dated-text.mjs";
 import { classify } from "./lib/place.mjs";
 import { buildMatcher, findTopic } from "./lib/match.mjs";
 import { stripHtml, decodeEntities } from "./lib/ics.mjs";
@@ -37,8 +37,7 @@ const HORIZON_DAYS = 400;
 const STALE_DAYS = 14;
 const CONCURRENCY = 8;
 const LUMA_PAGES = 40;
-// A subject match far in the future is a recurring meetup, not news.
-const TOPIC_HORIZON_DAYS = 120;
+const MAX_PAGES = 8;
 const now = Date.now();
 const nowIso = new Date(now).toISOString();
 const pad = (n) => String(n).padStart(2, "0");
@@ -60,32 +59,39 @@ const authorById = new Map(AUTHORS.map((a) => [a.id, a]));
 
 // ---------- Formats that need more than one request ----------
 async function readColumbia(feed) {
-  // The feed returns its first 100 per request, so walk the year a month at a time.
+  // The feed returns at most 100 per request, so walk the year in windows and
+  // split any window that comes back full.
   const out = [];
   const seen = new Set();
-  for (let m = 0; m < 12; m++) {
-    const from = new Date(now + m * 30 * 86400000).toISOString().slice(0, 10).replace(/-/g, "");
-    const to = new Date(now + (m + 1) * 30 * 86400000).toISOString().slice(0, 10).replace(/-/g, "");
-    const text = await get(`${feed.url}&start=${from}&end=${to}`);
+  const stamp = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, "");
+  const utc = (v) => (v ? Date.parse(v.replace(/(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z/, "$1-$2-$3T$4:$5:$6Z")) : null);
+  async function walk(fromMs, toMs) {
+    const text = await get(`${feed.url}&start=${stamp(fromMs)}&end=${stamp(toMs)}`);
     const list = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)).bwEventList?.events ?? [];
+    await sleep(150);
+    if (list.length >= 100 && toMs - fromMs > 2 * 86400000) {
+      const mid = fromMs + Math.floor((toMs - fromMs) / 2);
+      await walk(fromMs, mid);
+      await walk(mid, toMs);
+      return;
+    }
     for (const e of list) {
       if (seen.has(e.guid)) continue;
       seen.add(e.guid);
-      const start = e.start?.utcdate ? Date.parse(e.start.utcdate.replace(/(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z/, "$1-$2-$3T$4:$5:$6Z")) : null;
-      const end = e.end?.utcdate ? Date.parse(e.end.utcdate.replace(/(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z/, "$1-$2-$3T$4:$5:$6Z")) : null;
+      const start = utc(e.start?.utcdate);
       if (!start) continue;
       out.push({
         title: decodeEntities(e.summary ?? ""),
         startMs: start,
-        endMs: end,
+        endMs: utc(e.end?.utcdate),
         allDay: e.start?.allday === "true",
         url: e.eventlink || feed.url,
         location: stripHtml(e.location?.address ?? "") || null,
         description: clip(e.description),
       });
     }
-    await sleep(150);
   }
+  for (let m = 0; m < 13; m++) await walk(now + m * 30 * 86400000, now + (m + 1) * 30 * 86400000);
   return out;
 }
 
@@ -119,14 +125,109 @@ async function readLuma(feed) {
   return out;
 }
 
-async function readFeed(feed) {
+const itemKey = (i) => `${i.day ?? i.startMs}|${i.title}`;
+const parseText = (text, feed) => {
+  const linked = parseCalendarLinks(text, feed);
+  return linked.length ? linked : parseDatedText(text, feed, { today });
+};
+
+// Follows a paginated listing until a page adds nothing new or MAX_PAGES.
+async function readPages(feed, firstText, parse) {
+  const seen = new Set();
+  const items = [];
+  let text = firstText;
+  let url = feed.url;
+  for (let page = 1; page <= MAX_PAGES; page++) {
+    const fresh = parse(text, feed).filter((i) => !seen.has(itemKey(i)));
+    if (!fresh.length) break;
+    for (const i of fresh) seen.add(itemKey(i));
+    items.push(...fresh);
+    const next = nextPage(text, url, page);
+    if (!next || next === url) break;
+    await sleep(250);
+    url = next;
+    try {
+      text = await get(url);
+    } catch {
+      break; // the pages already read still count
+    }
+  }
+  return items;
+}
+
+// WordPress "The Events Calendar" exports only its next 30 events or so, and
+// ignores a date range. Its REST API has the whole year, and where a site has
+// turned that off, one export per month gets the same thing.
+const isoDay = (ms) => new Date(ms).toISOString().slice(0, 10);
+async function readTribeExport(feed) {
+  const plain = parseByFormat("ics", await get(feed.url), feed, window);
+  const u = new URL(feed.url);
+  const rest = await readTribeRest({ ...feed, url: `${u.origin}/wp-json/tribe/events/v1/events` }).catch(() => null);
+  if (rest && rest.length >= plain.length) return rest;
+  const base = `${u.origin}${u.pathname.replace(/\/$/, "")}`;
+  const seen = new Set(plain.map(itemKey));
+  const out = [...plain];
+  for (let m = 1; m <= 12; m++) {
+    const d = new Date(now);
+    d.setUTCDate(1);
+    d.setUTCMonth(d.getUTCMonth() + m);
+    const text = await get(`${base}/month/${d.toISOString().slice(0, 7)}/?ical=1`).catch(() => "");
+    if (!text.includes("BEGIN:VCALENDAR")) continue;
+    for (const i of parseByFormat("ics", text, feed, window)) {
+      if (seen.has(itemKey(i))) continue;
+      seen.add(itemKey(i));
+      out.push(i);
+    }
+    await sleep(250);
+  }
+  return out;
+}
+async function readTribeRest(feed) {
+  const events = [];
+  const u = new URL(feed.url);
+  u.searchParams.set("per_page", "50");
+  u.searchParams.set("start_date", isoDay(now));
+  u.searchParams.set("end_date", isoDay(now + HORIZON_DAYS * 86400000));
+  let url = u.href;
+  for (let page = 0; url && page < MAX_PAGES * 2; page++) {
+    const data = JSON.parse(await get(url));
+    events.push(...(data.events ?? []));
+    url = data.next_rest_url ?? null;
+    if (url) await sleep(250);
+  }
+  return parseByFormat("tribe", JSON.stringify({ events }), feed, window);
+}
+// Eventbrite search lists the soonest first, 20 to a page, and rate-limits
+// quickly, so it goes slowly and keeps whatever pages it got.
+async function readEventbrite(feed) {
+  const seen = new Set();
+  const out = [];
+  for (let page = 1; page <= 4; page++) {
+    let items;
+    try {
+      items = parseByFormat("jsonld", await get(page === 1 ? feed.url : `${feed.url}?page=${page}`), feed, window);
+    } catch (err) {
+      if (page === 1) throw err;
+      break;
+    }
+    const fresh = items.filter((i) => !seen.has(itemKey(i)));
+    if (!fresh.length) break;
+    for (const i of fresh) seen.add(itemKey(i));
+    out.push(...fresh);
+    await sleep(1500);
+  }
+  return out;
+}
+
+async function readFeed(feed, { paged = false } = {}) {
   if (feed.format === "columbia") return { items: await readColumbia(feed) };
   if (feed.format === "luma") return { items: await readLuma(feed) };
+  if (feed.format === "tribe") return { items: await readTribeRest(feed) };
+  if (feed.format === "jsonld" && /eventbrite\.com\/d\//.test(feed.url)) return { items: await readEventbrite(feed) };
+  if (feed.format === "ics" && /[?&]ical=1/.test(feed.url)) return { items: await readTribeExport(feed) };
   const text = await get(feed.url);
-  if (feed.format === "text") {
-    const linked = parseCalendarLinks(text, feed);
-    return { items: linked.length ? linked : parseDatedText(text, feed, { today }), text };
-  }
+  if (feed.format === "text") return { items: paged ? await readPages(feed, text, parseText) : parseText(text, feed), text };
+  if (feed.format === "jsonld" && paged) return { items: await readPages(feed, text, (t, f) => parseByFormat("jsonld", t, f, window)), text };
   return { items: parseByFormat(feed.format, text, feed, window), text };
 }
 
@@ -163,7 +264,6 @@ function makeEvent(inst, { authors, via, match, topic, sourceId, sourceLabel, ve
   if (!when.day || when.day < today || when.day > lastDay) return null;
   // A course that runs a whole term is not an appearance.
   if (when.endDay && Date.parse(when.endDay) - Date.parse(when.day) > 14 * 86400000) return null;
-  if (via === "topic" && Date.parse(when.day) - now > TOPIC_HORIZON_DAYS * 86400000) return null;
   // "On the subject" is a New York list. A climate summit in Brussels on the
   // Club of Rome's calendar is not news here unless someone on the list is at it.
   if (via === "topic" && place.region !== "nyc" && place.region !== "near") return null;
@@ -247,7 +347,7 @@ async function readVenue(v) {
   for (const [i, feed] of (v.feeds ?? []).entries()) {
     const id = `venue:${v.id}:${i}`;
     try {
-      const { items } = await readFeed(feed);
+      const { items } = await readFeed(feed, { paged: true });
       let n = 0;
       for (const inst of items) {
         // A host named on the listing is as firm as a name in the title.
@@ -268,8 +368,14 @@ async function readVenue(v) {
           n++;
         }
       }
-      console.log(`fetch-events: ${v.name}: ${n} kept (${items.length} read)`);
-      sources.push({ id, label: v.name, kind: "venue", url: feed.url, ok: true, count: n, parsed: items.length });
+      // How far ahead this calendar really reaches. A feed that stops after a
+      // few weeks is a blind spot, whatever HORIZON_DAYS says.
+      const reach = items.reduce((m, i) => {
+        const d = i.day ?? (Number.isFinite(i.startMs) ? dayOf(i.startMs) : "");
+        return d > m ? d : m;
+      }, "");
+      console.log(`fetch-events: ${v.name}: ${n} kept (${items.length} read, to ${reach || "nothing"})`);
+      sources.push({ id, label: v.name, kind: "venue", url: feed.url, ok: true, count: n, parsed: items.length, reach: reach || null });
     } catch (err) {
       recordFailure(id, v.name, "venue", feed.url, err);
     }
@@ -301,7 +407,10 @@ const sameEvent = (a, b) => {
     const wb = words(b.title);
     return [...wa].filter((w) => wb.has(w)).length >= Math.min(2, Math.min(wa.size, wb.size));
   }
-  return a.title.toLowerCase() === b.title.toLowerCase();
+  // A subject match on the same talk as a named listing: one event, two rows.
+  const wa = words(a.title);
+  const wb = words(b.title);
+  return a.title.toLowerCase() === b.title.toLowerCase() || (a.via !== b.via && [...wa].filter((w) => wb.has(w)).length >= 2);
 };
 const merged = [];
 for (const e of events.slice().sort((a, b) => RANK[a.match] - RANK[b.match])) {

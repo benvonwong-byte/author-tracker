@@ -1,16 +1,7 @@
 {
- "fetchedAt": "2026-11-06T19:38:15.976Z",
+ "fetchedAt": "2026-11-06T20:46:00.444Z",
  "horizonDays": 400,
  "sources": [
-  {
-   "id": "author:bayo-akomolafe:0",
-   "label": "Bayo Akomolafe",
-   "kind": "author",
-   "url": "https://www.bayoakomolafe.net/engagements",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
   {
    "id": "author:charles-eisenstein:0",
    "label": "Charles Eisenstein",
@@ -19,15 +10,6 @@
    "ok": true,
    "count": 0,
    "parsed": 1
-  },
-  {
-   "id": "author:iain-mcgilchrist:0",
-   "label": "Iain McGilchrist",
-   "kind": "author",
-   "url": "https://channelmcgilchrist.com/events/",
-   "ok": true,
-   "count": 1,
-   "parsed": 22
   },
   {
    "id": "author:paul-kingsnorth:0",
@@ -39,13 +21,13 @@
    "parsed": 0
   },
   {
-   "id": "author:jeremy-lent:0",
-   "label": "Jeremy Lent",
+   "id": "author:iain-mcgilchrist:0",
+   "label": "Iain McGilchrist",
    "kind": "author",
-   "url": "https://www.jeremylent.com/event-archive",
+   "url": "https://channelmcgilchrist.com/events/",
    "ok": true,
-   "count": 0,
-   "parsed": 0
+   "count": 1,
+   "parsed": 22
   },
   {
    "id": "author:adam-tooze:0",
@@ -57,19 +39,19 @@
    "parsed": 30
   },
   {
-   "id": "author:peter-turchin:0",
-   "label": "Peter Turchin",
+   "id": "author:bayo-akomolafe:0",
+   "label": "Bayo Akomolafe",
    "kind": "author",
-   "url": "https://peterturchin.com/talks",
+   "url": "https://www.bayoakomolafe.net/engagements",
    "ok": true,
    "count": 0,
-   "parsed": 18
+   "parsed": 0
   },
   {
-   "id": "author:lene-rachel-andersen:0",
-   "label": "Lene Rachel Andersen",
+   "id": "author:jeremy-lent:0",
+   "label": "Jeremy Lent",
    "kind": "author",
-   "url": "https://www.nordicbildung.org/events/",
+   "url": "https://www.jeremylent.com/event-archive",
    "ok": true,
    "count": 0,
    "parsed": 0
@@ -93,6 +75,15 @@
    "parsed": 0
   },
   {
+   "id": "author:lene-rachel-andersen:0",
+   "label": "Lene Rachel Andersen",
+   "kind": "author",
+   "url": "https://www.nordicbildung.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 0
+  },
+  {
    "id": "author:timothy-snyder:0",
    "label": "Timothy Snyder",
    "kind": "author",
@@ -102,28 +93,28 @@
    "parsed": 0
   },
   {
+   "id": "author:peter-turchin:0",
+   "label": "Peter Turchin",
+   "kind": "author",
+   "url": "https://peterturchin.com/talks",
+   "ok": true,
+   "count": 0,
+   "parsed": 18
+  },
+  {
+   "id": "author:yuval-noah-harari:0",
+   "label": "Yuval Noah Harari",
+   "kind": "author",
+   "url": "https://www.ynharari.com/events-page/",
+   "ok": true,
+   "count": 1,
+   "parsed": 158
+  },
+  {
    "id": "author:karen-hao:0",
    "label": "Karen Hao",
    "kind": "author",
    "url": "https://karendhao.com/tour-archive",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "author:timnit-gebru:0",
-   "label": "Timnit Gebru",
-   "kind": "author",
-   "url": "https://dair-institute.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "author:ruha-benjamin:0",
-   "label": "Ruha Benjamin",
-   "kind": "author",
-   "url": "https://www.ruhabenjamin.com/events?format=json",
    "ok": true,
    "count": 0,
    "parsed": 0
@@ -138,31 +129,22 @@
    "parsed": 4
   },
   {
-   "id": "author:yuval-noah-harari:0",
-   "label": "Yuval Noah Harari",
+   "id": "author:ruha-benjamin:0",
+   "label": "Ruha Benjamin",
    "kind": "author",
-   "url": "https://www.ynharari.com/events-page/",
-   "ok": true,
-   "count": 1,
-   "parsed": 158
-  },
-  {
-   "id": "author:alex-hanna:0",
-   "label": "Alex Hanna",
-   "kind": "author",
-   "url": "https://thecon.ai/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 31
-  },
-  {
-   "id": "author:rutger-bregman:0",
-   "label": "Rutger Bregman",
-   "kind": "author",
-   "url": "https://rutgerbregman.com/events",
+   "url": "https://www.ruhabenjamin.com/events?format=json",
    "ok": true,
    "count": 0,
    "parsed": 0
+  },
+  {
+   "id": "author:timnit-gebru:0",
+   "label": "Timnit Gebru",
+   "kind": "author",
+   "url": "https://dair-institute.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 1
   },
   {
    "id": "author:audrey-tang:0",
@@ -174,58 +156,13 @@
    "parsed": 0
   },
   {
-   "id": "author:marjorie-kelly:0",
-   "label": "Marjorie Kelly",
+   "id": "author:rutger-bregman:0",
+   "label": "Rutger Bregman",
    "kind": "author",
-   "url": "https://marjoriekelly.org/speaking/",
+   "url": "https://rutgerbregman.com/events",
    "ok": true,
    "count": 0,
-   "parsed": 5
-  },
-  {
-   "id": "author:michael-e-mann:0",
-   "label": "Michael E. Mann",
-   "kind": "author",
-   "url": "https://michaelmann.net/talks-events/",
-   "ok": true,
-   "count": 1,
-   "parsed": 13
-  },
-  {
-   "id": "author:kim-stanley-robinson:0",
-   "label": "Kim Stanley Robinson",
-   "kind": "author",
-   "url": "https://www.kimstanleyrobinson.info/events/?ical=1",
-   "ok": true,
-   "count": 2,
-   "parsed": 3
-  },
-  {
-   "id": "author:robin-wall-kimmerer:0",
-   "label": "Robin Wall Kimmerer",
-   "kind": "author",
-   "url": "https://robinwallkimmerer.com/events/?ical=1",
-   "ok": true,
-   "count": 12,
-   "parsed": 12
-  },
-  {
-   "id": "author:david-korten:0",
-   "label": "David Korten",
-   "kind": "author",
-   "url": "https://davidkorten.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "author:katharine-hayhoe:0",
-   "label": "Katharine Hayhoe",
-   "kind": "author",
-   "url": "https://www.katharinehayhoe.com/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
+   "parsed": 0
   },
   {
    "id": "author:dougald-hine:0",
@@ -237,22 +174,49 @@
    "parsed": 7
   },
   {
-   "id": "author:naomi-klein:0",
-   "label": "Naomi Klein",
+   "id": "author:michael-e-mann:0",
+   "label": "Michael E. Mann",
    "kind": "author",
-   "url": "https://naomiklein.org/events/",
+   "url": "https://michaelmann.net/talks-events/",
+   "ok": true,
+   "count": 1,
+   "parsed": 13
+  },
+  {
+   "id": "author:cory-doctorow:0",
+   "label": "Cory Doctorow",
+   "kind": "author",
+   "url": "https://pluralistic.net/feed/",
    "ok": true,
    "count": 9,
    "parsed": 9
   },
   {
-   "id": "author:amitav-ghosh:0",
-   "label": "Amitav Ghosh",
+   "id": "author:alex-hanna:0",
+   "label": "Alex Hanna",
    "kind": "author",
-   "url": "https://amitavghosh.com/news-and-events/",
+   "url": "https://thecon.ai/events/",
    "ok": true,
    "count": 0,
-   "parsed": 87
+   "parsed": 31
+  },
+  {
+   "id": "author:kim-stanley-robinson:0",
+   "label": "Kim Stanley Robinson",
+   "kind": "author",
+   "url": "https://www.kimstanleyrobinson.info/events/?ical=1",
+   "ok": true,
+   "count": 2,
+   "parsed": 3
+  },
+  {
+   "id": "author:katharine-hayhoe:0",
+   "label": "Katharine Hayhoe",
+   "kind": "author",
+   "url": "https://www.katharinehayhoe.com/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 1
   },
   {
    "id": "author:johann-hari:0",
@@ -262,6 +226,15 @@
    "ok": true,
    "count": 0,
    "parsed": 2
+  },
+  {
+   "id": "author:amitav-ghosh:0",
+   "label": "Amitav Ghosh",
+   "kind": "author",
+   "url": "https://amitavghosh.com/news-and-events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 87
   },
   {
    "id": "author:andrew-boyd:0",
@@ -282,6 +255,15 @@
    "parsed": 6
   },
   {
+   "id": "author:david-korten:0",
+   "label": "David Korten",
+   "kind": "author",
+   "url": "https://davidkorten.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 1
+  },
+  {
    "id": "author:james-bridle:0",
    "label": "James Bridle",
    "kind": "author",
@@ -291,13 +273,13 @@
    "parsed": 101
   },
   {
-   "id": "author:david-abram:0",
-   "label": "David Abram",
+   "id": "author:thomas-piketty:0",
+   "label": "Thomas Piketty",
    "kind": "author",
-   "url": "https://www.davidabram.org/events",
+   "url": "http://piketty.pse.ens.fr/en/lectures",
    "ok": true,
    "count": 0,
-   "parsed": 9
+   "parsed": 2
   },
   {
    "id": "author:samantha-sweetwater:0",
@@ -309,31 +291,22 @@
    "parsed": 0
   },
   {
-   "id": "author:david-bollier:0",
-   "label": "David Bollier",
+   "id": "author:david-abram:0",
+   "label": "David Abram",
    "kind": "author",
-   "url": "https://www.bollier.org/events",
+   "url": "https://www.davidabram.org/events",
    "ok": true,
    "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "author:cory-doctorow:0",
-   "label": "Cory Doctorow",
-   "kind": "author",
-   "url": "https://pluralistic.net/feed/",
-   "ok": true,
-   "count": 9,
    "parsed": 9
   },
   {
-   "id": "author:jorgen-randers:0",
-   "label": "Jorgen Randers",
+   "id": "author:chris-smaje:0",
+   "label": "Chris Smaje",
    "kind": "author",
-   "url": "http://www.2052.info/presentations/",
+   "url": "https://chrissmaje.com/events/",
    "ok": true,
    "count": 0,
-   "parsed": 1
+   "parsed": 0
   },
   {
    "id": "author:starhawk:0",
@@ -354,13 +327,22 @@
    "parsed": 31
   },
   {
-   "id": "author:chris-smaje:0",
-   "label": "Chris Smaje",
+   "id": "author:jorgen-randers:0",
+   "label": "Jorgen Randers",
    "kind": "author",
-   "url": "https://chrissmaje.com/events/",
+   "url": "http://www.2052.info/presentations/",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 1
+  },
+  {
+   "id": "author:robin-wall-kimmerer:0",
+   "label": "Robin Wall Kimmerer",
+   "kind": "author",
+   "url": "https://robinwallkimmerer.com/events/?ical=1",
+   "ok": true,
+   "count": 12,
+   "parsed": 12
   },
   {
    "id": "author:neal-stephenson:0",
@@ -372,6 +354,15 @@
    "parsed": 10
   },
   {
+   "id": "author:david-bollier:0",
+   "label": "David Bollier",
+   "kind": "author",
+   "url": "https://www.bollier.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 0
+  },
+  {
    "id": "author:leanne-betasamosake-simpson:0",
    "label": "Leanne Betasamosake Simpson",
    "kind": "author",
@@ -379,33 +370,6 @@
    "ok": true,
    "count": 0,
    "parsed": 65
-  },
-  {
-   "id": "author:anne-therese-gennari:0",
-   "label": "Anne Therese Gennari",
-   "kind": "author",
-   "url": "https://www.annetheresegennari.com/upcoming-events",
-   "ok": true,
-   "count": 1,
-   "parsed": 1
-  },
-  {
-   "id": "author:matthias-schmelzer:0",
-   "label": "Matthias Schmelzer",
-   "kind": "author",
-   "url": "https://www.uni-flensburg.de/nec/ueber-uns/personen/mitarbeiterinnen/matthias-schmelzer",
-   "ok": true,
-   "count": 0,
-   "parsed": 82
-  },
-  {
-   "id": "author:matt-haig:0",
-   "label": "Matt Haig",
-   "kind": "author",
-   "url": "https://www.matthaig.com/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
   },
   {
    "id": "author:laurie-laybourn:0",
@@ -417,6 +381,42 @@
    "parsed": 97
   },
   {
+   "id": "author:anne-therese-gennari:0",
+   "label": "Anne Therese Gennari",
+   "kind": "author",
+   "url": "https://www.annetheresegennari.com/upcoming-events",
+   "ok": true,
+   "count": 1,
+   "parsed": 1
+  },
+  {
+   "id": "author:marjorie-kelly:0",
+   "label": "Marjorie Kelly",
+   "kind": "author",
+   "url": "https://marjoriekelly.org/speaking/",
+   "ok": true,
+   "count": 0,
+   "parsed": 5
+  },
+  {
+   "id": "author:matthias-schmelzer:0",
+   "label": "Matthias Schmelzer",
+   "kind": "author",
+   "url": "https://www.uni-flensburg.de/nec/ueber-uns/personen/mitarbeiterinnen/matthias-schmelzer",
+   "ok": true,
+   "count": 0,
+   "parsed": 82
+  },
+  {
+   "id": "author:naomi-klein:0",
+   "label": "Naomi Klein",
+   "kind": "author",
+   "url": "https://naomiklein.org/events/",
+   "ok": true,
+   "count": 9,
+   "parsed": 9
+  },
+  {
    "id": "author:peter-frase:0",
    "label": "Peter Frase",
    "kind": "author",
@@ -426,13 +426,13 @@
    "parsed": 23
   },
   {
-   "id": "author:thomas-piketty:0",
-   "label": "Thomas Piketty",
+   "id": "author:matt-haig:0",
+   "label": "Matt Haig",
    "kind": "author",
-   "url": "http://piketty.pse.ens.fr/en/lectures",
+   "url": "https://www.matthaig.com/events/",
    "ok": true,
    "count": 0,
-   "parsed": 2
+   "parsed": 0
   },
   {
    "id": "venue:eventbrite-nyc:0",
@@ -442,8 +442,8 @@
    "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 405"
+   "lastGood": "2026-11-06T20:43:47.702Z",
+   "error": "HTTP 429"
   },
   {
    "id": "venue:albertine:0",
@@ -452,7 +452,8 @@
    "url": "https://www.albertine.com/events/",
    "ok": true,
    "count": 0,
-   "parsed": 1
+   "parsed": 1,
+   "reach": "2026-11-10"
   },
   {
    "id": "venue:eventbrite-nyc:1",
@@ -462,8 +463,8 @@
    "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 405"
+   "lastGood": "2026-11-06T20:43:47.702Z",
+   "error": "HTTP 429"
   },
   {
    "id": "venue:eventbrite-nyc:2",
@@ -473,8 +474,8 @@
    "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 405"
+   "lastGood": "2026-11-06T20:43:47.702Z",
+   "error": "HTTP 429"
   },
   {
    "id": "venue:eventbrite-nyc:3",
@@ -484,8 +485,8 @@
    "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 405"
+   "lastGood": "2026-11-06T20:43:47.702Z",
+   "error": "HTTP 429"
   },
   {
    "id": "venue:eventbrite-nyc:4",
@@ -495,8 +496,8 @@
    "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 405"
+   "lastGood": "2026-11-06T20:42:16.875Z",
+   "error": "HTTP 429"
   },
   {
    "id": "venue:nyu:0",
@@ -505,7 +506,8 @@
    "url": "https://events.nyu.edu/live/ical/events/",
    "ok": true,
    "count": 2,
-   "parsed": 1054
+   "parsed": 1054,
+   "reach": "2027-11-15"
   },
   {
    "id": "venue:mcny:0",
@@ -514,16 +516,8 @@
    "url": "https://www.mcny.org/events",
    "ok": true,
    "count": 0,
-   "parsed": 3
-  },
-  {
-   "id": "venue:printed-matter:0",
-   "label": "Printed Matter",
-   "kind": "venue",
-   "url": "https://www.printedmatter.org/programs/2-events",
-   "ok": true,
-   "count": 0,
-   "parsed": 22
+   "parsed": 3,
+   "reach": "2027-04-18"
   },
   {
    "id": "venue:explorers-club:0",
@@ -532,43 +526,8 @@
    "url": "https://www.explorers.org/wp-json/tribe/events/v1/events?per_page=50",
    "ok": true,
    "count": 0,
-   "parsed": 20
-  },
-  {
-   "id": "venue:rubin:0",
-   "label": "Rubin Museum",
-   "kind": "venue",
-   "url": "https://rubinmuseum.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 22
-  },
-  {
-   "id": "venue:cfr:0",
-   "label": "Council on Foreign Relations",
-   "kind": "venue",
-   "url": "https://www.cfr.org/event",
-   "ok": true,
-   "count": 0,
-   "parsed": 19
-  },
-  {
-   "id": "venue:new-america:0",
-   "label": "New America",
-   "kind": "venue",
-   "url": "https://www.newamerica.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 7
-  },
-  {
-   "id": "venue:pioneer-works:0",
-   "label": "Pioneer Works",
-   "kind": "venue",
-   "url": "https://pioneerworks.org/programs",
-   "ok": true,
-   "count": 0,
-   "parsed": 24
+   "parsed": 21,
+   "reach": "2027-04-24"
   },
   {
    "id": "venue:nyas:0",
@@ -577,7 +536,38 @@
    "url": "https://www.nyas.org/events",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:pioneer-works:0",
+   "label": "Pioneer Works",
+   "kind": "venue",
+   "url": "https://pioneerworks.org/programs",
+   "ok": true,
+   "count": 0,
+   "parsed": 24,
+   "reach": "2027-04-13"
+  },
+  {
+   "id": "venue:rubin:0",
+   "label": "Rubin Museum",
+   "kind": "venue",
+   "url": "https://rubinmuseum.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 77,
+   "reach": "2026-11-10"
+  },
+  {
+   "id": "venue:cfr:0",
+   "label": "Council on Foreign Relations",
+   "kind": "venue",
+   "url": "https://www.cfr.org/event",
+   "ok": true,
+   "count": 0,
+   "parsed": 19,
+   "reach": "2026-11-04"
   },
   {
    "id": "venue:effective-altruism-nyc:0",
@@ -585,8 +575,19 @@
    "kind": "venue",
    "url": "https://calendar.google.com/calendar/ical/hbvetqf5h1pd0of0vn6uvphqts%40group.calendar.google.com/public/basic.ics",
    "ok": true,
+   "count": 1,
+   "parsed": 18,
+   "reach": "2027-12-11"
+  },
+  {
+   "id": "venue:interference:0",
+   "label": "Interference Archive",
+   "kind": "venue",
+   "url": "https://interferencearchive.org/events",
+   "ok": true,
    "count": 0,
-   "parsed": 18
+   "parsed": 52,
+   "reach": "2026-11-16"
   },
   {
    "id": "venue:north-brooklyn-mutual-aid:0",
@@ -595,79 +596,8 @@
    "url": "https://calendar.google.com/calendar/ical/greenpointhelpers%40gmail.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 124
-  },
-  {
-   "id": "venue:smiling-hogshead-ranch:0",
-   "label": "Smiling Hogshead Ranch",
-   "kind": "venue",
-   "url": "https://calendar.google.com/calendar/ical/smilinghogsheadranch%40gmail.com/public/basic.ics",
-   "ok": true,
-   "count": 0,
-   "parsed": 7
-  },
-  {
-   "id": "venue:climate-cafe-nyc-friends:0",
-   "label": "Climate Cafe NYC & friends",
-   "kind": "venue",
-   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-dWMNt952eh2WWAh",
-   "ok": true,
-   "count": 0,
-   "parsed": 9
-  },
-  {
-   "id": "venue:sunrise-movement-nyc:0",
-   "label": "Sunrise Movement NYC",
-   "kind": "venue",
-   "url": "https://calendar.google.com/calendar/ical/hello%40sunrisenyc.org/public/basic.ics",
-   "ok": true,
-   "count": 0,
-   "parsed": 143
-  },
-  {
-   "id": "venue:all-tech-is-human:0",
-   "label": "All Tech Is Human",
-   "kind": "venue",
-   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-tp9fJuQNa1rcyNN",
-   "ok": true,
-   "count": 0,
-   "parsed": 3
-  },
-  {
-   "id": "venue:betanyc:0",
-   "label": "BetaNYC",
-   "kind": "venue",
-   "url": "https://www.beta.nyc/events/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 6
-  },
-  {
-   "id": "venue:ny-society-for-ethical-culture:0",
-   "label": "NY Society for Ethical Culture",
-   "kind": "venue",
-   "url": "https://ethical.nyc/events/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 30
-  },
-  {
-   "id": "venue:350-brooklyn:0",
-   "label": "350 Brooklyn",
-   "kind": "venue",
-   "url": "https://calendar.google.com/calendar/ical/350brooklyn%40gmail.com/public/basic.ics",
-   "ok": true,
-   "count": 0,
-   "parsed": 128
-  },
-  {
-   "id": "venue:les-ecology-center:0",
-   "label": "LES Ecology Center",
-   "kind": "venue",
-   "url": "https://www.lesecologycenter.org/events/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 28
+   "parsed": 124,
+   "reach": "2027-12-06"
   },
   {
    "id": "venue:roosevelt-house:0",
@@ -676,16 +606,88 @@
    "url": "https://roosevelthouse.hunter.cuny.edu/events",
    "ok": true,
    "count": 0,
-   "parsed": 3
+   "parsed": 3,
+   "reach": "2026-12-09"
   },
   {
-   "id": "venue:park-slope-food-coop:0",
-   "label": "Park Slope Food Coop",
+   "id": "venue:350-brooklyn:0",
+   "label": "350 Brooklyn",
    "kind": "venue",
-   "url": "https://linewaitersgazette.com/events/?ical=1",
+   "url": "https://calendar.google.com/calendar/ical/350brooklyn%40gmail.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 128,
+   "reach": "2027-12-08"
+  },
+  {
+   "id": "venue:climate-cafe-nyc-friends:0",
+   "label": "Climate Cafe NYC & friends",
+   "kind": "venue",
+   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-dWMNt952eh2WWAh",
+   "ok": true,
+   "count": 0,
+   "parsed": 9,
+   "reach": "2026-11-21"
+  },
+  {
+   "id": "venue:all-tech-is-human:0",
+   "label": "All Tech Is Human",
+   "kind": "venue",
+   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-tp9fJuQNa1rcyNN",
+   "ok": true,
+   "count": 0,
+   "parsed": 3,
+   "reach": "2026-11-20"
+  },
+  {
+   "id": "venue:sunrise-movement-nyc:0",
+   "label": "Sunrise Movement NYC",
+   "kind": "venue",
+   "url": "https://calendar.google.com/calendar/ical/hello%40sunrisenyc.org/public/basic.ics",
+   "ok": true,
+   "count": 0,
+   "parsed": 143,
+   "reach": "2027-12-08"
+  },
+  {
+   "id": "venue:new-america:0",
+   "label": "New America",
+   "kind": "venue",
+   "url": "https://www.newamerica.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 7,
+   "reach": "2027-02-11"
+  },
+  {
+   "id": "venue:smiling-hogshead-ranch:0",
+   "label": "Smiling Hogshead Ranch",
+   "kind": "venue",
+   "url": "https://calendar.google.com/calendar/ical/smilinghogsheadranch%40gmail.com/public/basic.ics",
+   "ok": true,
+   "count": 0,
+   "parsed": 7,
+   "reach": "2027-11-08"
+  },
+  {
+   "id": "venue:betanyc:0",
+   "label": "BetaNYC",
+   "kind": "venue",
+   "url": "https://www.beta.nyc/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 6,
+   "reach": "2026-12-16"
+  },
+  {
+   "id": "venue:printed-matter:0",
+   "label": "Printed Matter",
+   "kind": "venue",
+   "url": "https://www.printedmatter.org/programs/2-events",
+   "ok": true,
+   "count": 0,
+   "parsed": 158,
+   "reach": "2026-11-24"
   },
   {
    "id": "venue:new-york-insight:0",
@@ -705,7 +707,8 @@
    "url": "https://www.marineparkalliance.org/events/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 17
+   "parsed": 17,
+   "reach": "2027-02-20"
   },
   {
    "id": "venue:prospect-park-alliance:0",
@@ -719,22 +722,24 @@
    "error": "HTTP 403"
   },
   {
-   "id": "venue:loisaida-center:0",
-   "label": "Loisaida Center",
+   "id": "venue:park-slope-food-coop:0",
+   "label": "Park Slope Food Coop",
    "kind": "venue",
-   "url": "https://loisaida.org/events/?ical=1",
+   "url": "https://linewaitersgazette.com/events/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 7
+   "parsed": 2,
+   "reach": "2026-12-01"
   },
   {
-   "id": "venue:interference:0",
-   "label": "Interference Archive",
+   "id": "venue:randall-s-island-park-alliance:0",
+   "label": "Randall's Island Park Alliance",
    "kind": "venue",
-   "url": "https://interferencearchive.org/events",
+   "url": "https://randallsisland.org/events/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 10
+   "parsed": 9,
+   "reach": "2026-12-12"
   },
   {
    "id": "venue:bushwick-ayuda-mutua:0",
@@ -743,7 +748,8 @@
    "url": "https://calendar.google.com/calendar/ical/e2ccb510b59ef94691d46c9fa96e8f6de65ef2a82f121d0059ef12ee9c34c88d%40group.calendar.google.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
   },
   {
    "id": "venue:the-point-cdc:0",
@@ -752,7 +758,18 @@
    "url": "https://calendar.google.com/calendar/ical/c_ece6e2744f97e756c5a07f81630bbbb377f8facf58ac5064cb72accc423e7098%40group.calendar.google.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:loisaida-center:0",
+   "label": "Loisaida Center",
+   "kind": "venue",
+   "url": "https://loisaida.org/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 76,
+   "reach": "2027-12-07"
   },
   {
    "id": "venue:billion-oyster-project:0",
@@ -772,34 +789,8 @@
    "url": "https://www.repaircafe.nyc/upcoming-events?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "venue:culture-push:0",
-   "label": "Culture Push",
-   "kind": "venue",
-   "url": "https://www.culturepush.org/new-events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:open-plans:0",
-   "label": "Open Plans",
-   "kind": "venue",
-   "url": "https://www.openplans.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:south-bronx-unite:0",
-   "label": "South Bronx Unite",
-   "kind": "venue",
-   "url": "https://www.southbronxunite.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 2
+   "parsed": 1,
+   "reach": "2026-11-22"
   },
   {
    "id": "venue:extinction-rebellion-nyc:0",
@@ -808,16 +799,38 @@
    "url": "https://www.xrebellion.nyc/events?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
   },
   {
-   "id": "venue:broadway-green-alliance:0",
-   "label": "Broadway Green Alliance",
+   "id": "venue:culture-push:0",
+   "label": "Culture Push",
    "kind": "venue",
-   "url": "https://www.broadwaygreen.com/events?format=json",
+   "url": "https://www.culturepush.org/new-events?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:open-plans:0",
+   "label": "Open Plans",
+   "kind": "venue",
+   "url": "https://www.openplans.org/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:south-bronx-unite:0",
+   "label": "South Bronx Unite",
+   "kind": "venue",
+   "url": "https://www.southbronxunite.org/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 2,
+   "reach": "2026-11-14"
   },
   {
    "id": "venue:the-new-york-climate-exchange:0",
@@ -826,7 +839,8 @@
    "url": "https://www.nyclimateexchange.org/events-calendar?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
   },
   {
    "id": "venue:the-climate-museum:0",
@@ -835,7 +849,18 @@
    "url": "https://climatemuseum.org/events?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 1
+   "parsed": 1,
+   "reach": "2026-09-01"
+  },
+  {
+   "id": "venue:broadway-green-alliance:0",
+   "label": "Broadway Green Alliance",
+   "kind": "venue",
+   "url": "https://www.broadwaygreen.com/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
   },
   {
    "id": "venue:food-water-watch:0",
@@ -844,43 +869,8 @@
    "url": "https://api.mobilize.us/v1/organizations/1094/events",
    "ok": true,
    "count": 0,
-   "parsed": 200
-  },
-  {
-   "id": "venue:randall-s-island-park-alliance:0",
-   "label": "Randall's Island Park Alliance",
-   "kind": "venue",
-   "url": "https://randallsisland.org/events/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 9
-  },
-  {
-   "id": "venue:green-wood-cemetery:0",
-   "label": "Green-Wood Cemetery",
-   "kind": "venue",
-   "url": "https://www.green-wood.com/calendar/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 30
-  },
-  {
-   "id": "venue:flatbush-tool-library-flatbush-mixtape:0",
-   "label": "Flatbush Tool Library (Flatbush Mixtape)",
-   "kind": "venue",
-   "url": "https://calendar.google.com/calendar/ical/d141c9baf5e32194020970ac8e766b82d2f95554d573608d433d57eb022198ce%40group.calendar.google.com/public/basic.ics",
-   "ok": true,
-   "count": 0,
-   "parsed": 263
-  },
-  {
-   "id": "venue:east-new-york-community-land-trust:0",
-   "label": "East New York Community Land Trust",
-   "kind": "venue",
-   "url": "https://calendar.google.com/calendar/ical/f02921c5fbab2de72df15220564f82ec6c290c064e277c67993aaa81ad64a255%40group.calendar.google.com/public/basic.ics",
-   "ok": true,
-   "count": 0,
-   "parsed": 128
+   "parsed": 200,
+   "reach": "2021-07-24"
   },
   {
    "id": "venue:cooper-square-committee-cooper-square-clt:0",
@@ -889,124 +879,28 @@
    "url": "https://calendar.google.com/calendar/ical/coopersquare%40gmail.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 1
+   "parsed": 1,
+   "reach": "2026-11-10"
   },
   {
-   "id": "venue:index-space:0",
-   "label": "Index Space",
+   "id": "venue:east-new-york-community-land-trust:0",
+   "label": "East New York Community Land Trust",
    "kind": "venue",
-   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-qdFtD4iSoH7Xj4m",
+   "url": "https://calendar.google.com/calendar/ical/f02921c5fbab2de72df15220564f82ec6c290c064e277c67993aaa81ad64a255%40group.calendar.google.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 5
+   "parsed": 128,
+   "reach": "2027-12-08"
   },
   {
-   "id": "venue:solar-one:0",
-   "label": "Solar One",
+   "id": "venue:flatbush-tool-library-flatbush-mixtape:0",
+   "label": "Flatbush Tool Library (Flatbush Mixtape)",
    "kind": "venue",
-   "url": "https://solar1.org/events-calendar/?ical=1",
+   "url": "https://calendar.google.com/calendar/ical/d141c9baf5e32194020970ac8e766b82d2f95554d573608d433d57eb022198ce%40group.calendar.google.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:judson-memorial-church:0",
-   "label": "Judson Memorial Church",
-   "kind": "venue",
-   "url": "https://www.judson.org/calendar?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 39
-  },
-  {
-   "id": "venue:starr-bar:0",
-   "label": "Starr Bar",
-   "kind": "venue",
-   "url": "https://www.starrbar.com/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 16
-  },
-  {
-   "id": "venue:st-lydia-s:0",
-   "label": "St. Lydia's",
-   "kind": "venue",
-   "url": "https://www.stlydias.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 10
-  },
-  {
-   "id": "venue:sure-we-can:0",
-   "label": "Sure We Can",
-   "kind": "venue",
-   "url": "https://www.surewecan.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "venue:slow-money-nyc:0",
-   "label": "Slow Money NYC",
-   "kind": "venue",
-   "url": "https://www.slowmoneynyc.org/calendar?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:civic-hall-at-union-square:0",
-   "label": "Civic Hall at Union Square",
-   "kind": "venue",
-   "url": "https://www.civichall.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 83
-  },
-  {
-   "id": "venue:we-act-for-environmental-justice:0",
-   "label": "WE ACT for Environmental Justice",
-   "kind": "venue",
-   "url": "https://weact.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "venue:the-people-s-forum:0",
-   "label": "The People's Forum",
-   "kind": "venue",
-   "url": "https://peoplesforum.org/calendar/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 21
-  },
-  {
-   "id": "venue:the-psychedelic-assembly:0",
-   "label": "The Psychedelic Assembly",
-   "kind": "venue",
-   "url": "https://www.thepsychedelicassembly.com/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:reti-center:0",
-   "label": "RETI Center",
-   "kind": "venue",
-   "url": "https://www.reticenter.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:creative-time:0",
-   "label": "Creative Time",
-   "kind": "venue",
-   "url": "https://creativetime.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 32
+   "parsed": 263,
+   "reach": "2027-12-09"
   },
   {
    "id": "venue:earth-matter-ny:0",
@@ -1015,61 +909,48 @@
    "url": "https://earthmatter.org/events/feed/",
    "ok": true,
    "count": 0,
-   "parsed": 10
+   "parsed": 10,
+   "reach": "2027-01-11"
   },
   {
-   "id": "venue:regional-plan-association-rpa:0",
-   "label": "Regional Plan Association (RPA)",
+   "id": "venue:green-wood-cemetery:0",
+   "label": "Green-Wood Cemetery",
    "kind": "venue",
-   "url": "https://rpa.org/events/upcoming",
+   "url": "https://www.green-wood.com/calendar/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 4
+   "parsed": 50,
+   "reach": "2026-12-22"
   },
   {
-   "id": "venue:pratt-institute:0",
-   "label": "Pratt Institute",
+   "id": "venue:solar-one:0",
+   "label": "Solar One",
    "kind": "venue",
-   "url": "https://www.pratt.edu/events/",
+   "url": "https://solar1.org/events-calendar/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 6
+   "parsed": 0,
+   "reach": null
   },
   {
-   "id": "venue:ica-group:0",
-   "label": "ICA Group",
+   "id": "venue:index-space:0",
+   "label": "Index Space",
    "kind": "venue",
-   "url": "https://www.icagroup.org/events",
+   "url": "https://api.lu.ma/ics/get?entity=calendar&id=cal-qdFtD4iSoH7Xj4m",
    "ok": true,
    "count": 0,
-   "parsed": 11
+   "parsed": 6,
+   "reach": "2026-12-06"
   },
   {
-   "id": "venue:freshkills-park-alliance:0",
-   "label": "Freshkills Park Alliance",
+   "id": "venue:judson-memorial-church:0",
+   "label": "Judson Memorial Church",
    "kind": "venue",
-   "url": "https://freshkillspark.org/calendar",
+   "url": "https://www.judson.org/calendar?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 338
-  },
-  {
-   "id": "venue:tishman-environment-and-design-center-the-new-school:0",
-   "label": "Tishman Environment and Design Center (The New School)",
-   "kind": "venue",
-   "url": "https://www.tishmancenter.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 12
-  },
-  {
-   "id": "venue:columbia:0",
-   "label": "Columbia University",
-   "kind": "venue",
-   "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&fexpr=(categories.href!=%22/public/.bedework/categories/sys/Ongoing%22)&skinName=list-json&count=100",
-   "ok": true,
-   "count": 0,
-   "parsed": 363
+   "parsed": 39,
+   "reach": "2026-12-13"
   },
   {
    "id": "venue:nyc-resistor:0",
@@ -1078,16 +959,158 @@
    "url": "https://calendar.google.com/calendar/ical/p2m2av9dhrh4n1ub7jlsc68s7o%40group.calendar.google.com/public/basic.ics",
    "ok": true,
    "count": 0,
-   "parsed": 331
+   "parsed": 331,
+   "reach": "2027-12-09"
   },
   {
-   "id": "venue:genspace:0",
-   "label": "Genspace",
+   "id": "venue:st-lydia-s:0",
+   "label": "St. Lydia's",
    "kind": "venue",
-   "url": "https://www.genspace.org/events",
+   "url": "https://www.stlydias.org/events?format=json",
    "ok": true,
    "count": 0,
-   "parsed": 10
+   "parsed": 10,
+   "reach": "2026-12-20"
+  },
+  {
+   "id": "venue:starr-bar:0",
+   "label": "Starr Bar",
+   "kind": "venue",
+   "url": "https://www.starrbar.com/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 16,
+   "reach": "2026-12-06"
+  },
+  {
+   "id": "venue:ny-society-for-ethical-culture:0",
+   "label": "NY Society for Ethical Culture",
+   "kind": "venue",
+   "url": "https://ethical.nyc/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 207,
+   "reach": "2027-12-11"
+  },
+  {
+   "id": "venue:sure-we-can:0",
+   "label": "Sure We Can",
+   "kind": "venue",
+   "url": "https://www.surewecan.org/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 1,
+   "reach": "2026-11-14"
+  },
+  {
+   "id": "venue:slow-money-nyc:0",
+   "label": "Slow Money NYC",
+   "kind": "venue",
+   "url": "https://www.slowmoneynyc.org/calendar?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:civic-hall-at-union-square:0",
+   "label": "Civic Hall at Union Square",
+   "kind": "venue",
+   "url": "https://www.civichall.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 83,
+   "reach": "2026-11-11"
+  },
+  {
+   "id": "venue:the-psychedelic-assembly:0",
+   "label": "The Psychedelic Assembly",
+   "kind": "venue",
+   "url": "https://www.thepsychedelicassembly.com/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:reti-center:0",
+   "label": "RETI Center",
+   "kind": "venue",
+   "url": "https://www.reticenter.org/events?format=json",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:regional-plan-association-rpa:0",
+   "label": "Regional Plan Association (RPA)",
+   "kind": "venue",
+   "url": "https://rpa.org/events/upcoming",
+   "ok": true,
+   "count": 0,
+   "parsed": 4,
+   "reach": "2026-11-23"
+  },
+  {
+   "id": "venue:we-act-for-environmental-justice:0",
+   "label": "WE ACT for Environmental Justice",
+   "kind": "venue",
+   "url": "https://weact.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 1,
+   "reach": "2027-01-19"
+  },
+  {
+   "id": "venue:creative-time:0",
+   "label": "Creative Time",
+   "kind": "venue",
+   "url": "https://creativetime.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 32,
+   "reach": "2026-12-01"
+  },
+  {
+   "id": "venue:ica-group:0",
+   "label": "ICA Group",
+   "kind": "venue",
+   "url": "https://www.icagroup.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 11,
+   "reach": "2026-10-19"
+  },
+  {
+   "id": "venue:pratt-institute:0",
+   "label": "Pratt Institute",
+   "kind": "venue",
+   "url": "https://www.pratt.edu/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 6,
+   "reach": "2026-11-06"
+  },
+  {
+   "id": "venue:tishman-environment-and-design-center-the-new-school:0",
+   "label": "Tishman Environment and Design Center (The New School)",
+   "kind": "venue",
+   "url": "https://www.tishmancenter.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 12,
+   "reach": "2026-10-16"
+  },
+  {
+   "id": "venue:freshkills-park-alliance:0",
+   "label": "Freshkills Park Alliance",
+   "kind": "venue",
+   "url": "https://freshkillspark.org/calendar",
+   "ok": true,
+   "count": 0,
+   "parsed": 338,
+   "reach": "2026-04-04"
   },
   {
    "id": "venue:make-the-road-new-york:0",
@@ -1096,25 +1119,28 @@
    "url": "https://maketheroadny.org/wp-json/tribe/events/v1/events?per_page=50",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 0,
+   "reach": null
   },
   {
-   "id": "venue:go-green-brooklyn:0",
-   "label": "Go Green Brooklyn",
+   "id": "venue:wendy-s-subway:0",
+   "label": "Wendy's Subway",
    "kind": "venue",
-   "url": "https://gogreenbk.org/events/?ical=1",
+   "url": "https://www.wendyssubway.com/programs",
    "ok": true,
    "count": 0,
-   "parsed": 30
+   "parsed": 505,
+   "reach": "2026-11-20"
   },
   {
-   "id": "venue:green-guerillas:0",
-   "label": "Green Guerillas",
+   "id": "venue:genspace:0",
+   "label": "Genspace",
    "kind": "venue",
-   "url": "https://www.greenguerillas.org/upcoming-events",
+   "url": "https://www.genspace.org/events",
    "ok": true,
    "count": 0,
-   "parsed": 1
+   "parsed": 10,
+   "reach": "2026-10-16"
   },
   {
    "id": "venue:post-carbon-institute-resilience-org:0",
@@ -1123,25 +1149,8 @@
    "url": "https://www.resilience.org/events/",
    "ok": true,
    "count": 0,
-   "parsed": 21
-  },
-  {
-   "id": "venue:brooklyn-zen-center:0",
-   "label": "Brooklyn Zen Center",
-   "kind": "venue",
-   "url": "https://brooklynzen.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 5
-  },
-  {
-   "id": "venue:employee-ownership-nyc-owner-to-owners:0",
-   "label": "Employee Ownership NYC / Owner to Owners",
-   "kind": "venue",
-   "url": "https://www.owner2owners.nyc/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
+   "parsed": 21,
+   "reach": "2026-09-30"
   },
   {
    "id": "venue:riverkeeper:0",
@@ -1150,108 +1159,38 @@
    "url": "https://www.riverkeeper.org/news-and-events/events",
    "ok": true,
    "count": 0,
-   "parsed": 3
+   "parsed": 3,
+   "reach": "2026-10-22"
   },
   {
-   "id": "venue:data-society:0",
-   "label": "Data & Society",
+   "id": "venue:green-guerillas:0",
+   "label": "Green Guerillas",
    "kind": "venue",
-   "url": "https://datasociety.net/events/",
+   "url": "https://www.greenguerillas.org/upcoming-events",
    "ok": true,
    "count": 0,
-   "parsed": 13
+   "parsed": 1,
+   "reach": "2026-12-16"
   },
   {
-   "id": "venue:the-new-york-society-library:0",
-   "label": "The New York Society Library",
+   "id": "venue:employee-ownership-nyc-owner-to-owners:0",
+   "label": "Employee Ownership NYC / Owner to Owners",
    "kind": "venue",
-   "url": "https://www.nysoclib.org/events",
+   "url": "https://www.owner2owners.nyc/events?format=json",
    "ok": true,
-   "count": 0,
-   "parsed": 13
-  },
-  {
-   "id": "venue:poets-house:0",
-   "label": "Poets House",
-   "kind": "venue",
-   "url": "https://poetshouse.org/wp-json/tribe/events/v1/events?per_page=50",
-   "ok": false,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "HTTP 403"
+   "reach": null
   },
   {
-   "id": "venue:brooklyn-institute-for-social-research:0",
-   "label": "Brooklyn Institute for Social Research",
+   "id": "venue:brooklyn-zen-center:0",
+   "label": "Brooklyn Zen Center",
    "kind": "venue",
-   "url": "https://thebrooklyninstitute.com/events/",
+   "url": "https://brooklynzen.org/events/",
    "ok": true,
    "count": 0,
-   "parsed": 153
-  },
-  {
-   "id": "venue:democracy-collaborative:0",
-   "label": "Democracy Collaborative",
-   "kind": "venue",
-   "url": "https://www.democracycollaborative.org/events?format=json",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:climate-cafe-nyc:0",
-   "label": "Climate Cafe NYC",
-   "kind": "venue",
-   "url": "https://www.climatecafe.eco/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 9
-  },
-  {
-   "id": "venue:roosevelt-institute:0",
-   "label": "Roosevelt Institute",
-   "kind": "venue",
-   "url": "https://rooseveltinstitute.org/event",
-   "ok": true,
-   "count": 0,
-   "parsed": 8
-  },
-  {
-   "id": "venue:commonweal:0",
-   "label": "Commonweal",
-   "kind": "venue",
-   "url": "https://www.commonweal.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 36
-  },
-  {
-   "id": "venue:doughnut-economics-action-lab:0",
-   "label": "Doughnut Economics Action Lab",
-   "kind": "venue",
-   "url": "https://doughnuteconomics.org/events.xml",
-   "ok": true,
-   "count": 0,
-   "parsed": 20
-  },
-  {
-   "id": "venue:nyu-stern-center-for-sustainable-business:0",
-   "label": "NYU Stern Center for Sustainable Business",
-   "kind": "venue",
-   "url": "https://www.stern.nyu.edu/experience-stern/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 3
-  },
-  {
-   "id": "venue:literary-hub:0",
-   "label": "Literary Hub",
-   "kind": "venue",
-   "url": "https://lithub.com/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 2
+   "parsed": 9,
+   "reach": "2026-12-31"
   },
   {
    "id": "venue:waterfront-alliance:0",
@@ -1260,115 +1199,38 @@
    "url": "https://waterfrontalliance.org/events/",
    "ok": true,
    "count": 0,
-   "parsed": 10
+   "parsed": 10,
+   "reach": "2027-05-28"
   },
   {
-   "id": "venue:haymarket-books:0",
-   "label": "Haymarket Books",
+   "id": "venue:brooklyn-institute-for-social-research:0",
+   "label": "Brooklyn Institute for Social Research",
    "kind": "venue",
-   "url": "https://www.haymarketbooks.org/events",
+   "url": "https://thebrooklyninstitute.com/events/",
    "ok": true,
    "count": 0,
-   "parsed": 8
+   "parsed": 153,
+   "reach": "2026-11-20"
   },
   {
-   "id": "venue:club-of-rome:0",
-   "label": "Club of Rome",
+   "id": "venue:go-green-brooklyn:0",
+   "label": "Go Green Brooklyn",
    "kind": "venue",
-   "url": "https://www.clubofrome.org/events/?ical=1",
+   "url": "https://gogreenbk.org/events/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 0
+   "parsed": 225,
+   "reach": "2027-10-09"
   },
   {
-   "id": "venue:skirball-center-nyu:0",
-   "label": "Skirball Center NYU",
+   "id": "venue:the-people-s-forum:0",
+   "label": "The People's Forum",
    "kind": "venue",
-   "url": "https://nyuskirball.org/whats-on/",
+   "url": "https://peoplesforum.org/calendar/?ical=1",
    "ok": true,
    "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:institute-for-policy-studies:0",
-   "label": "Institute for Policy Studies",
-   "kind": "venue",
-   "url": "https://ips-dc.org/events/?ical=1",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "venue:othering-belonging-institute:0",
-   "label": "Othering & Belonging Institute",
-   "kind": "venue",
-   "url": "https://belonging.berkeley.edu/events",
-   "ok": true,
-   "count": 1,
-   "parsed": 3
-  },
-  {
-   "id": "venue:local-futures:0",
-   "label": "Local Futures",
-   "kind": "venue",
-   "url": "https://www.localfutures.org/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 1
-  },
-  {
-   "id": "venue:the-bell-house:0",
-   "label": "The Bell House",
-   "kind": "venue",
-   "url": "https://www.thebellhouseny.com/calendar",
-   "ok": true,
-   "count": 0,
-   "parsed": 36
-  },
-  {
-   "id": "venue:brooklyn-book-festival:0",
-   "label": "Brooklyn Book Festival",
-   "kind": "venue",
-   "url": "https://brooklynbookfestival.org/event",
-   "ok": true,
-   "count": 0,
-   "parsed": 14
-  },
-  {
-   "id": "venue:earth4all:0",
-   "label": "Earth4All",
-   "kind": "venue",
-   "url": "https://earth4all.life/event-list/",
-   "ok": true,
-   "count": 0,
-   "parsed": 12
-  },
-  {
-   "id": "venue:centre-for-the-understanding-of-sustainable-prosperity:0",
-   "label": "Centre for the Understanding of Sustainable Prosperity",
-   "kind": "venue",
-   "url": "https://cusp.ac.uk/events/",
-   "ok": true,
-   "count": 0,
-   "parsed": 26
-  },
-  {
-   "id": "venue:life-itself:0",
-   "label": "Life Itself",
-   "kind": "venue",
-   "url": "https://lifeitself.org/events",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
-  },
-  {
-   "id": "venue:navdanya-international:0",
-   "label": "Navdanya International",
-   "kind": "venue",
-   "url": "https://navdanyainternational.org/upcoming-actions/",
-   "ok": true,
-   "count": 0,
-   "parsed": 0
+   "parsed": 51,
+   "reach": "2027-06-03"
   },
   {
    "id": "venue:luma-nyc:0",
@@ -1377,18 +1239,248 @@
    "url": "https://api.lu.ma/discover/get-paginated-events?latitude=40.73&longitude=-73.98&pagination_limit=50",
    "ok": true,
    "count": 1,
-   "parsed": 1504
+   "parsed": 1511,
+   "reach": "2027-10-27"
   },
   {
-   "id": "venue:wendy-s-subway:0",
-   "label": "Wendy's Subway",
+   "id": "venue:climate-cafe-nyc:0",
+   "label": "Climate Cafe NYC",
    "kind": "venue",
-   "url": "https://www.wendyssubway.com/programs",
-   "ok": false,
+   "url": "https://www.climatecafe.eco/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 9,
+   "reach": "2026-11-21"
+  },
+  {
+   "id": "venue:data-society:0",
+   "label": "Data & Society",
+   "kind": "venue",
+   "url": "https://datasociety.net/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 13,
+   "reach": "2026-12-03"
+  },
+  {
+   "id": "venue:democracy-collaborative:0",
+   "label": "Democracy Collaborative",
+   "kind": "venue",
+   "url": "https://www.democracycollaborative.org/events?format=json",
+   "ok": true,
    "count": 0,
    "parsed": 0,
-   "lastGood": "2026-11-06T18:32:13.796Z",
-   "error": "fetch failed"
+   "reach": null
+  },
+  {
+   "id": "venue:doughnut-economics-action-lab:0",
+   "label": "Doughnut Economics Action Lab",
+   "kind": "venue",
+   "url": "https://doughnuteconomics.org/events.xml",
+   "ok": true,
+   "count": 0,
+   "parsed": 20,
+   "reach": "2026-12-17"
+  },
+  {
+   "id": "venue:roosevelt-institute:0",
+   "label": "Roosevelt Institute",
+   "kind": "venue",
+   "url": "https://rooseveltinstitute.org/event",
+   "ok": true,
+   "count": 0,
+   "parsed": 8,
+   "reach": "2026-10-26"
+  },
+  {
+   "id": "venue:commonweal:0",
+   "label": "Commonweal",
+   "kind": "venue",
+   "url": "https://www.commonweal.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 36,
+   "reach": "2027-05-04"
+  },
+  {
+   "id": "venue:haymarket-books:0",
+   "label": "Haymarket Books",
+   "kind": "venue",
+   "url": "https://www.haymarketbooks.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 8,
+   "reach": "2026-11-20"
+  },
+  {
+   "id": "venue:literary-hub:0",
+   "label": "Literary Hub",
+   "kind": "venue",
+   "url": "https://lithub.com/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 2,
+   "reach": "2026-11-06"
+  },
+  {
+   "id": "venue:poets-house:0",
+   "label": "Poets House",
+   "kind": "venue",
+   "url": "https://poetshouse.org/wp-json/tribe/events/v1/events?per_page=50",
+   "ok": true,
+   "count": 0,
+   "parsed": 36,
+   "reach": "2027-02-27"
+  },
+  {
+   "id": "venue:nyu-stern-center-for-sustainable-business:0",
+   "label": "NYU Stern Center for Sustainable Business",
+   "kind": "venue",
+   "url": "https://www.stern.nyu.edu/experience-stern/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 3,
+   "reach": "2026-12-01"
+  },
+  {
+   "id": "venue:skirball-center-nyu:0",
+   "label": "Skirball Center NYU",
+   "kind": "venue",
+   "url": "https://nyuskirball.org/whats-on/",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:local-futures:0",
+   "label": "Local Futures",
+   "kind": "venue",
+   "url": "https://www.localfutures.org/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 1,
+   "reach": "2025-09-03"
+  },
+  {
+   "id": "venue:the-bell-house:0",
+   "label": "The Bell House",
+   "kind": "venue",
+   "url": "https://www.thebellhouseny.com/calendar",
+   "ok": true,
+   "count": 0,
+   "parsed": 36,
+   "reach": "2026-12-02"
+  },
+  {
+   "id": "venue:institute-for-policy-studies:0",
+   "label": "Institute for Policy Studies",
+   "kind": "venue",
+   "url": "https://ips-dc.org/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 2,
+   "reach": "2026-11-24"
+  },
+  {
+   "id": "venue:othering-belonging-institute:0",
+   "label": "Othering & Belonging Institute",
+   "kind": "venue",
+   "url": "https://belonging.berkeley.edu/events",
+   "ok": true,
+   "count": 1,
+   "parsed": 3,
+   "reach": "2026-11-14"
+  },
+  {
+   "id": "venue:earth4all:0",
+   "label": "Earth4All",
+   "kind": "venue",
+   "url": "https://earth4all.life/event-list/",
+   "ok": true,
+   "count": 0,
+   "parsed": 12,
+   "reach": "2026-10-28"
+  },
+  {
+   "id": "venue:centre-for-the-understanding-of-sustainable-prosperity:0",
+   "label": "Centre for the Understanding of Sustainable Prosperity",
+   "kind": "venue",
+   "url": "https://cusp.ac.uk/events/",
+   "ok": true,
+   "count": 0,
+   "parsed": 26,
+   "reach": "2026-08-27"
+  },
+  {
+   "id": "venue:the-new-york-society-library:0",
+   "label": "The New York Society Library",
+   "kind": "venue",
+   "url": "https://www.nysoclib.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 82,
+   "reach": "2026-12-11"
+  },
+  {
+   "id": "venue:navdanya-international:0",
+   "label": "Navdanya International",
+   "kind": "venue",
+   "url": "https://navdanyainternational.org/upcoming-actions/",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:life-itself:0",
+   "label": "Life Itself",
+   "kind": "venue",
+   "url": "https://lifeitself.org/events",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:brooklyn-book-festival:0",
+   "label": "Brooklyn Book Festival",
+   "kind": "venue",
+   "url": "https://brooklynbookfestival.org/event",
+   "ok": true,
+   "count": 0,
+   "parsed": 51,
+   "reach": "2026-09-28"
+  },
+  {
+   "id": "venue:club-of-rome:0",
+   "label": "Club of Rome",
+   "kind": "venue",
+   "url": "https://www.clubofrome.org/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 0,
+   "reach": null
+  },
+  {
+   "id": "venue:columbia:0",
+   "label": "Columbia University",
+   "kind": "venue",
+   "url": "https://events.columbia.edu/feeder/main/eventsFeed.do?f=y&sort=dtstart.utc:asc&fexpr=(categories.href!=%22/public/.bedework/categories/sys/Ongoing%22)&skinName=list-json&count=100",
+   "ok": true,
+   "count": 4,
+   "parsed": 908,
+   "reach": "2027-10-06"
+  },
+  {
+   "id": "venue:les-ecology-center:0",
+   "label": "LES Ecology Center",
+   "kind": "venue",
+   "url": "https://www.lesecologycenter.org/events/?ical=1",
+   "ok": true,
+   "count": 0,
+   "parsed": 800,
+   "reach": "2027-11-24"
   }
  ],
  "events": [
@@ -1613,38 +1705,6 @@
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
   {
-   "id": "1e9851ceb1ee",
-   "title": "Resisting the New Fascisms, hosted by Internazionale",
-   "authorIds": [
-    "naomi-klein"
-   ],
-   "authors": [
-    "Naomi Klein"
-   ],
-   "day": "2026-11-10",
-   "endDay": null,
-   "start": "2026-11-10T17:00:00.000Z",
-   "end": null,
-   "allDay": true,
-   "timeText": "6:30pm",
-   "region": "elsewhere",
-   "place": "Rome",
-   "venue": null,
-   "lat": 41.9028,
-   "lng": 12.4964,
-   "approxPin": true,
-   "url": "https://naomiklein.org/events/",
-   "description": null,
-   "via": "author",
-   "match": "site",
-   "topic": null,
-   "yearInferred": false,
-   "sourceId": "author:naomi-klein:0",
-   "sourceLabel": "Naomi Klein's site",
-   "alsoAt": [],
-   "firstSeen": "2026-11-06T18:32:13.796Z"
-  },
-  {
    "id": "78f2de2fec65",
    "title": "Enshittification (Sid Williams Theatre Society)",
    "authorIds": [
@@ -1673,6 +1733,38 @@
    "yearInferred": true,
    "sourceId": "author:cory-doctorow:0",
    "sourceLabel": "Cory Doctorow's site",
+   "alsoAt": [],
+   "firstSeen": "2026-11-06T18:32:13.796Z"
+  },
+  {
+   "id": "1e9851ceb1ee",
+   "title": "Resisting the New Fascisms, hosted by Internazionale",
+   "authorIds": [
+    "naomi-klein"
+   ],
+   "authors": [
+    "Naomi Klein"
+   ],
+   "day": "2026-11-10",
+   "endDay": null,
+   "start": "2026-11-10T17:00:00.000Z",
+   "end": null,
+   "allDay": true,
+   "timeText": "6:30pm",
+   "region": "elsewhere",
+   "place": "Rome",
+   "venue": null,
+   "lat": 41.9028,
+   "lng": 12.4964,
+   "approxPin": true,
+   "url": "https://naomiklein.org/events/",
+   "description": null,
+   "via": "author",
+   "match": "site",
+   "topic": null,
+   "yearInferred": false,
+   "sourceId": "author:naomi-klein:0",
+   "sourceLabel": "Naomi Klein's site",
    "alsoAt": [],
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
@@ -1739,38 +1831,6 @@
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
   {
-   "id": "2b308c903510",
-   "title": "The dissonances in the world in which we live, hosted by La Milanesiana and DisArch Project",
-   "authorIds": [
-    "naomi-klein"
-   ],
-   "authors": [
-    "Naomi Klein"
-   ],
-   "day": "2026-11-12",
-   "endDay": null,
-   "start": "2026-11-12T17:00:00.000Z",
-   "end": null,
-   "allDay": true,
-   "timeText": "12:00pm – 1:30pm",
-   "region": "elsewhere",
-   "place": "Pavia",
-   "venue": null,
-   "lat": 45.1847,
-   "lng": 9.1582,
-   "approxPin": true,
-   "url": "https://www.eventbrite.it/e/le-dissonanze-nel-mondo-in-cui-viviamo-naomi-klein-astra-taylor-tickets-2004110767254",
-   "description": "More info here",
-   "via": "author",
-   "match": "site",
-   "topic": null,
-   "yearInferred": false,
-   "sourceId": "author:naomi-klein:0",
-   "sourceLabel": "Naomi Klein's site",
-   "alsoAt": [],
-   "firstSeen": "2026-11-06T18:32:13.796Z"
-  },
-  {
    "id": "28793997588f",
    "title": "BC Policy Solutions Gala",
    "authorIds": [
@@ -1799,6 +1859,38 @@
    "yearInferred": true,
    "sourceId": "author:cory-doctorow:0",
    "sourceLabel": "Cory Doctorow's site",
+   "alsoAt": [],
+   "firstSeen": "2026-11-06T18:32:13.796Z"
+  },
+  {
+   "id": "2b308c903510",
+   "title": "The dissonances in the world in which we live, hosted by La Milanesiana and DisArch Project",
+   "authorIds": [
+    "naomi-klein"
+   ],
+   "authors": [
+    "Naomi Klein"
+   ],
+   "day": "2026-11-12",
+   "endDay": null,
+   "start": "2026-11-12T17:00:00.000Z",
+   "end": null,
+   "allDay": true,
+   "timeText": "12:00pm – 1:30pm",
+   "region": "elsewhere",
+   "place": "Pavia",
+   "venue": null,
+   "lat": 45.1847,
+   "lng": 9.1582,
+   "approxPin": true,
+   "url": "https://www.eventbrite.it/e/le-dissonanze-nel-mondo-in-cui-viviamo-naomi-klein-astra-taylor-tickets-2004110767254",
+   "description": "More info here",
+   "via": "author",
+   "match": "site",
+   "topic": null,
+   "yearInferred": false,
+   "sourceId": "author:naomi-klein:0",
+   "sourceLabel": "Naomi Klein's site",
    "alsoAt": [],
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
@@ -1833,6 +1925,38 @@
    "sourceLabel": "Robin Wall Kimmerer's site",
    "alsoAt": [],
    "firstSeen": "2026-11-06T18:32:13.796Z"
+  },
+  {
+   "id": "c01ba0029b28",
+   "title": "International Economics & Geopolitics Seminar | Daron Acemoglu",
+   "authorIds": [
+    "daron-acemoglu"
+   ],
+   "authors": [
+    "Daron Acemoglu"
+   ],
+   "day": "2026-11-12",
+   "endDay": null,
+   "start": "2026-11-12T23:00:00.000Z",
+   "end": "2026-11-13T00:30:00.000Z",
+   "allDay": false,
+   "timeText": null,
+   "region": "nyc",
+   "place": "International Affairs Building, 420 W. 118 St., New York, NY 10027 1501",
+   "venue": "Columbia University",
+   "lat": 40.8075,
+   "lng": -73.9626,
+   "approxPin": false,
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a0ae6e56-01a0-b04956d3-0000411bevents%40columbia.edu&recurrenceId=",
+   "description": "International Economics and Geopolitics Seminar with Daron Acemoglu (MIT)\n\nWhat Happened to Liberal Democracy? Remaking a Politics of Shared Prosperity\n\nThe Columbia International Economics & Geopolitics Seminar, organized by Jeff Frieden and Alan Taylor and…",
+   "via": "venue",
+   "match": "title",
+   "topic": null,
+   "yearInferred": false,
+   "sourceId": "venue:columbia:0",
+   "sourceLabel": "Columbia University",
+   "alsoAt": [],
+   "firstSeen": "2026-11-06T20:43:47.702Z"
   },
   {
    "id": "95f514432bb6",
@@ -1999,6 +2123,72 @@
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
   {
+   "id": "897d12b44f3c",
+   "title": "Man in the Mirror: Hope, Struggle, and Belonging in an American City",
+   "authorIds": [
+    "anand-giridharadas"
+   ],
+   "authors": [
+    "Anand Giridharadas"
+   ],
+   "day": "2026-11-17",
+   "endDay": null,
+   "start": "2026-11-17T23:00:00.000Z",
+   "end": "2026-11-18T01:00:00.000Z",
+   "allDay": false,
+   "timeText": null,
+   "region": "nyc",
+   "place": "Pulitzer Hall, 2950 Broadway, New York, NY 10027 Lecture Hall",
+   "venue": "Columbia University",
+   "lat": 40.8075,
+   "lng": -73.9626,
+   "approxPin": false,
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a1aaf72f-01a1-ad50c90d-000066ddevents%40columbia.edu&recurrenceId=",
+   "description": "Man in the Mirror: Hope, Struggle, and Belonging in an American City\n\nAuthor Anand Giridharadas discusses his new book with author and journalist Jodi Kantor.\n\nIn 2023, the lives of two men, Jordan Neely, a homeless man known in better…",
+   "via": "venue",
+   "match": "listing",
+   "topic": null,
+   "yearInferred": false,
+   "sourceId": "venue:columbia:0",
+   "sourceLabel": "Columbia University",
+   "alsoAt": [],
+   "firstSeen": "2026-11-06T20:43:47.702Z"
+  },
+  {
+   "id": "1e8ee25ec4e8",
+   "title": "On \"The Alibi of Capital\", Timothy Mitchell and Adam Tooze",
+   "authorIds": [
+    "adam-tooze"
+   ],
+   "authors": [
+    "Adam Tooze"
+   ],
+   "day": "2026-11-17",
+   "endDay": null,
+   "start": "2026-11-17T23:15:00.000Z",
+   "end": "2026-11-18T00:30:00.000Z",
+   "allDay": false,
+   "timeText": null,
+   "region": "nyc",
+   "place": "Fayerweather Hall, 1180 Amsterdam Ave., New York, NY 10027 413",
+   "venue": "Columbia University",
+   "lat": 40.8075,
+   "lng": -73.9626,
+   "approxPin": false,
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a167ceb0-01a1-6a222c89-00001050events%40columbia.edu&recurrenceId=",
+   "description": "Join the Committee on Global Thought (CGT) for a book talk with Timothy Mitchell, William B. Ransford Professor of Middle Eastern, South Asian, and African Studies, on his new book, The Alibi of Capital: How We Broke the Earth to Steal the Future on the Promise of a Better Tomorrow</…",
+   "via": "venue",
+   "match": "title",
+   "topic": null,
+   "yearInferred": false,
+   "sourceId": "venue:columbia:0",
+   "sourceLabel": "Columbia University",
+   "alsoAt": [
+    "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a1aafbda-01a1-aceba542-0000458cevents%40columbia.edu&recurrenceId="
+   ],
+   "firstSeen": "2026-11-06T20:43:47.702Z"
+  },
+  {
    "id": "5cc138e3474b",
    "title": "The Plant Initiative",
    "authorIds": [
@@ -2152,7 +2342,7 @@
    "lng": -1.2577,
    "approxPin": true,
    "url": "https://www.kimstanleyrobinson.info/event/ksr-brian-eno-a-history-of-utopia/",
-   "description": "What does it mean to build a liveable future – and who gets to imagine it?\nSince its creation by Thomas More in his 1516 work of political fiction, the concept of utopia has appeared throughout politics, philosophy and culture.\nIn this unique collaboration as part of Oxford Ministry for the Future’…",
+   "description": "What does it mean to build a liveable future – and who gets to imagine it?\n\nSince its creation by Thomas More in his 1516 work of political fiction, the concept of utopia has appeared throughout politics, philosophy and culture.\n\nIn this unique collaboration as part of Oxford Ministry for the Futur…",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2344,7 +2534,7 @@
    "lng": -122.4194,
    "approxPin": true,
    "url": "https://www.kimstanleyrobinson.info/event/litquake-san-francisco-literary-festival/",
-   "description": "The Best Journey in the World: An Antarctic Story with Kim Stanley Robinson\nWednesday January 6, 2027 7:30pm – 9:00pm PST\nGrace Cathedral\nCo-presented with Grace Cathedral’s The Forum\nInterweaving memoir and good old fashioned ice adventure, Kim Stanley Robinson’s latest takes readers along on the…",
+   "description": "The Best Journey in the World: An Antarctic Story with Kim Stanley Robinson\n\nWednesday January 6, 2027 7:30pm – 9:00pm PST\n\nGrace Cathedral\n\nCo-presented with Grace Cathedral’s The Forum\n\nInterweaving memoir and good old fashioned ice adventure, Kim Stanley Robinson’s latest takes readers along on…",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2376,7 +2566,7 @@
    "lng": null,
    "approxPin": false,
    "url": "https://robinwallkimmerer.com/event/loyola-marymount-university/",
-   "description": "Global Conversations\nIndigenous Knowledge, Environmental Justice, Reciprocity & Interconnectedness",
+   "description": "Global Conversations\n\nIndigenous Knowledge, Environmental Justice, Reciprocity & Interconnectedness",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2472,7 +2662,7 @@
    "lng": null,
    "approxPin": false,
    "url": "https://robinwallkimmerer.com/event/california-institute-of-integral-studies/",
-   "description": "An Evening with Robin Wall Kimmerer\nThe Serviceberry, Braiding Sweetgrass & Plant, Baby, Plant",
+   "description": "An Evening with Robin Wall Kimmerer\n\nThe Serviceberry, Braiding Sweetgrass & Plant, Baby, Plant",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2568,7 +2758,7 @@
    "lng": null,
    "approxPin": false,
    "url": "https://robinwallkimmerer.com/event/university-of-arkansas-native-american-student-services/",
-   "description": "Reciprocity, Restoration, and Relational Ozarks\nIndigeneity, Storytelling and Conversation",
+   "description": "Reciprocity, Restoration, and Relational Ozarks\n\nIndigeneity, Storytelling and Conversation",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2600,7 +2790,7 @@
    "lng": null,
    "approxPin": false,
    "url": "https://robinwallkimmerer.com/event/new-jersey-education-association/",
-   "description": "New Jersey Education Association Keynote and Conversation\nNJEA Transform Conference 2027",
+   "description": "New Jersey Education Association Keynote and Conversation\n\nNJEA Transform Conference 2027",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2675,7 +2865,7 @@
    "firstSeen": "2026-11-06T18:32:13.796Z"
   },
   {
-   "id": "493549f5a282",
+   "id": "43fefe504d61",
    "title": "Cascade Head Biosphere Collaborative",
    "authorIds": [
     "robin-wall-kimmerer"
@@ -2683,10 +2873,10 @@
    "authors": [
     "Robin Wall Kimmerer"
    ],
-   "day": "2027-09-25",
-   "endDay": "2027-09-27",
-   "start": "2027-09-25T16:00:00.000Z",
-   "end": "2027-09-27T16:00:00.000Z",
+   "day": "2027-09-24",
+   "endDay": "2027-09-26",
+   "start": "2027-09-25T00:00:00.000Z",
+   "end": "2027-09-26T23:59:59.000Z",
    "allDay": true,
    "timeText": null,
    "region": "elsewhere",
@@ -2696,7 +2886,7 @@
    "lng": null,
    "approxPin": false,
    "url": "https://robinwallkimmerer.com/event/cascade-head-biosphere-collaborative/",
-   "description": "Full Heart Productions & Cascade Head Biosphere Collaborative\nBraiding Sweetgrass, The Serviceberry, Gathering Moss, The Democracy of Species & Bud Finds Her Gift\nOtis, OR",
+   "description": "Full Heart Productions & Cascade Head Biosphere Collaborative\n\nBraiding Sweetgrass, The Serviceberry, Gathering Moss, The Democracy of Species & Bud Finds Her Gift\n\nOtis, OR",
    "via": "author",
    "match": "site",
    "topic": null,
@@ -2704,223 +2894,251 @@
    "sourceId": "author:robin-wall-kimmerer:0",
    "sourceLabel": "Robin Wall Kimmerer's site",
    "alsoAt": [],
-   "firstSeen": "2026-11-06T18:32:13.796Z"
+   "firstSeen": "2026-11-06T20:46:00.444Z"
+  },
+  {
+   "id": "fbfa2d223990",
+   "title": "Petrov Day",
+   "authorIds": [],
+   "authors": [],
+   "day": "2027-09-26",
+   "endDay": "2027-09-27",
+   "start": "2027-09-26T16:00:00.000Z",
+   "end": "2027-09-27T16:00:00.000Z",
+   "allDay": true,
+   "timeText": null,
+   "region": "nyc",
+   "place": "Effective Altruism NYC",
+   "venue": "Effective Altruism NYC",
+   "lat": null,
+   "lng": null,
+   "approxPin": false,
+   "url": "https://www.lesswrong.com/posts/QtyKq4BDyuJ3tysoK/9-26-is-petrov-day",
+   "description": "\"Wherever you are, whatever you're doing, take a minute to not destroy the world.\"\n\nhttps://www.lesswrong.com/posts/QtyKq4BDyuJ3tysoK/9-26-is-petrov-day\nhttps://en.wikipedia.org/wiki/The_Man_Who_Saved_the_World\n\nWays to celebrate:\n\n* Screening of the film \"The Man Who Saved The World\"? (It's pretty…",
+   "via": "topic",
+   "match": "topic",
+   "topic": "existential risk",
+   "yearInferred": false,
+   "sourceId": "venue:effective-altruism-nyc:0",
+   "sourceLabel": "Effective Altruism NYC",
+   "alsoAt": [],
+   "firstSeen": "2026-11-06T20:43:47.702Z"
   }
  ],
  "pages": {
   "charles-eisenstein": {
    "hash": "87845090bf45b9148785be037ee701647e53233f",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "iain-mcgilchrist": {
    "hash": "a2d82fb05ea3d317349d7ba5fc9d416cce4fcb97",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "adam-tooze": {
    "hash": "2e4f20b26af36b987304c5489a82a0d92d07edd9",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "bayo-akomolafe": {
    "hash": "80008aac67bbebe8394a702e13e6ddc09a564379",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "lene-rachel-andersen": {
    "hash": "342be24e58b981f0bec59b28a4d2599ca82caaaf",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "rebecca-solnit": {
    "hash": "08bef48d9c3725fc24d921106a2ea8148d27d4ed",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "peter-turchin": {
    "hash": "802b0e8e831fabbe39f7c9512aefc1c46d1cc366",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "timothy-snyder": {
    "hash": "246e6939e1bec2ee30c954cde1abaa83aaa6dcca",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "yuval-noah-harari": {
    "hash": "7af256d95db0177b9072d2c9ca95064084dcc58d",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "jeremy-lent": {
    "hash": "5f11a726b4f9a9b3e986f63ad6458c6319efa2d7",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "timnit-gebru": {
    "hash": "2b676b0b38dd5c5b6d7ed42109b6997bc60c6984",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "karen-hao": {
    "hash": "362ba63c24a62ba3d11df4b7a2a8efb28f5e0b14",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "douglas-rushkoff": {
    "hash": "6dc58beb044687096cb24272243a6d638d80883b",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "audrey-tang": {
    "hash": "59aeadca830b522aeee9e73f7b54a6a956eec8e5",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "rutger-bregman": {
    "hash": "aa14cd9f3930e4c0c8f22c1b1e415b86ac0276d2",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "marjorie-kelly": {
    "hash": "d90279c72e23b89893c1374b79a9e69959662672",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "michael-e-mann": {
    "hash": "454f22dbae8bbebc62dd91238860c89067b042e2",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "cory-doctorow": {
    "hash": "e72db46800ff1dbb2670f884bcb2fc860ccd34f7",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "alex-hanna": {
    "hash": "d299c53aff65b527ac5be127273280d76b5592df",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "katharine-hayhoe": {
    "hash": "7385e7d9a09d8485bf7fcca12634cfafb7effff2",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "dougald-hine": {
    "hash": "0a72abdd7da738950a49a9b529b83a0bda66b8d6",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "johann-hari": {
    "hash": "943420bda0c51a8e86f173895deb296beb96e398",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "amitav-ghosh": {
    "hash": "2be141812879830e270e8f783ed217339408c10e",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "andrew-boyd": {
    "hash": "7f03806d7359c3e07eb7f5a0ed4c28698f92fa7e",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "david-korten": {
    "hash": "2472eace99d5fedf7c05aa1a47a5a5f011a02996",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "hunter-lovins": {
    "hash": "3bfa1fdc3c5245e12cda5d1e24a989aaba90c13d",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "james-bridle": {
    "hash": "ba216730496ebafb88cacd2fac151407d9b53a66",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "samantha-sweetwater": {
    "hash": "6cba8592b34c8c630ed048cf363393647cb6e9c6",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "david-abram": {
    "hash": "efed085536a7eb5ceef87e8753088a9f6c2d3f09",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "thomas-piketty": {
    "hash": "3fe1729aff7dd5bfdf43a8b264c7e381035f4a53",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "starhawk": {
    "hash": "8d1bb21940bb56f9d87dee9df69f143e30dab26d",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "chris-smaje": {
-   "hash": "66b61c26fdae800f24da7d553fcf4c3cabba9c7f",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
-   "changedAt": null
+   "hash": "ea7d1a5ed3b9a03a87547bf8bc87a5134830c93a",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
+   "changedAt": "2026-11-06T20:42:16.875Z"
   },
   "becky-chambers": {
    "hash": "df22ea0772923dc33dfc524939a1e47c1d067484",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "leanne-betasamosake-simpson": {
    "hash": "debd77a0f4f677e33902e25ea6e707c673f12874",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "neal-stephenson": {
    "hash": "214d78cab9c8eab32a1b37d0fc39c252759bf2f7",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "laurie-laybourn": {
    "hash": "d26a6d872e5ec7080a1add608afa694419dbff66",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "david-bollier": {
-   "hash": "e84eddde36be30e2c0bb85265ea0529eb5ddb2d9",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
-   "changedAt": "2026-11-06T19:38:15.976Z"
+   "hash": "043061ed018596a575e999ad1675cf3a7a9c980e",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
+   "changedAt": "2026-11-06T20:46:00.444Z"
   },
   "jorgen-randers": {
    "hash": "092a910edaea79a52ae7ab6bc52be6308bf99e9a",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "anne-therese-gennari": {
    "hash": "015499939b5c3776c986fed2ed6d68a615190fb3",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "matthias-schmelzer": {
    "hash": "bce24f07ff0d637080159fce673f7f0e1e5584a0",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "naomi-klein": {
    "hash": "76a7958933e28156f26674eab5209c6bd914858d",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "peter-frase": {
    "hash": "4529418fb99971327f800c79ce392153a35dc428",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   },
   "matt-haig": {
    "hash": "6c13eb6dbd059e7229f22c149a87a1e6ad91d11c",
-   "checkedAt": "2026-11-06T19:38:15.976Z",
+   "checkedAt": "2026-11-06T20:46:00.444Z",
    "changedAt": null
   }
  }

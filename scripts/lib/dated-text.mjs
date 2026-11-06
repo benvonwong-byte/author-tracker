@@ -291,3 +291,26 @@ export function parseCalendarLinks(html, src) {
   }
   return out;
 }
+
+// The address of the next page of a listing, or null. Only a link that says it
+// is the next page counts, so this cannot wander off into the rest of a site.
+export function nextPage(html, url, pageNumber) {
+  const here = new URL(url);
+  const rel =
+    html.match(/<(?:link|a)\b[^>]*\brel=["']next["'][^>]*\bhref=["']([^"']+)["']/i) ??
+    html.match(/<(?:link|a)\b[^>]*\bhref=["']([^"']+)["'][^>]*\brel=["']next["']/i);
+  const candidates = rel ? [rel[1]] : [];
+  const numbered = new RegExp(`(?:[?&](?:page|paged|p|pg)=${pageNumber + 1}(?:&|$)|/page/${pageNumber + 1}/?(?:[?#]|$))`, "i");
+  for (const m of html.matchAll(/href=["']([^"']+)["']/gi)) {
+    if (numbered.test(m[1].replace(/&amp;/g, "&"))) candidates.push(m[1]);
+  }
+  for (const c of candidates) {
+    try {
+      const u = new URL(c.replace(/&amp;/g, "&"), here);
+      if (u.origin === here.origin) return u.href;
+    } catch {
+      /* not a URL */
+    }
+  }
+  return null;
+}

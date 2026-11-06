@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { findDate, parseDatedText, parseCalendarLinks } from "../scripts/lib/dated-text.mjs";
+import { findDate, parseDatedText, parseCalendarLinks, nextPage } from "../scripts/lib/dated-text.mjs";
 import { classify } from "../scripts/lib/place.mjs";
 import { buildMatcher, findTopic } from "../scripts/lib/match.mjs";
 
@@ -109,4 +109,13 @@ test("Google Calendar links give the exact title, time and place", () => {
   assert.equal(e.location, "Portland, OR");
   assert.equal(new Date(e.startMs).toISOString(), "2026-11-08T02:00:00.000Z");
   assert.equal(e.url, "https://example.org/events");
+});
+
+test("nextPage follows a real next link and nothing else", () => {
+  const url = "https://example.org/events/";
+  assert.equal(nextPage(`<a href="/events/page/2/">2</a>`, url, 1), "https://example.org/events/page/2/");
+  assert.equal(nextPage(`<a href="?page=3">3</a><a href="?page=2">2</a>`, url, 1), "https://example.org/events/?page=2");
+  assert.equal(nextPage(`<link rel="next" href="https://example.org/events?offset=20">`, url, 1), "https://example.org/events?offset=20");
+  assert.equal(nextPage(`<a href="https://other.org/events/page/2/">2</a>`, url, 1), null);
+  assert.equal(nextPage(`<a href="/about">About</a>`, url, 1), null);
 });

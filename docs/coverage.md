@@ -10,6 +10,19 @@ Checked 6 November 2026.
 
 An author's own page is the only source that puts them at an event without naming them in the listing. An institute's calendar that does not name the person (Local Futures for Helena Norberg-Hodge, for example) goes in `data/venues.json`, not on the author, so nobody is shown at an event they are not at.
 
+## How far ahead it looks
+
+The fetcher keeps anything in the next 400 days, but that only helps if a source hands over that much. Several do not by default, so each has its own handling:
+
+| Source | Limit | What the fetcher does |
+|---|---|---|
+| Columbia | 100 events per request | Walks the year, and splits any window that comes back full |
+| WordPress calendars | Exports only their next 30 or so events | Uses the REST API, or one export per month |
+| Paginated event pages | The first page only holds the soonest | Follows next-page links, up to 8 |
+| Eventbrite | 20 per page, soonest first | Reads up to 4 pages, slowly |
+
+Run `node scripts/show-events.mjs --reach` to see how far each calendar really goes. A small organization that only lists the next few weeks shows up short here, and nothing can be done about that from this side. Each source's furthest date is stored as `reach` in `data/events.json`.
+
 ## Not read
 
 These are in `data/unreadable.json` and the page footer.
