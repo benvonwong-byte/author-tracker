@@ -12,7 +12,7 @@ data/authors.json ─┐
 data/venues.json  ─┘                                                   (site, RSS, .ics, JSON-LD)
 ```
 
-A GitHub Action runs this every morning and on every push to `main`. It needs Node 20 or newer, no dependencies and no API keys.
+A GitHub Action runs this every morning and on every push to `main`. A small Cloudflare Worker in `worker/` serves the result at authors.dearcrisis.com. It needs Node 20 or newer, no dependencies and no API keys.
 
 There are two kinds of source, because neither is enough alone:
 

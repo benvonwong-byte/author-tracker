@@ -6,17 +6,17 @@ The site rebuilds itself every morning on GitHub's servers. GitHub Actions reads
 
 `.github/workflows/deploy.yml` runs every day at 11:23 UTC, on every push to `main`, and by hand from the Actions tab. It runs the gate, reads every feed, builds, checks the share card, commits the refreshed data on the daily runs, and publishes `dist/`.
 
-## First deploy
+## Where it lives
 
-1. Create the repository and push `main`.
-2. Settings, Pages, Source: GitHub Actions.
-3. Until the custom domain is set, the site is at benvonwong-byte.github.io/author-tracker.
-4. Add a Cloudflare DNS record in the dearcrisis.com zone: CNAME `authors` to `benvonwong-byte.github.io`, DNS only. Then Settings, Pages, Custom domain: `authors.dearcrisis.com`, and enforce HTTPS. Set the record first: setting the domain without it sends the github.io address to a name that does not resolve.
+GitHub Pages serves the site at `benvonwong-byte.github.io/author-tracker`. `authors.dearcrisis.com` is a small Cloudflare Worker (`worker/index.js`, deployed with `npx wrangler deploy`, not by CI) that forwards every request there and caches good answers for five minutes. A Worker is there because the Cloudflare login this project has can attach a domain to a Worker but cannot edit DNS records. The Worker only changes when `worker/index.js` does, so the daily rebuild does not touch it.
 
-5. In the DearCrisis repo, add this site to the private atlas (`src/data/map/atlas.mjs`), which lists every service the project runs.
+To replace it with a plain record, the way Sunset Events works: run `npx wrangler delete`, add a Cloudflare record (CNAME `authors` to `benvonwong-byte.github.io`, DNS only), then set Settings, Pages, Custom domain to `authors.dearcrisis.com` and enforce HTTPS. Set the record first: setting the domain without it sends the github.io address to a name that does not resolve.
+
+To take the site down: `npx wrangler delete`, then Settings, Pages, Unpublish.
 
 ## Still open
 
+- Merge dear-crisis PR #117, the atlas entry for this site.
 - Review the author list. Many blurbs in `data/authors.json` rely partly on general knowledge of the book, and a few shelf authors are off topic.
 - Write to The Strand, McNally Jackson and Greenlight about a feed. `docs/coverage.md` explains why this is the biggest gap.
 

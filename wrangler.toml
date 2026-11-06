@@ -1,0 +1,6 @@
+# The Worker behind authors.dearcrisis.com. Deploy with: npx wrangler deploy
+name = "authors-in-town"
+main = "worker/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+routes = [{ pattern = "authors.dearcrisis.com", custom_domain = true }]
