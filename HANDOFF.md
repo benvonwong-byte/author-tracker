@@ -20,6 +20,8 @@ Eventbrite, Poets House, Wendy's Subway and the Explorers Club refuse requests f
 
 The home run also searches Eventbrite by author name, 40 authors a morning at one every six seconds, oldest search first, so everyone comes round in about a week if Eventbrite allows it. It stopped the first test at 14 searches, so check `data/name-search.json` after a few mornings to see the real pace. What it finds is remembered in `data/name-search.json`, which GitHub's run reads but never searches. If Eventbrite refuses a search, that morning's searching stops and the rest stay first in line. Set `NAME_SEARCH_LIMIT` to change the daily number.
 
+The home run also opens 92NY, The New School, McNally Jackson and Word in headless Chrome. `home-refresh.sh` installs `puppeteer-core` with `--no-save`, so it is never in `package.json`, and it uses the Mac's Google Chrome (`CHROME_PATH` to change that). `docs/coverage.md` has the rules: the browser says what it is, and a refusal is final for the day.
+
 `scripts/install-home-refresh.sh` installs the home run as a daily 5:50 AM launch agent, `com.dearcrisis.authors-refresh`, with logs in `/tmp/dc-authors-refresh.*.log`. **It is not installed yet.** Until it is, those sources only update when someone runs `home-refresh.sh` by hand, and their dates drop 30 days after that. The agent runs a copy of the script, so run the install script again after changing `home-refresh.sh`. Sunset Events' `HANDOFF.md` has the options if no Mac is available.
 
 Remove the agent with:
@@ -33,7 +35,7 @@ rm -rf ~/.authors-refresh
 ## Still open
 
 - Review the author list. Many blurbs in `data/authors.json` rely partly on general knowledge of the book, and a few shelf authors are off topic.
-- Write to 92NY, New York Public Library, The Strand and McNally Jackson about a feed. `docs/coverage.md` says what is still out of reach.
+- Write to 92NY, New York Public Library and The Center for Fiction about a feed. `docs/coverage.md` says what is still out of reach.
 
 ## Good to know
 

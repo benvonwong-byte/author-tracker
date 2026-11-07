@@ -1670,5 +1670,74 @@
     "url": "https://www.commonnotions.org/events1?format=json"
    }
   ]
+ },
+ {
+  "id": "92ny",
+  "name": "92NY",
+  "kind": "talks",
+  "lat": 40.7829,
+  "lng": -73.9527,
+  "site": "https://www.92ny.org/culture-arts/talks",
+  "homeOnly": true,
+  "feeds": [
+   {
+    "format": "browser",
+    "reader": "92ny",
+    "url": "https://www.92ny.org/whats-on/events?hierarchicalMenu%5BEventMenu.lvl0%5D%5B0%5D=Talks"
+   },
+   {
+    "format": "browser",
+    "reader": "92ny",
+    "url": "https://www.92ny.org/whats-on/events?hierarchicalMenu%5BEventMenu.lvl0%5D%5B0%5D=Literary%20Readings"
+   }
+  ]
+ },
+ {
+  "id": "new-school",
+  "name": "The New School",
+  "kind": "university",
+  "lat": 40.7355,
+  "lng": -73.9971,
+  "site": "https://events.newschool.edu/",
+  "homeOnly": true,
+  "feeds": [
+   {
+    "format": "browser",
+    "reader": "newschool",
+    "url": "https://events.newschool.edu/"
+   }
+  ]
+ },
+ {
+  "id": "mcnally-jackson",
+  "name": "McNally Jackson",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.mcnallyjackson.com/events",
+  "homeOnly": true,
+  "feeds": [
+   {
+    "format": "browser",
+    "reader": "indiecommerce",
+    "url": "https://mcnallyjackson.com/events"
+   }
+  ]
+ },
+ {
+  "id": "word",
+  "name": "Word Bookstores",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://wordbookstores.com/events",
+  "homeOnly": true,
+  "feeds": [
+   {
+    "format": "browser",
+    "reader": "indiecommerce",
+    "url": "https://wordbookstores.com/events"
+   }
+  ]
  }
 ]

@@ -28,6 +28,10 @@ cd "$CLONE"
 git fetch -q origin main
 git reset -q --hard origin/main
 
+# The calendars that only appear in a browser need this. It is not in package.json,
+# so GitHub's build stays free of dependencies. A failed install only skips them.
+npm install --silent --no-save --no-package-lock --ignore-scripts puppeteer-core || echo "$(date '+%F %T') authors refresh: no browser reader today"
+
 node scripts/fetch-events.mjs
 
 # Commit only the data files, on top of whatever main is now, so a script

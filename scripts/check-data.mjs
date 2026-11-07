@@ -13,7 +13,7 @@ const authors = read("data/authors.json");
 const venues = read("data/venues.json");
 const unreadable = read("data/unreadable.json");
 const CLUSTERS = new Set(["metacrisis", "polycrisis", "xrisk", "systems", "economy", "planet", "culture"]);
-const FORMATS = new Set(["text", "ics", "luma", "meetup", "tockify", "civicplus", "squarespace", "tribe", "mobilize", "rss", "rss-future", "jsonld", "eventbrite", "mahina", "fullcalendar", "columbia", "eventbrite-org", "prh"]);
+const FORMATS = new Set(["text", "ics", "luma", "meetup", "tockify", "civicplus", "squarespace", "tribe", "mobilize", "rss", "rss-future", "jsonld", "eventbrite", "mahina", "fullcalendar", "columbia", "eventbrite-org", "prh", "browser"]);
 const isHttp = (u) => typeof u === "string" && /^https?:\/\/\S+$/.test(u);
 
 const errors = [];
@@ -21,6 +21,7 @@ function feeds(at, list) {
   for (const f of list ?? []) {
     if (!FORMATS.has(f.format)) errors.push(`${at}: unknown feed format "${f.format}"`);
     if (!isHttp(f.url)) errors.push(`${at}: feed url must be http(s)`);
+    if (f.format === "browser" && !f.reader) errors.push(`${at}: a browser feed needs a reader`);
     for (const k of ["start", "stop", "skip"]) {
       if (f[k]) {
         try {

@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { findDate, parseDatedText, parseCalendarLinks, nextPage } from "../scripts/lib/dated-text.mjs";
 import { classify } from "../scripts/lib/place.mjs";
 import { buildMatcher, findTopic } from "../scripts/lib/match.mjs";
-import { parseEventbriteOrganizer, parsePrhEvents, searchSlug } from "../scripts/lib/listings.mjs";
+import { parseEventbriteOrganizer, parsePrhEvents, searchSlug, parseIndieCommerceEvents, parse92nyHits, parseNewSchoolHits } from "../scripts/lib/listings.mjs";
 
 const today = "2026-11-06";
 const parse = (html, src = {}) => parseDatedText(html, { url: "https://example.org/", ...src }, { today });
@@ -151,4 +151,31 @@ test("Penguin Random House: a date with a local clock time, and the page total",
 test("the Eventbrite search word for a name", () => {
   assert.equal(searchSlug("Slavoj Žižek"), "slavoj-zizek");
   assert.equal(searchSlug("Emily M. Bender"), "emily-m-bender");
+});
+
+test("a bookstore calendar on the shared template", () => {
+  const html = `<article id="event-1" class="event-list"><h3 class="event-list__title"><a href="/event/2026-11-30/x">Tiffany&#039;s Book Club</a></h3><div class="event-list__body"> Join us </div><span class="event-list__details--label">Date: </span> Mon, 11/30/2026 <span class="event-list__details--label">Time: </span> 7:00pm - 8:30pm <span class="address-line1">McNally Jackson Seaport</span><span class="address-line2">4 Fulton Street</span><span class="locality">New York</span>, <span class="administrative-area">NY</span> <span class="postal-code">10038</span></article>`;
+  const [e] = parseIndieCommerceEvents(html, "https://mcnallyjackson.com/events/2026/11");
+  assert.equal(e.title, "Tiffany's Book Club");
+  assert.equal(e.day, "2026-11-30");
+  assert.equal(e.timeText, "7:00pm");
+  assert.equal(e.location, "McNally Jackson Seaport, 4 Fulton Street, New York, NY 10038");
+  assert.equal(e.url, "https://mcnallyjackson.com/event/2026-11-30/x");
+});
+
+test("92NY: the clock time is New York's, written as if it were UTC", () => {
+  const seven = Date.UTC(2026, 10, 12, 19, 0) / 1000;
+  const [e, ...rest] = parse92nyHits([{ Title: "A Debate", URL: "/event/a", ShortDesc: "<em>Two</em> people", FuturePerformances: [{ perf_dt: seven }, { perf_dt: seven + 3600 }] }]);
+  assert.equal(e.day, "2026-11-12");
+  assert.equal(e.timeText, "7pm");
+  assert.equal(e.description, "Two people");
+  assert.equal(rest.length, 0);
+});
+
+test("The New School: only the next date of a listing", () => {
+  const day = 86400000;
+  const now = Date.UTC(2026, 10, 6);
+  const items = parseNewSchoolHits([{ objectID: "a", title: "Series", tns_dates: [now - 9 * day, now + 2 * day, now + 3 * day] }, { objectID: "a", title: "Series", tns_dates: [now + 2 * day] }], now);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].startMs, now + 2 * day);
 });

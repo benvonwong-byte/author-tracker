@@ -1,15 +1,5 @@
 [
  {
-  "name": "McNally Jackson",
-  "url": "https://www.mcnallyjackson.com/events",
-  "why": "refuses automated requests"
- },
- {
-  "name": "Word Bookstores",
-  "url": "https://www.wordbookstores.com/event",
-  "why": "refuses automated requests"
- },
- {
   "name": "Book Culture",
   "url": "https://www.bookculture.com/event",
   "why": "refuses automated requests"
@@ -37,22 +27,17 @@
  {
   "name": "92NY",
   "url": "https://www.92ny.org/talks",
-  "why": "answers a bot check to automated requests; some dates arrive through Penguin Random House"
+  "why": "only its next 10 talks and readings are read"
  },
  {
   "name": "New York Public Library",
   "url": "https://www.nypl.org/events/calendar",
-  "why": "answers a bot check to automated requests; some dates arrive through Penguin Random House"
+  "why": "its bot check holds back the event list"
  },
  {
   "name": "Brooklyn Public Library",
   "url": "https://www.bklynlibrary.org/calendar",
-  "why": "builds its calendar in the browser"
- },
- {
-  "name": "The New School",
-  "url": "https://events.newschool.edu/",
-  "why": "answers a security check to automated requests"
+  "why": "its search refuses direct requests"
  },
  {
   "name": "The Center for Fiction",

@@ -77,3 +77,77 @@ export const searchSlug = (name) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+
+// The bookstore calendar template many independent stores share (IndieCommerce).
+// One <article class="event-list"> per event, with the date and time labelled.
+export function parseIndieCommerceEvents(html, base) {
+  const text = (s) => decodeEntities(String(s ?? "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+  const items = [];
+  for (const block of String(html).split(/<article\b[^>]*class="event-list"[^>]*>/).slice(1)) {
+    const title = block.match(/class="event-list__title"[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+    const date = block.match(/Date:\s*<\/span>\s*[A-Za-z]*,?\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if (!title || !date) continue;
+    const time = block.match(/Time:\s*<\/span>\s*(\d{1,2}(?::\d{2})?\s*[ap]m)/i);
+    const field = (cls) => text(block.match(new RegExp(`class="${cls}"[^>]*>([^<]*)<`))?.[1]);
+    const city = [field("locality"), [field("administrative-area"), field("postal-code")].filter(Boolean).join(" ")].filter(Boolean).join(", ");
+    items.push({
+      title: text(title[2]),
+      day: `${date[3]}-${date[1].padStart(2, "0")}-${date[2].padStart(2, "0")}`,
+      timeText: time?.[1]?.replace(/\s+/g, "") ?? null,
+      location: [field("address-line1"), field("address-line2"), city].filter(Boolean).join(", ") || null,
+      url: new URL(title[1], base).href,
+      description: text(block.match(/class="event-list__body"[^>]*>([\s\S]*?)<\/div>/)?.[1]) || null,
+    });
+  }
+  return items;
+}
+
+// 92NY's search results. perf_dt holds the New York clock time written as if it
+// were UTC: 7pm in the room is 19:00 here, so it is read as printed.
+export function parse92nyHits(hits, base = "https://www.92ny.org") {
+  const items = [];
+  for (const h of hits ?? []) {
+    const stamps = (h.FuturePerformances ?? []).map((p) => p.perf_dt).filter(Boolean);
+    if (!stamps.length && h.NextPerformanceDateTime) stamps.push(h.NextPerformanceDateTime);
+    const days = new Map();
+    for (const s of stamps) {
+      const iso = new Date(s * 1000).toISOString();
+      if (!days.has(iso.slice(0, 10))) days.set(iso.slice(0, 10), iso.slice(11, 16));
+    }
+    for (const [day, clock] of days) {
+      items.push({
+        title: decodeEntities(h.Title ?? "").trim(),
+        day,
+        timeText: clockText(clock),
+        location: "92NY, 1395 Lexington Ave, New York, NY 10128",
+        url: h.URL ? new URL(h.URL, base).href : base,
+        description: decodeEntities(String(h.ShortDesc ?? "").replace(/<[^>]+>/g, "")).trim() || null,
+      });
+    }
+  }
+  return items;
+}
+
+// The New School's search results: the next date a listing runs, and only that,
+// so a concert series does not fill the list.
+export function parseNewSchoolHits(hits, nowMs) {
+  const seen = new Set();
+  const items = [];
+  for (const h of hits ?? []) {
+    const id = h.objectID ?? h.title;
+    if (seen.has(id)) continue;
+    seen.add(id);
+    const next = (h.tns_dates ?? []).filter((d) => d >= nowMs - 6 * 3600000).sort((a, b) => a - b)[0] ?? h.tns_eventStartDate;
+    if (!Number.isFinite(next) || !h.title) continue;
+    items.push({
+      title: decodeEntities(h.title).trim(),
+      startMs: next,
+      endMs: null,
+      allDay: false,
+      url: h.exterUrl ?? "https://events.newschool.edu/",
+      location: null,
+      description: decodeEntities(String(h.description ?? "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim().slice(0, 600) || null,
+    });
+  }
+  return items;
+}

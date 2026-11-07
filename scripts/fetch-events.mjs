@@ -27,6 +27,7 @@ import { parseDatedText, parseCalendarLinks, htmlToLines, nextPage } from "./lib
 import { classify } from "./lib/place.mjs";
 import { buildMatcher, findTopic } from "./lib/match.mjs";
 import { parseEventbriteOrganizer, parsePrhEvents, searchSlug } from "./lib/listings.mjs";
+import { readInBrowser, closeBrowser } from "./lib/browser.mjs";
 import { stripHtml, decodeEntities } from "./lib/ics.mjs";
 import { partsIn, zonedToUtc, TZ } from "./lib/time.mjs";
 
@@ -281,7 +282,19 @@ async function readEventbrite(feed) {
   return out;
 }
 
+// One browser page at a time, so the morning read stays gentle.
+let browserTurn = Promise.resolve();
+function inBrowserTurn(fn) {
+  const run = browserTurn.then(fn);
+  browserTurn = run.catch(() => {});
+  return run;
+}
+
 async function readFeed(feed, { paged = false } = {}) {
+  if (feed.format === "browser") {
+    if (!AT_HOME) throw new Error("read in a browser from a home connection only");
+    return { items: await inBrowserTurn(() => readInBrowser(feed, { now })) };
+  }
   if (feed.format === "columbia") return { items: await readColumbia(feed) };
   if (feed.format === "luma") return { items: await readLuma(feed) };
   if (feed.format === "tribe") return { items: await readTribeRest(feed) };
@@ -459,6 +472,7 @@ async function pool(items, fn) {
 }
 await pool(AUTHORS.filter((a) => a.feeds?.length), readAuthor);
 await pool(VENUES, readVenue);
+await closeBrowser();
 await readNameSearches();
 
 // ---------- Eventbrite, one author at a time ----------
