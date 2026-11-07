@@ -1,17 +1,7 @@
 [
  {
-  "name": "The Strand",
-  "url": "https://www.strandbooks.com/events",
-  "why": "refuses automated requests"
- },
- {
   "name": "McNally Jackson",
   "url": "https://www.mcnallyjackson.com/events",
-  "why": "refuses automated requests"
- },
- {
-  "name": "Greenlight Bookstore",
-  "url": "https://www.greenlightbookstore.com/event",
   "why": "refuses automated requests"
  },
  {
@@ -47,12 +37,12 @@
  {
   "name": "92NY",
   "url": "https://www.92ny.org/talks",
-  "why": "builds its calendar in the browser"
+  "why": "answers a bot check to automated requests; some dates arrive through Penguin Random House"
  },
  {
   "name": "New York Public Library",
   "url": "https://www.nypl.org/events/calendar",
-  "why": "builds its calendar in the browser"
+  "why": "answers a bot check to automated requests; some dates arrive through Penguin Random House"
  },
  {
   "name": "Brooklyn Public Library",
@@ -62,12 +52,7 @@
  {
   "name": "The New School",
   "url": "https://events.newschool.edu/",
-  "why": "builds its calendar in the browser"
- },
- {
-  "name": "Books Are Magic",
-  "url": "https://www.booksaremagic.net/events",
-  "why": "builds its calendar in the browser"
+  "why": "answers a security check to automated requests"
  },
  {
   "name": "The Center for Fiction",

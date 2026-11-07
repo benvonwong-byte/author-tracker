@@ -285,8 +285,14 @@
   "cluster": "polycrisis",
   "what": "Philosopher and climate campaigner, co-founder of the Moderate Flank Incubator. Author of Parents for a Future.",
   "site": "https://www.rupertread.net",
-  "eventsPage": null,
-  "feeds": []
+  "eventsPage": "https://rupertread.net/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://rupertread.net/events/",
+    "titleBefore": true
+   }
+  ]
  },
  {
   "id": "joseph-tainter",
@@ -722,8 +728,14 @@
   "cluster": "systems",
   "what": "Santa Fe Institute professor and author of Complexity: A Guided Tour.",
   "site": "https://melaniemitchell.me",
-  "eventsPage": null,
-  "feeds": []
+  "eventsPage": "https://melaniemitchell.me/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://melaniemitchell.me/",
+    "start": "^Upcoming Talks"
+   }
+  ]
  },
  {
   "id": "brian-klaas",
@@ -2112,8 +2124,13 @@
   "cluster": "metacrisis",
   "what": "Edited Spiritual Ecology, which argues the ecological crisis is a spiritual one that calls for a changed relationship with the Earth.",
   "site": "https://goldensufi.org",
-  "eventsPage": null,
-  "feeds": []
+  "eventsPage": "https://goldensufi.org/events/",
+  "feeds": [
+   {
+    "format": "text",
+    "url": "https://goldensufi.org/events/"
+   }
+  ]
  },
  {
   "id": "carolyn-baker",
@@ -2394,5 +2411,439 @@
   "eventsPage": null,
   "feeds": [],
   "needsContext": true
+ },
+ {
+  "id": "ezra-klein",
+  "name": "Ezra Klein",
+  "cluster": "economy",
+  "what": "New York Times columnist and podcast host. Co-author of Abundance, on why American government struggles to build housing, clean energy and infrastructure.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "derek-thompson",
+  "name": "Derek Thompson",
+  "cluster": "economy",
+  "what": "Writer and podcast host. Co-author of Abundance with Ezra Klein.",
+  "site": "https://www.derekthompson.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ian-bremmer",
+  "name": "Ian Bremmer",
+  "cluster": "polycrisis",
+  "what": "Founder of Eurasia Group. Author of The Power of Crisis, on how pandemics, climate change and AI could force countries to cooperate.",
+  "site": "https://www.ianbremmer.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "fareed-zakaria",
+  "name": "Fareed Zakaria",
+  "cluster": "polycrisis",
+  "what": "CNN host and author of Age of Revolutions, on how past upheavals shaped the backlash against globalization and technology today.",
+  "site": "https://fareedzakaria.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "anne-applebaum",
+  "name": "Anne Applebaum",
+  "cluster": "polycrisis",
+  "what": "Historian and Atlantic staff writer. Author of Autocracy, Inc., on how authoritarian governments support each other, and Twilight of Democracy.",
+  "site": "https://www.anneapplebaum.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "masha-gessen",
+  "name": "Masha Gessen",
+  "cluster": "polycrisis",
+  "what": "Journalist and author of Surviving Autocracy and The Future Is History.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "yascha-mounk",
+  "name": "Yascha Mounk",
+  "cluster": "polycrisis",
+  "what": "Political scientist and author of The People vs. Democracy and The Great Experiment.",
+  "site": "https://yaschamounk.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "francis-fukuyama",
+  "name": "Francis Fukuyama",
+  "cluster": "polycrisis",
+  "what": "Stanford political scientist. Author of Liberalism and Its Discontents and The End of History and the Last Man.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rodrigo-nunes",
+  "name": "Rodrigo Nunes",
+  "cluster": "polycrisis",
+  "what": "Brazilian philosopher. Author of Neither Vertical nor Horizontal, on how political movements organize.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "timothy-mitchell",
+  "name": "Timothy Mitchell",
+  "cluster": "polycrisis",
+  "what": "Columbia political theorist. Author of Carbon Democracy, on how coal and oil shaped modern politics.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true,
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "geoffrey-hinton",
+  "name": "Geoffrey Hinton",
+  "cluster": "xrisk",
+  "what": "Nobel laureate and deep learning pioneer who left Google in 2023 to warn about the risks of advanced AI.",
+  "site": "https://www.cs.toronto.edu/~hinton/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "yoshua-bengio",
+  "name": "Yoshua Bengio",
+  "cluster": "xrisk",
+  "what": "Turing Award winner who chairs the International AI Safety Report and writes on catastrophic risk from AI.",
+  "site": "https://yoshuabengio.org/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "daniel-kokotajlo",
+  "name": "Daniel Kokotajlo",
+  "cluster": "xrisk",
+  "what": "Former OpenAI researcher and lead author of AI 2027, a scenario of superhuman AI arriving within the decade.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "arvind-narayanan",
+  "name": "Arvind Narayanan",
+  "cluster": "xrisk",
+  "what": "Princeton computer scientist and co-author of AI Snake Oil, on which AI claims hold up and which do not.",
+  "site": "https://www.cs.princeton.edu/~arvindn/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "sayash-kapoor",
+  "name": "Sayash Kapoor",
+  "cluster": "xrisk",
+  "what": "Co-author of AI Snake Oil with Arvind Narayanan.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "meredith-whittaker",
+  "name": "Meredith Whittaker",
+  "cluster": "xrisk",
+  "what": "President of Signal and co-founder of the AI Now Institute. Writes on surveillance and concentrated power in the AI industry.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "jaron-lanier",
+  "name": "Jaron Lanier",
+  "cluster": "culture",
+  "what": "Computer scientist and author of Who Owns the Future? and Ten Arguments for Deleting Your Social Media Accounts Right Now.",
+  "site": "https://www.jaronlanier.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ted-chiang",
+  "name": "Ted Chiang",
+  "cluster": "culture",
+  "what": "Author of the story collection Exhalation and of New Yorker essays arguing what generative AI can and cannot do.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "sherry-turkle",
+  "name": "Sherry Turkle",
+  "cluster": "culture",
+  "what": "MIT sociologist of technology. Author of Alone Together and Reclaiming Conversation.",
+  "site": "https://sherryturkle.mit.edu/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kyle-chayka",
+  "name": "Kyle Chayka",
+  "cluster": "culture",
+  "what": "New Yorker writer and author of Filterworld, on how recommendation algorithms flatten culture.",
+  "site": "https://www.kylechayka.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "max-fisher",
+  "name": "Max Fisher",
+  "cluster": "culture",
+  "what": "Journalist and author of The Chaos Machine, on how social media platforms drive political extremism.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "nicholas-carr",
+  "name": "Nicholas Carr",
+  "cluster": "culture",
+  "what": "Author of The Shallows and Superbloom, on how communication technology changes attention and society.",
+  "site": "https://www.nicholascarr.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "chris-hayes",
+  "name": "Chris Hayes",
+  "cluster": "culture",
+  "what": "MSNBC host and author of The Sirens' Call, which treats attention as the resource that defines this era.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "safiya-noble",
+  "name": "Safiya Noble",
+  "cluster": "culture",
+  "what": "UCLA professor and author of Algorithms of Oppression, on racism in search engines.",
+  "site": "https://safiyaunoble.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Safiya Umoja Noble"
+  ]
+ },
+ {
+  "id": "evgeny-morozov",
+  "name": "Evgeny Morozov",
+  "cluster": "culture",
+  "what": "Writer on technology and politics. Author of The Net Delusion and To Save Everything, Click Here.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "mariame-kaba",
+  "name": "Mariame Kaba",
+  "cluster": "culture",
+  "what": "Organizer and author of We Do This 'Til We Free Us, on abolition and community safety.",
+  "site": "https://www.mariamekaba.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kim-tallbear",
+  "name": "Kim TallBear",
+  "cluster": "culture",
+  "what": "University of Alberta professor and author of Native American DNA.",
+  "site": "https://kimtallbear.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "tim-wu",
+  "name": "Tim Wu",
+  "cluster": "economy",
+  "what": "Columbia law professor and author of The Age of Extraction and The Master Switch, on how tech platforms concentrate power.",
+  "site": "https://www.law.columbia.edu/faculty/timothy-wu",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true,
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "lina-khan",
+  "name": "Lina Khan",
+  "cluster": "economy",
+  "what": "Former chair of the Federal Trade Commission and Columbia law professor. Wrote Amazon's Antitrust Paradox.",
+  "site": "https://www.law.columbia.edu/faculty/lina-khan",
+  "eventsPage": null,
+  "feeds": [],
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "joseph-stiglitz",
+  "name": "Joseph Stiglitz",
+  "cluster": "economy",
+  "what": "Columbia economist and Nobel laureate. Author of The Road to Freedom and The Price of Inequality.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Joseph E. Stiglitz"
+  ],
+  "nyc": "Teaches at Columbia University"
+ },
+ {
+  "id": "stephanie-kelton",
+  "name": "Stephanie Kelton",
+  "cluster": "economy",
+  "what": "Economist and author of The Deficit Myth, on what public money can and cannot do.",
+  "site": "https://stephaniekelton.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "rebecca-henderson",
+  "name": "Rebecca Henderson",
+  "cluster": "economy",
+  "what": "Harvard Business School professor and author of Reimagining Capitalism in a World on Fire.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "ai-jen-poo",
+  "name": "Ai-jen Poo",
+  "cluster": "economy",
+  "what": "President of the National Domestic Workers Alliance and author of The Age of Dignity, on care work in an aging country.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "heather-mcghee",
+  "name": "Heather McGhee",
+  "cluster": "economy",
+  "what": "Author of The Sum of Us, on what racism costs everyone in the American economy.",
+  "site": "https://www.heathermcghee.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "quinn-slobodian",
+  "name": "Quinn Slobodian",
+  "cluster": "economy",
+  "what": "Historian and author of Crack-Up Capitalism and Hayek's Bastards, on the politics of free-market thought.",
+  "site": "https://www.quinnslobodian.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "grace-blakeley",
+  "name": "Grace Blakeley",
+  "cluster": "economy",
+  "what": "Economist and author of Vulture Capitalism, on how corporations and states plan together.",
+  "site": "https://www.graceblakeley.co.uk/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "nancy-fraser",
+  "name": "Nancy Fraser",
+  "cluster": "economy",
+  "what": "New School philosopher and author of Cannibal Capitalism, on how capitalism eats the care, nature and democracy it depends on.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "slavoj-zizek",
+  "name": "Slavoj Žižek",
+  "cluster": "culture",
+  "what": "Philosopher and author of Living in the End Times and Too Late to Awaken.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "kate-aronoff",
+  "name": "Kate Aronoff",
+  "cluster": "planet",
+  "what": "New Republic writer and author of Overheated, on how fossil fuel interests and policy failures shaped climate politics.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "amy-westervelt",
+  "name": "Amy Westervelt",
+  "cluster": "planet",
+  "what": "Investigative climate journalist and creator of the Drilled podcast on the fossil fuel industry.",
+  "site": "https://www.amywestervelt.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "mary-annaise-heglar",
+  "name": "Mary Annaïse Heglar",
+  "cluster": "planet",
+  "what": "Climate essayist and co-creator of the Hot Take podcast. Wrote Climate Change Ain't the First Existential Threat.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": [],
+  "aliases": [
+   "Mary Heglar"
+  ]
+ },
+ {
+  "id": "jonathan-foley",
+  "name": "Jonathan Foley",
+  "cluster": "planet",
+  "what": "Climate scientist who has led Project Drawdown, which ranks climate solutions.",
+  "site": "https://globalecologist.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "saul-griffith",
+  "name": "Saul Griffith",
+  "cluster": "planet",
+  "what": "Engineer and author of Electrify, a plan for moving the American economy off fossil fuels. Co-founder of Rewiring America.",
+  "site": null,
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "timothy-morton",
+  "name": "Timothy Morton",
+  "cluster": "planet",
+  "what": "Rice University philosopher and author of Hyperobjects, on things too large in time and space to think about, such as climate change.",
+  "site": "https://ecologywithoutnature.blogspot.com/",
+  "eventsPage": null,
+  "feeds": [],
+  "needsContext": true
+ },
+ {
+  "id": "james-gleick",
+  "name": "James Gleick",
+  "cluster": "systems",
+  "what": "Science writer and author of Chaos, which brought complexity science to general readers, and The Information.",
+  "site": "https://around.com/",
+  "eventsPage": null,
+  "feeds": []
+ },
+ {
+  "id": "ed-yong",
+  "name": "Ed Yong",
+  "cluster": "planet",
+  "what": "Science journalist and author of An Immense World and I Contain Multitudes. Won a Pulitzer Prize for reporting on the Covid-19 pandemic.",
+  "site": "https://www.edyong.me/",
+  "eventsPage": null,
+  "feeds": []
  }
 ]

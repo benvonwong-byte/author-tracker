@@ -14,7 +14,9 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
 
 CLONE="${AUTHORS_CLONE:-$HOME/.authors-refresh/author-tracker}"
 REPO_URL="https://github.com/benvonwong-byte/author-tracker.git"
-DATA=(data/events.json data/seen.json data/pages.json)
+DATA=(data/events.json data/seen.json data/pages.json data/name-search.json)
+# Turns on the daily Eventbrite search by author name, which GitHub cannot do.
+export AUTHORS_HOME=1
 
 echo "$(date '+%F %T') authors refresh: start"
 

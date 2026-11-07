@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { findDate, parseDatedText, parseCalendarLinks, nextPage } from "../scripts/lib/dated-text.mjs";
 import { classify } from "../scripts/lib/place.mjs";
 import { buildMatcher, findTopic } from "../scripts/lib/match.mjs";
+import { parseEventbriteOrganizer, parsePrhEvents, searchSlug } from "../scripts/lib/listings.mjs";
 
 const today = "2026-11-06";
 const parse = (html, src = {}) => parseDatedText(html, { url: "https://example.org/", ...src }, { today });
@@ -118,4 +119,36 @@ test("nextPage follows a real next link and nothing else", () => {
   assert.equal(nextPage(`<link rel="next" href="https://example.org/events?offset=20">`, url, 1), "https://example.org/events?offset=20");
   assert.equal(nextPage(`<a href="https://other.org/events/page/2/">2</a>`, url, 1), null);
   assert.equal(nextPage(`<a href="/about">About</a>`, url, 1), null);
+});
+
+test("an Eventbrite organizer page: its events, without the cancelled ones", () => {
+  const event = { name: "Tim Wu: The Age of Extraction", url: "https://www.eventbrite.com/e/1", start_date: "2026-12-01", start_time: "19:30:00", end_date: "2026-12-01", is_online_event: false, is_cancelled: false, primary_venue: { name: "Strand Bookstore", address: { localized_address_display: "828 Broadway, New York, NY 10003", latitude: "40.73", longitude: "-73.99" } } };
+  const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { upcomingEvents: [event, { ...event, name: "Gone", is_cancelled: true }, { ...event, name: "Online", is_online_event: true, start_time: "00:00:00" }] } } })}</script>`;
+  const items = parseEventbriteOrganizer(html);
+  assert.deepEqual(items.map((i) => i.title), ["Tim Wu: The Age of Extraction", "Online"]);
+  assert.equal(items[0].timeText, "7:30pm");
+  assert.equal(items[0].location, "Strand Bookstore, 828 Broadway, New York, NY 10003");
+  assert.equal(items[0].lat, 40.73);
+  assert.equal(items[1].location, "Online");
+  assert.equal(items[1].timeText, null);
+  assert.throws(() => parseEventbriteOrganizer("<html></html>"));
+});
+
+test("Penguin Random House: a date with a local clock time, and the page total", () => {
+  const block = (author, book, start) => `<div class="result-item clearfix"><a href="/authors/1/x">p</a><div itemprop="startDate" content="${start}">x</div><div class="author" itemprop="name">
+  <h2><a href="/authors/1/x" class="author-name">${author}</a></h2></div><div class="author-of">Author of <a href="/books/1/">${book}</a></div><div class="hdr" itemprop="name">92nd Street Y</div><span itemprop="streetAddress">1395 Lexington Ave</span><span itemprop="addressLocality">New York</span><span itemprop="addressRegion">NY</span><span itemprop="postalCode">10128</span></div>`;
+  const { items, total } = parsePrhEvents(`<div totalResults="41"></div>${block("A &amp; B", "Title", "2026-12-01T19:30:00+0000")}${block("C", "Other", "2026-12-02T00:00:00+0000")}`);
+  assert.equal(total, 41);
+  assert.equal(items[0].title, "A & B: Title");
+  assert.equal(items[0].day, "2026-12-01");
+  assert.equal(items[0].timeText, "7:30pm");
+  assert.equal(items[0].location, "92nd Street Y, 1395 Lexington Ave, New York, NY 10128");
+  assert.equal(items[1].timeText, null);
+  assert.equal(classify({ location: items[0].location, text: items[0].title }).region, "nyc");
+  assert.equal(classify({ location: "NY BOOKS, 1 MAIN ST, NEW YORK, NY 10001", text: "x" }).region, "nyc");
+});
+
+test("the Eventbrite search word for a name", () => {
+  assert.equal(searchSlug("Slavoj Žižek"), "slavoj-zizek");
+  assert.equal(searchSlug("Emily M. Bender"), "emily-m-bender");
 });

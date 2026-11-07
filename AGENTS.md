@@ -16,9 +16,9 @@ Same rules as dearcrisis.com. Plain words. An author's `what` says what they wro
 ## Data rules
 
 - Public appearances of people writing in public. A personal address, phone number or private schedule never goes in this repo. `nyc` says where someone teaches or lives only when they say so publicly.
-- `data/events.json`, `data/seen.json` and `data/pages.json` are generated. Do not edit them by hand. `seen.json` is the memory behind the RSS feed: deleting it makes every date look new to every subscriber.
+- `data/events.json`, `data/seen.json`, `data/pages.json` and `data/name-search.json` are generated. Do not edit them by hand. `seen.json` is the memory behind the RSS feed: deleting it makes every date look new to every subscriber.
 - A site that answers 403 goes in `data/unreadable.json`, which the footer lists for checking by hand. Do not disguise the fetcher to get past a block. The client in `scripts/lib/http.mjs` says who it is.
-- The fetcher must never fail the build. A broken feed is logged, named in the footer, and skipped, and its last good dates stay for 14 days.
+- The fetcher must never fail the build. A broken feed is logged, named in the footer, and skipped, and its last good dates stay for 30 days.
 
 ## A false New York date is the worst bug here
 

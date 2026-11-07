@@ -14,10 +14,11 @@ data/venues.json  ─┘                                                   (site
 
 A GitHub Action runs this every morning and on every push to `main`. A small Cloudflare Worker in `worker/` serves the result at authors.dearcrisis.com. It needs Node 20 or newer, no dependencies and no API keys.
 
-There are two kinds of source, because neither is enough alone:
+There are three kinds of source, because none is enough alone. `docs/coverage.md` has the tests behind this and what is still out of reach.
 
 1. **Author pages.** Most authors keep a plain list of dates on their own site with no feed behind it, so `scripts/lib/dated-text.mjs` finds the dates in the page and reads the lines around each one. A page with "Add to Google Calendar" links is read from those links instead, since they hold the exact title, time and place. Where a real feed exists (Squarespace, WordPress, an ICS file) that is used instead. Every date counts, wherever it is. Each page's text is also hashed, so the directory can say "their events page last changed Nov 5" even when the parser finds nothing.
-2. **New York calendars.** NYU, Columbia, Luma's New York listings, Eventbrite searches, museums and the Dear Crisis hub organizations. Each is read in full and a listing is kept only if it names a listed author or one of the subjects in `scripts/lib/match.mjs`.
+2. **New York calendars.** NYU, Columbia, Luma's New York listings, Eventbrite searches, bookstores through their Eventbrite pages, Penguin Random House's New York tour list, museums and the Dear Crisis hub organizations. Each is read in full and a listing is kept only if it names a listed author or one of the subjects in `scripts/lib/match.mjs`.
+3. **Eventbrite, searched by author.** A home connection searches a few dozen names each morning and remembers what it finds in `data/name-search.json`, so a talk at any venue selling tickets through Eventbrite can turn up.
 
 The subject match is how new names turn up: an NYU talk on AI welfare by someone not on the list appears under "On the subject", and anyone worth following gets added to `data/authors.json`.
 

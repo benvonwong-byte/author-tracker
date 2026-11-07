@@ -1231,9 +1231,12 @@
   "feeds": [
    {
     "format": "text",
-    "url": "https://www.haymarketbooks.org/events"
+    "url": "https://www.haymarketbooks.org/events",
+    "start": "^Upcoming Events",
+    "titleBefore": true
    }
-  ]
+  ],
+  "allOnSubject": "Haymarket Books"
  },
  {
   "id": "literary-hub",
@@ -1394,6 +1397,277 @@
    {
     "format": "text",
     "url": "https://lifeitself.org/events"
+   }
+  ]
+ },
+ {
+  "id": "strand",
+  "name": "The Strand",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/strand-bookstore-30058841244",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/strand-bookstore-30058841244"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "greenlight",
+  "name": "Greenlight Bookstore",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/greenlight-bookstore-13064382976",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/greenlight-bookstore-13064382976"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "books-are-magic",
+  "name": "Books Are Magic",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/books-are-magic-17671794664",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/books-are-magic-17671794664"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "community-bookstore",
+  "name": "Community Bookstore",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/community-bookstore-17768356901",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/community-bookstore-17768356901"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "rizzoli",
+  "name": "Rizzoli Bookstore",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/rizzoli-bookstore-11785715523",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/rizzoli-bookstore-11785715523"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "housing-works",
+  "name": "Housing Works Bookstore",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/housing-works-bookstore-6548340747",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/housing-works-bookstore-6548340747"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "pt-knitwear",
+  "name": "P&T Knitwear",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/pt-knitwear-41790821233",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/pt-knitwear-41790821233"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "hive-mind",
+  "name": "Hive Mind Books",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/hive-mind-books-79929425663",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/hive-mind-books-79929425663"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "lofty-pigeon",
+  "name": "Lofty Pigeon Books",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/lofty-pigeon-books-70958284203",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/lofty-pigeon-books-70958284203"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "book-club-bar",
+  "name": "Book Club Bar",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/book-club-bar-40513431663",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/book-club-bar-40513431663"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "lizs-book-bar",
+  "name": "Liz's Book Bar",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/lizs-book-bar-83466825333",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/lizs-book-bar-83466825333"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "bgsqd",
+  "name": "Bureau of General Services, Queer Division",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/bureau-of-general-services-queer-division-121271543808",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/bureau-of-general-services-queer-division-121271543808"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "twisted-spine",
+  "name": "The Twisted Spine",
+  "kind": "bookstore",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/the-twisted-spine-114781508361",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/the-twisted-spine-114781508361"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "cooper-union",
+  "name": "The Cooper Union",
+  "kind": "university",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/cooper-union-for-the-advancement-of-science-art-13227280331",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/cooper-union-for-the-advancement-of-science-art-13227280331"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "caveat",
+  "name": "Caveat",
+  "kind": "talks",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/caveat-13580085802",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/caveat-13580085802"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "heyman-center",
+  "name": "Heyman Center for the Humanities, Columbia",
+  "kind": "university",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.eventbrite.com/o/the-society-of-fellows-and-heyman-center-for-the-humanities-41815482663",
+  "feeds": [
+   {
+    "format": "eventbrite-org",
+    "url": "https://www.eventbrite.com/o/the-society-of-fellows-and-heyman-center-for-the-humanities-41815482663"
+   }
+  ],
+  "homeOnly": true
+ },
+ {
+  "id": "penguin-random-house",
+  "name": "Penguin Random House author tours",
+  "kind": "listing",
+  "unsure": true,
+  "lat": null,
+  "lng": null,
+  "site": "https://www.penguinrandomhouse.com/authors/events/",
+  "feeds": [
+   {
+    "format": "prh",
+    "url": "https://www.penguinrandomhouse.com/authors/events/?location=10003&proximity=25"
+   }
+  ]
+ },
+ {
+  "id": "common-notions",
+  "name": "Common Notions",
+  "kind": "publisher",
+  "unsure": true,
+  "allOnSubject": "Common Notions",
+  "lat": null,
+  "lng": null,
+  "site": "https://www.commonnotions.org/events1",
+  "feeds": [
+   {
+    "format": "squarespace",
+    "url": "https://www.commonnotions.org/events1?format=json"
    }
   ]
  }

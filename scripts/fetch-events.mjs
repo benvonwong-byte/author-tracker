@@ -9,8 +9,12 @@
 //      listing is kept only if it names a listed author or one of the topics
 //      in scripts/lib/match.mjs.
 //
+//   3. Eventbrite searches by author name, read from a home connection a few
+//      dozen a morning, oldest first, and remembered in data/name-search.json.
+//      GitHub's run only reads that memory.
+//
 // Never fails the build: a broken source is logged and skipped, its last good
-// events stay for 14 days, and if most sources fail at once the previous file
+// events stay for 30 days, and if most sources fail at once the previous file
 // is kept.
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -22,6 +26,7 @@ import { parseByFormat } from "./lib/parsers.mjs";
 import { parseDatedText, parseCalendarLinks, htmlToLines, nextPage } from "./lib/dated-text.mjs";
 import { classify } from "./lib/place.mjs";
 import { buildMatcher, findTopic } from "./lib/match.mjs";
+import { parseEventbriteOrganizer, parsePrhEvents, searchSlug } from "./lib/listings.mjs";
 import { stripHtml, decodeEntities } from "./lib/ics.mjs";
 import { partsIn, zonedToUtc, TZ } from "./lib/time.mjs";
 
@@ -32,6 +37,14 @@ const VENUES = read("data/venues.json", []);
 const PREV = read("data/events.json", { events: [], sources: [] });
 const SEEN = read("data/seen.json", {});
 const PAGES = read("data/pages.json", {});
+const NAME_SEARCH = read("data/name-search.json", {});
+
+// Only scripts/home-refresh.sh sets this. Eventbrite refuses GitHub's servers.
+const AT_HOME = process.env.AUTHORS_HOME === "1";
+// About 270 authors at 40 a morning reaches everyone in a week. Eventbrite began
+// answering 429 after 16 searches at one every 2.5 seconds, so these go slower.
+const NAME_SEARCHES_PER_RUN = Number(process.env.NAME_SEARCH_LIMIT) || 40;
+const NAME_SEARCH_GAP_MS = 6000;
 
 const HORIZON_DAYS = 400;
 // A source that fails keeps its last good dates this long. Eventbrite and a
@@ -200,6 +213,52 @@ async function readTribeRest(feed) {
   }
   return parseByFormat("tribe", JSON.stringify({ events }), feed, window);
 }
+// Penguin Random House shows ten events a page and its next-page address is not
+// a link, but it filters by date, so walk the year and split any window that
+// holds more than one page.
+async function readPrh(feed) {
+  const DAY = 86400000;
+  const out = [];
+  const seen = new Set();
+  const stamp = (ms) => {
+    const [y, m, d] = dayOf(ms).split("-");
+    return `${m}/${d}/${y}`;
+  };
+  const glue = feed.url.includes("?") ? "&" : "?";
+  async function walk(fromMs, toMs) {
+    const address = `${feed.url}${glue}datefrom=${stamp(fromMs)}&dateto=${stamp(toMs)}`;
+    // The site answers an occasional 500, and a second try usually gets through.
+    const page = await get(address).catch(async () => {
+      await sleep(3000);
+      return get(address);
+    });
+    const { items, total } = parsePrhEvents(page);
+    await sleep(500);
+    if (total > items.length && toMs - fromMs >= DAY) {
+      const mid = fromMs + Math.floor((toMs - fromMs) / 2 / DAY) * DAY;
+      await walk(fromMs, mid);
+      await walk(mid + DAY, toMs);
+      return;
+    }
+    for (const i of items) {
+      if (seen.has(itemKey(i))) continue;
+      seen.add(itemKey(i));
+      out.push(i);
+    }
+  }
+  for (let m = 0; m < 13; m++) await walk(now + m * 30 * DAY, now + (m + 1) * 30 * DAY - DAY);
+  return out;
+}
+
+// Every Eventbrite request takes its turn, however many sources want one, so
+// the morning read does not look like a burst.
+let eventbriteTurn = Promise.resolve();
+function inEventbriteTurn(fn) {
+  const run = eventbriteTurn.then(fn);
+  eventbriteTurn = run.catch(() => {}).then(() => sleep(1500));
+  return run;
+}
+
 // Eventbrite search lists the soonest first, 20 to a page, and rate-limits
 // quickly, so it goes slowly and keeps whatever pages it got.
 async function readEventbrite(feed) {
@@ -226,7 +285,9 @@ async function readFeed(feed, { paged = false } = {}) {
   if (feed.format === "columbia") return { items: await readColumbia(feed) };
   if (feed.format === "luma") return { items: await readLuma(feed) };
   if (feed.format === "tribe") return { items: await readTribeRest(feed) };
-  if (feed.format === "jsonld" && /eventbrite\.com\/d\//.test(feed.url)) return { items: await readEventbrite(feed) };
+  if (feed.format === "prh") return { items: await readPrh(feed) };
+  if (feed.format === "eventbrite-org") return { items: await inEventbriteTurn(async () => parseEventbriteOrganizer(await get(feed.url), feed)) };
+  if (feed.format === "jsonld" && /eventbrite\.com\/d\//.test(feed.url)) return { items: await inEventbriteTurn(() => readEventbrite(feed)) };
   if (feed.format === "ics" && /[?&]ical=1/.test(feed.url)) return { items: await readTribeExport(feed) };
   const text = await get(feed.url);
   if (feed.format === "text") return { items: paged ? await readPages(feed, text, parseText) : parseText(text, feed), text };
@@ -262,6 +323,8 @@ function makeEvent(inst, { authors, via, match, topic, sourceId, sourceLabel, ve
   if (venue && !venue.unsure && (place.region === "unknown" || (place.region === "nyc" && place.approx))) {
     place = { region: "nyc", place: inst.location?.trim() || venue.name, lat: venue.lat, lng: venue.lng, approx: false };
   }
+  // A listing that gives a street says more than the city it was classed under.
+  if (place.region === "nyc" && place.approx && inst.location?.trim()) place = { ...place, place: inst.location.trim() };
   if (Number.isFinite(inst.lat) && Number.isFinite(inst.lng)) place = { ...place, lat: inst.lat, lng: inst.lng, approx: false };
   const when = timing(inst, place.region);
   if (!when.day || when.day < today || when.day > lastDay) return null;
@@ -355,7 +418,8 @@ async function readVenue(v) {
       for (const inst of items) {
         // A host named on the listing is as firm as a name in the title.
         const hits = matchAuthors([inst.title, inst.hosts].filter(Boolean).join(" "), inst.description);
-        const topic = hits.length ? null : findTopic(inst.title, inst.description);
+        // A publisher whose whole list is on these subjects needs no phrase match.
+        const topic = hits.length ? null : v.allOnSubject ? { label: v.allOnSubject, where: "venue" } : findTopic(inst.title, inst.description);
         if (!hits.length && !topic) continue;
         const ev = makeEvent(inst, {
           authors: hits.map((h) => authorById.get(h.id)),
@@ -395,6 +459,71 @@ async function pool(items, fn) {
 }
 await pool(AUTHORS.filter((a) => a.feeds?.length), readAuthor);
 await pool(VENUES, readVenue);
+await readNameSearches();
+
+// ---------- Eventbrite, one author at a time ----------
+// Finds a talk at any venue that sells tickets through Eventbrite, including
+// dates further out than a store's own page shows. The matcher still has to
+// find the full name in the listing, so a loose search result does not get in.
+async function readNameSearches() {
+  const id = "names:eventbrite";
+  const url = "https://www.eventbrite.com/d/ny--new-york/";
+  const venue = { id: "eventbrite-names", name: "Eventbrite, searched by author", kind: "listing", unsure: true, lat: null, lng: null };
+
+  if (AT_HOME) {
+    const due = AUTHORS.slice()
+      .sort((a, b) => (NAME_SEARCH[a.id]?.searchedAt ?? "").localeCompare(NAME_SEARCH[b.id]?.searchedAt ?? ""))
+      .slice(0, NAME_SEARCHES_PER_RUN);
+    let done = 0;
+    for (const a of due) {
+      try {
+        const items = parseByFormat("jsonld", await get(`${url}${searchSlug(a.name)}/`), { url }, window);
+        NAME_SEARCH[a.id] = {
+          searchedAt: nowIso,
+          items: items
+            .filter((i) => matchAuthors([i.title, i.hosts].filter(Boolean).join(" "), i.description).length)
+            .map(({ title, day, endDay, startMs, endMs, allDay, timeText, location, url: link, description, lat, lng }) => ({ title, day, endDay, startMs, endMs, allDay, timeText, location, url: link, description: description ? String(description).slice(0, 600) : null, lat, lng })),
+        };
+        done++;
+      } catch (err) {
+        // Most likely a rate limit. The rest are next in line tomorrow.
+        console.warn(`fetch-events: Eventbrite search stopped at ${a.name}: ${err.message}`);
+        break;
+      }
+      await sleep(NAME_SEARCH_GAP_MS);
+    }
+    console.log(`fetch-events: Eventbrite searched for ${done} authors`);
+  }
+
+  // Every run, home or not, turns what is remembered into events.
+  let parsed = 0;
+  let n = 0;
+  let reach = "";
+  let newest = null;
+  const fresh = Object.values(NAME_SEARCH).filter((s) => now - Date.parse(s.searchedAt) < STALE_DAYS * 86400000);
+  for (const s of fresh) {
+    if (!newest || s.searchedAt > newest) newest = s.searchedAt;
+    for (const inst of s.items) {
+      parsed++;
+      const hits = matchAuthors([inst.title, inst.hosts].filter(Boolean).join(" "), inst.description);
+      if (!hits.length) continue;
+      const ev = makeEvent(inst, {
+        authors: hits.map((h) => authorById.get(h.id)),
+        via: "venue",
+        match: hits.some((h) => h.where === "title") ? "title" : "listing",
+        venue,
+        sourceId: id,
+        sourceLabel: venue.name,
+      });
+      if (!ev) continue;
+      events.push(ev);
+      n++;
+      if (ev.day > reach) reach = ev.day;
+    }
+  }
+  console.log(`fetch-events: ${venue.name}: ${n} kept (${fresh.length} authors remembered)`);
+  sources.push({ id, label: venue.name, kind: "venue", url, ok: true, count: n, parsed, reach: reach || null, homeOnly: true, lastGood: newest });
+}
 
 // ---------- Merge duplicates ----------
 // The author's own page wins, then a venue that names them in the title.
@@ -406,6 +535,9 @@ const sameEvent = (a, b) => {
   if (a.authorIds.length && b.authorIds.length) {
     if (!a.authorIds.some((x) => b.authorIds.includes(x))) return false;
     if (a.via !== b.via) return true; // one person, one day, two sources
+    // Two calendars can title the same New York talk differently, and one person
+    // giving two talks here on one day is rare. The second link stays in alsoAt.
+    if (a.region === "nyc" && b.region === "nyc") return true;
     const wa = words(a.title);
     const wb = words(b.title);
     return [...wa].filter((w) => wb.has(w)).length >= Math.min(2, Math.min(wa.size, wb.size));
@@ -449,6 +581,7 @@ if (bad && PREV.events?.length) {
   writeFileSync(join(ROOT, "data/events.json"), JSON.stringify({ fetchedAt: nowIso, horizonDays: HORIZON_DAYS, sources, events: merged, pages: PAGES }, null, 1) + "\n");
   writeFileSync(join(ROOT, "data/seen.json"), JSON.stringify(SEEN, null, 0) + "\n");
   writeFileSync(join(ROOT, "data/pages.json"), JSON.stringify(PAGES, null, 0) + "\n");
+  if (AT_HOME) writeFileSync(join(ROOT, "data/name-search.json"), JSON.stringify(NAME_SEARCH, null, 0) + "\n");
 }
 const count = (r) => merged.filter((e) => e.region === r).length;
 console.log(

@@ -13,7 +13,7 @@ const authors = read("data/authors.json");
 const venues = read("data/venues.json");
 const unreadable = read("data/unreadable.json");
 const CLUSTERS = new Set(["metacrisis", "polycrisis", "xrisk", "systems", "economy", "planet", "culture"]);
-const FORMATS = new Set(["text", "ics", "luma", "meetup", "tockify", "civicplus", "squarespace", "tribe", "mobilize", "rss", "rss-future", "jsonld", "eventbrite", "mahina", "fullcalendar", "columbia"]);
+const FORMATS = new Set(["text", "ics", "luma", "meetup", "tockify", "civicplus", "squarespace", "tribe", "mobilize", "rss", "rss-future", "jsonld", "eventbrite", "mahina", "fullcalendar", "columbia", "eventbrite-org", "prh"]);
 const isHttp = (u) => typeof u === "string" && /^https?:\/\/\S+$/.test(u);
 
 const errors = [];
@@ -52,6 +52,7 @@ for (const v of venues) {
   vids.add(v.id);
   if (!v.name) errors.push(`${at}: missing name`);
   if (v.homeOnly !== undefined && typeof v.homeOnly !== "boolean") errors.push(`${at}: homeOnly must be true or false`);
+  if (v.allOnSubject !== undefined && (typeof v.allOnSubject !== "string" || !v.unsure)) errors.push(`${at}: allOnSubject must be a label, on a source marked unsure so it only counts in New York`);
   feeds(at, v.feeds);
 }
 for (const u of unreadable) if (!u.name || !isHttp(u.url)) errors.push(`unreadable ${u.name ?? "?"}: needs a name and a url`);

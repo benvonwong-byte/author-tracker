@@ -16,7 +16,11 @@ To take the site down: `npx wrangler delete`, then Settings, Pages, Unpublish.
 
 ## The sources that need a home connection
 
-Eventbrite, Poets House, Wendy's Subway and the Explorers Club refuse requests from GitHub's servers (`homeOnly` in `data/venues.json`). `scripts/home-refresh.sh` reads every source from a home connection and pushes the result, and GitHub's 11:23 UTC run keeps those sources' dates for 30 days after the last home read. `scripts/install-home-refresh.sh` installs it as a daily 5:50 AM launch agent, `com.dearcrisis.authors-refresh`, with logs in `/tmp/dc-authors-refresh.*.log`. **It is not installed yet.** Until it is, those four sources only update when someone runs `home-refresh.sh` by hand, and their dates drop 30 days after that. Sunset Events' `HANDOFF.md` has the options if no Mac is available.
+Eventbrite, Poets House, Wendy's Subway and the Explorers Club refuse requests from GitHub's servers (`homeOnly` in `data/venues.json`). Eventbrite matters most: The Strand, Greenlight, Books Are Magic and the other bookstores in `data/venues.json` are read through their Eventbrite organizer pages. `scripts/home-refresh.sh` reads every source from a home connection and pushes the result, and GitHub's 11:23 UTC run keeps those sources' dates for 30 days after the last home read.
+
+The home run also searches Eventbrite by author name, 40 authors a morning at one every six seconds, oldest search first, so everyone comes round in about a week if Eventbrite allows it. It stopped the first test at 14 searches, so check `data/name-search.json` after a few mornings to see the real pace. What it finds is remembered in `data/name-search.json`, which GitHub's run reads but never searches. If Eventbrite refuses a search, that morning's searching stops and the rest stay first in line. Set `NAME_SEARCH_LIMIT` to change the daily number.
+
+`scripts/install-home-refresh.sh` installs the home run as a daily 5:50 AM launch agent, `com.dearcrisis.authors-refresh`, with logs in `/tmp/dc-authors-refresh.*.log`. **It is not installed yet.** Until it is, those sources only update when someone runs `home-refresh.sh` by hand, and their dates drop 30 days after that. The agent runs a copy of the script, so run the install script again after changing `home-refresh.sh`. Sunset Events' `HANDOFF.md` has the options if no Mac is available.
 
 Remove the agent with:
 
@@ -28,15 +32,14 @@ rm -rf ~/.authors-refresh
 
 ## Still open
 
-- Merge dear-crisis PR #117, the atlas entry for this site.
 - Review the author list. Many blurbs in `data/authors.json` rely partly on general knowledge of the book, and a few shelf authors are off topic.
-- Write to The Strand, McNally Jackson and Greenlight about a feed. `docs/coverage.md` explains why this is the biggest gap.
+- Write to 92NY, New York Public Library, The Strand and McNally Jackson about a feed. `docs/coverage.md` says what is still out of reach.
 
 ## Good to know
 
-- Eventbrite refuses requests from data centers (see Sunset's `HANDOFF.md`), so GitHub's run gets nothing from it and the footer says so. No listing depends on it alone today.
+- Eventbrite refuses requests from data centers (see Sunset's `HANDOFF.md`), so GitHub's run gets nothing from it and the footer says so. The bookstore dates depend on the home run.
 - GitHub pauses scheduled workflows in a public repository after 60 days with no activity. The daily data commit counts as activity, unless no date changes for 60 days.
-- Dates from a source that fails stay for 14 days after its last good read, then drop.
+- Dates from a source that fails stay for 30 days after its last good read, then drop.
 
 ## Day to day
 
